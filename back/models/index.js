@@ -4,7 +4,7 @@ const Cart = require("./carts")
 const Category = require("./categorys")
 const Review = require("./reviews")
 const Mark = require("./mark")
-const Order = require("./mark")
+const Order = require("./orders")
 
 // relaciones de usuario
 User.hasMany(Review, {as: "review"});
@@ -15,7 +15,7 @@ Cart.hasMany(Order, {as: "order"})
 
 //Relaciones de la review
 Review.belongsTo(User, {as:"user"})
-Review.hasOne(Product, {as:"product"})
+Review.belongsTo(Product, {as:"product"})
 
 //Relaciones de Producto
 Product.hasMany(Review, {as: "review"})
