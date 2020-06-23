@@ -27,7 +27,6 @@ router.get("/logout", (req, res, next) => {
 router.get("/:id", (req, res, next) => {
   User.findByPk(req.params.id)
   .then(user => res.json(user))
-
 });
 
 router.get("/admin", (req, res, next) => {
