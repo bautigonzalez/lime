@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const routes = require("./routes")
+//const routes = require("./routes")
 const db = require("./db")
 const volleyball = require("volleyball")
 
@@ -20,8 +20,6 @@ app.use(express.urlencoded({ extended: false }))
 
 //Static
 app.use(express.static(__dirname + "/public"))
-
-
 
 //passport
 app.use(cookieParser());
@@ -61,9 +59,6 @@ passport.deserializeUser(function(id,done){
   User.findByPk(id)
   .then((user)=>done(null,user))
 })
-
-
-
 
 app.use('/api', routes);
 
