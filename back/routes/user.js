@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const passport = require('passport') 
-const { User, Cart } = require("../models");
+const { User, Cart, Order } = require("../models");
 
 router.post("/register", (req, res, next)=>{
   console.log("me estoy registrando")
@@ -38,6 +38,19 @@ router.get("/:id/cart", (req, res, next) => {
   })
   .then(cart=>res.json(cart))
 });
+
+router.post("/:id/cart", (req, res, next) => {
+  Cart.findOrCreate({
+    where: {
+      userId: req.params.id,
+      state: "pending"
+    }
+  })
+    .then(cart => {
+      cart[0].addProduct([req.body.product])
+      res.sendStatus(201)
+    })
+})
 
 router.get("/admin", (req, res, next) => {
   
