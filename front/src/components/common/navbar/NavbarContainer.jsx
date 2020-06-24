@@ -1,51 +1,27 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import Navbar from './Navbar'
+import React from 'react';
+import { Route, Redirect, Switch } from 'react-router-dom';
+import Navbar from "./Navbar"
+//import { buscarPeliculas } from "../action-creators/peliculas"
+//import { deslogueandome } from "../action-creators/user"
+import { connect } from "react-redux"
+import { withRouter } from "react-router"
 
-class NavbarContainer extends React.component {
-constructor(props) {
-    super(props);
-    this.state = {
-        value: "",
-        invalidLength: true,
-        hasChanged: false,
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleClick = this.handleClick.bind(this);
-    }
-    handleChange(evt) {
-    const value = evt.target.value;
-    this.setState({
-        value: value,
-        invalidLength: value.length < 1 || value.length > 25,
-        hasChanged: true,
-    });
-    }
-    handleSubmit(evt) {
-    evt.preventDefault();
-    this.props.buscando(this.state.value);
-
-    this.setState({
-        value: "",
-    });
-}
-render(){
-    return(
-        <Navbar
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-        />
-    )
-}
-}
-
-const mapDispatchToProps = (dispatch) => {
+const mapStateToProps = function(state, ownProps){
     return {
-        buscando: (product) => {
-            dispatch(buscando(product))
-        },
+        userId: state.user.loginUser.id,
+        username: state.user.loginUser.username,
+    }
+}
+class NavbarContainer extends React.Component{
+
+    constructor(props){
+        super(props)
+
+    }
+
+    render(){
+        return (<Navbar userId={this.props.userId} username={this.props.username} />)
     }
 }
 
-export default connect(null,mapDispatchToProps)(NavbarContainer)
+export default withRouter(connect(mapStateToProps, null)(NavbarContainer))
