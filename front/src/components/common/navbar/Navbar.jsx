@@ -1,15 +1,21 @@
 import React from "react"
-import {Navbar, Form, Button, Nav, Link, FormControl} from "react-bootstrap"
+import { Link } from "react-router-dom"
+import {Navbar, Form, Button, Nav, FormControl} from "react-bootstrap"
 
-export default () => {
+export default ( {userId, username}) => {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand>Navbar</Navbar.Brand>
+        <Navbar.Brand><Link to="/">LIME</Link></Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link>Home</Nav.Link>
-          <Nav.Link>Features</Nav.Link>
-          <Nav.Link>Pricing</Nav.Link>
+          <Nav.Link><Link to="/">Home</Link></Nav.Link>
+          {userId ? (<>
+          <Nav.Link>Hola {username}</Nav.Link>
+          <Nav.Link><Link to={`/user/${userId}/cart`}>Mi carrito</Link></Nav.Link>
+          </>):(<>
+            <Nav.Link><Link to="/user/login">Login</Link></Nav.Link>
+            <Nav.Link><Link to="/user/register">Register</Link></Nav.Link>
+          </>)}
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
