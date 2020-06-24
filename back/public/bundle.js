@@ -19836,7 +19836,7 @@ function toVal(mix) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#navbar{\n    background-color: #12100E;\n}\n\n#SearchCentrado{\n    width: 450px\n}\n\n.TabsCentrados{\n    margin: 0 auto;\n}", ""]);
+exports.push([module.i, "#navbar{\r\n    background-color: #12100E;\r\n}\r\n\r\n#SearchCentrado{\r\n    width: 450px\r\n}\r\n\r\n.TabsCentrados{\r\n    margin: 0 auto;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -58503,8 +58503,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_Notifications__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Notifications__WEBPACK_IMPORTED_MODULE_16__);
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./navbar.css */ "./src/components/common/navbar/navbar.css");
-/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_navbar_css__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./navbar.css */ "./src/components/common/navbar/navbar.css");
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_navbar_css__WEBPACK_IMPORTED_MODULE_19__);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -58762,8 +58762,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_PhoneIphone__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_PhoneIphone__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _material_ui_icons_Headset__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/Headset */ "./node_modules/@material-ui/icons/Headset.js");
 /* harmony import */ var _material_ui_icons_Headset__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Headset__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./navbar.css */ "./src/components/common/navbar/navbar.css");
-/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_navbar_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./navbar.css */ "./src/components/common/navbar/navbar.css");
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_navbar_css__WEBPACK_IMPORTED_MODULE_12__);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -59074,7 +59074,7 @@ __webpack_require__.r(__webpack_exports__);
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   path: "/",
-  component: _components_login_Login__WEBPACK_IMPORTED_MODULE_6__["default"]
+  component: _components_common_navbar_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"]
 })), document.getElementById("App"));
 
 /***/ })

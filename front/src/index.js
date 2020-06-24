@@ -9,7 +9,7 @@ import Login from "./components/login/Login"
  */
 ReactDOM.render(
   <BrowserRouter>
-      <Route path="/" component={Login} />
+      <Route path="/" component={Navbar} />
    </BrowserRouter> 
   ,document.getElementById("App")
 )
