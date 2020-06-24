@@ -1,13 +1,16 @@
-import { SEARCH_PRODUCTS } from '../constants'
+import { RECEIVE_PRODUCTS, SELECT_PRODUCT } from '../constants'
 
 const initialState = {
-    list : []
+    products: [],
+    product:{}
 }
 
 export default ( state= initialState, action) => {
     switch(action.type) {
-        case SEARCH_PRODUCTS:
-            return {...state, list: action.products}
+        case RECEIVE_PRODUCTS:
+            return {...state, products: action.products}
+        case SELECT_PRODUCT:
+            return {...state, product: action.product}
         default:
             return state;
     }

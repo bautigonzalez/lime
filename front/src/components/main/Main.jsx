@@ -1,5 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Route, Redirect, Switch } from 'react-router-dom';
+import ProductsContainer from '../products/ProductsContainer';
 
 export default () => (
-    <h1>COMIENZA LA LIMESTORE</h1>
-)
+  <div id="main">
+    holaaaaaaaaaaaaaa
+    <Switch>
+      <Route path="/" component={ProductsContainer}/>
+    </Switch>
+  </div>
+);
