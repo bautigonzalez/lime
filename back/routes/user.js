@@ -30,6 +30,7 @@ router.get("/:id", (req, res, next) => {
 });
 
 router.get("/admin", (req, res, next) => {
+  
 
 });
 

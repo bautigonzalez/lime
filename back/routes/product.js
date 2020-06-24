@@ -2,7 +2,12 @@ const express = require("express");
 const router = express.Router();
 const {Product , Review} =require('../models')
 
+
+/// MARCA Y CATEGORIA ??
+
+
 router.get("/", (req, res, next)=>{
+  /*   console.log(req.query.c) */
     Product.findAll()
     .then(prod =>res.json(prod))
 })
@@ -32,7 +37,7 @@ router.put("/:id", (req, res, next)=>{
         .then(prod=>res.status(201).json(prod))
 })
 
-//NOS TRAE PRODUCT_ID EN EL PRODUCTO
+
   
 router.post('/:id/review', (req,res,next)=>{
     Product.findByPk(req.params.id)
@@ -53,6 +58,8 @@ router.get('/:id/review',(req,res)=>{
     })
     .then(reviews => res.json(reviews))
 })
+
+
 
 
 module.exports = router;
