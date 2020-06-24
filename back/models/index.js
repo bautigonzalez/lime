@@ -4,26 +4,42 @@ const Cart = require("./carts")
 const Category = require("./categorys")
 const Review = require("./reviews")
 const Mark = require("./mark")
-const Order = require("./mark")
+const Order = require("./orders")
 
-// relaciones de usuario
-User.hasMany(Review, {as: "review"});
+
+
 
 //Relaciones de carrito
-Cart.belongsTo(User, {as: "user"})
-Cart.hasMany(Order, {as: "order"})
+Cart.belongsTo(User)
 
-//Relaciones de la review
-Review.belongsTo(User, {as:"user"})
-Review.hasOne(Product, {as:"product"})
 
-//Relaciones de Producto
-Product.hasMany(Review, {as: "review"})
-Review.hasOne(Mark, {as:"mark"})
-Review.hasOne(Category, {as:"category"})
+//Relaciones de la review   ?? USER_ID creo que esta de mas = la review pertenece al producto nada mas  O ver como implementar la reseña
+Review.belongsTo(User)
+Review.belongsTo(Product)
+
+
+//Relaciones de Producto ?? ya seteamos la marca y categoria
+Product.belongsTo(Mark)
+Product.belongsTo(Category)
+
 
 //Relacion de Orden
-Order.hasOne(Product, {as:"product"})
-Order.belongsTo(Cart, {as: "cart"})
+/* Order.belongsTo(Product)
+Order.belongsTo(Cart) */
+
+
+//Many to Many
+
+//Relacion de Orden
+Product.belongsToMany(Cart, { through: Order });
+Cart.belongsToMany(Product, { through: Order });
+
+//Relaciones de la review
+/* User.belongsToMany(Product, { through: Review });
+Product.belongsToMany(User, { through: Review });
+ */
+
+
+
 
 module.exports = { User, Product, Cart, Category, Review, Mark, Order};
