@@ -1,16 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Login from './Login'
-import { logueandome } from '../../action-creator/Login' 
+import { logueandome } from '../../action-creator/Users' 
 
-class LoginContainer extends React.component {
+class LoginContainer extends React.Component {
 constructor(props) {
     super(props)
     this.state = {
         username : "",
         password : "",
-        name : "",
       }
+      this.usernameChange = this.usernameChange.bind(this)
+      this.passwordChange = this.passwordChange.bind(this)
+      this.handleSubmit = this.handleSubmit.bind(this)
     }
 usernameChange (evt) {
 const value = evt.target.value
@@ -19,10 +21,6 @@ this.setState ({ username: value})
 passwordChange(evt) {
     const value = evt.target.value
     this.setState ({ password: value})
-}
-nameChange(evt){
-    const value = evt.target.value
-    this.setState ({ name: value})
 }
 handleSubmit(event){
     event.preventDefault()
@@ -33,18 +31,17 @@ render () {
     return ( 
         
         <Login 
-        usernameChange={this.usernameChange} 
+        usernameChange={this.usernameChange}
         passwordChange={this.passwordChange}
-        nameChange={this.nameChange}
-        
+        handleSubmit={this.handleSubmit}
         /> )
 }
 
 }
 const mapDispatchToProps = function(dispatch, ownProps){
     return {
-     registrandome: (username, password)=>{
-            dispatch(registrandome(username, password))
+        logueandome: (username, password)=>{
+            dispatch(logueandome(username, password))
             .then(()=>{
                  ownProps.history.push("/")
             })
