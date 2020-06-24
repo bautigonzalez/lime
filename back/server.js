@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-//const routes = require("./routes")
+const routes = require("./routes")
 const db = require("./db")
 const volleyball = require("volleyball")
 
