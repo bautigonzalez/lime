@@ -1,4 +1,4 @@
-import { LOGIN_USER } from '../constants'
+import { LOGIN_USER, REGISTER_USER } from '../constants'
 
 const initialState = {
     loginUser : {}

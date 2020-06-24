@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import Register from "./Register";
-import { registrandome } from "../../action-creator/Register";
+import { registrandome } from "../../action-creator/Users";
 
-class RegisterContainer extends React.component {
+class RegisterContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,6 +13,9 @@ class RegisterContainer extends React.component {
       address: "",
       image: "",
     };
+    this.usernameChange = this.usernameChange.bind(this)
+    this.passwordChange = this.passwordChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
   usernameChange(evt) {
     const value = evt.target.value;
@@ -44,10 +47,9 @@ class RegisterContainer extends React.component {
       <Register
         usernameChange={this.usernameChange}
         passwordChange={this.passwordChange}
-        nameChange={this.nameChange}
-        addressChange={this.addressChange}
+        handleSubmit={this.handleSubmit}
       />
-    );
+    )
   }
 }
 
