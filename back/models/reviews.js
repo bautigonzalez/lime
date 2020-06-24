@@ -8,7 +8,7 @@ Review.init(
             type: Sequelize.TEXT,
         },
         stars: {
-            type: Sequelize.FLOAT,
+            type: Sequelize.INTEGER,
             allowNull: false,
         },
     },
