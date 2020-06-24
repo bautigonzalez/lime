@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Navbar from './Navbar'
 
-class Navbar extends React.component {
+class NavbarContainer extends React.component {
 constructor(props) {
     super(props);
     this.state = {
@@ -47,3 +47,5 @@ const mapDispatchToProps = (dispatch) => {
         },
     }
 }
+
+export default connect(null,mapDispatchToProps)(NavbarContainer)
