@@ -8,10 +8,10 @@ export default ({ products}) => (
             <h3>Productos</h3>
             <ul>{!products && "No hay productos para mostrar"}
                 {products && products.map(product=>(<>
-                  <Link key={product.id} to={`/movies/${product.id}`}><li>{product.name}</li></Link>
+                  <Link key={product.id} to={`/product/${product.id}`}><li>{product.name}</li></Link>
                 </>))}
             </ul>
           </div>
       </div>
   </div>
-);
+)
