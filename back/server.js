@@ -14,8 +14,7 @@ app.use(express.urlencoded({ extended: false }))
 //Static
 app.use(express.static(__dirname + "/public"))
 
-/* app.use('/api', routes);
- */
+//app.use('/api', routes);
 app.get('/*', (req, res) => {
   res.sendFile(__dirname + '/public/' + 'index.html')
 })
