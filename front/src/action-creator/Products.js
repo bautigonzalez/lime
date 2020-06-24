@@ -1,14 +1,28 @@
-import { SEARCH_PRODUCTS } from '../constants'
+import { RECEIVE_PRODUCTS, SELECT_PRODUCT } from '../constants'
 import axios from 'axios'
 
-const searchProducts = (products) => ({
-    type: SEARCH_PRODUCTS,
+const receiveProducts = (products) => ({
+    type: RECEIVE_PRODUCTS,
     products
 })
 
-export const buscando = function(product) {
+const selectProduct = (product) => ({
+    type: SELECT_PRODUCT,
+    product
+})
+
+export const fetchProducts = function() {
     return (dispatch) => {
-        return axios.get('/api/product', {product} )
-        .then(res =>dispatch(searchProducts(res.data)))
+        return axios.get('/api/product')
+        .then(res => res.data)
+        .then(products => dispatch(receiveProducts(products)))
+    }
+}
+
+export const fetchProduct = function(id) {
+    return (dispatch) => {
+        return axios.get(`/api/product/${id}`)
+        .then(res => res.data)
+        .then(product => dispatch(selectProduct(product)))
     }
 }
