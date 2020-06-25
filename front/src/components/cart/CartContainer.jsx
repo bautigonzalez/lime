@@ -17,7 +17,7 @@ componentDidMount() {
 render () {
     return ( 
     <Cart 
-    cart={this.props.cart}
+    orders={this.props.orders}
     /> 
     )
 }
@@ -31,7 +31,7 @@ const mapDispatchToProps = function(dispatch, ownProps){
  const mapStateToProps = function (state, ownProps) {
     return {
         userId: ownProps.match.params.id,
-        cart: state.cart.cart
+        orders: state.cart.orders
     }
 }
 

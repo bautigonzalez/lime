@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const passport = require('passport') 
-const { User, Cart, Order } = require("../models");
+const { User, Cart, Order, Product } = require("../models");
 
 router.post("/register", (req, res, next)=>{
   console.log("me estoy registrando")
@@ -30,13 +30,20 @@ router.get("/:id", (req, res, next) => {
 });
 
 router.get("/:id/cart", (req, res, next) => {
-  Cart.findOrCreate({
+  Cart.findOne({
+    include :[
+      {
+          model: Product,
+          through: Order
+      }],
     where: {
       userId: req.params.id,
       state: "pending"
     }
   })
-  .then(cart=>res.json(cart))
+  .then(orders=>{
+    console.log(orders)
+    res.json(orders)})
 });
 
 router.post("/:id/cart", (req, res, next) => {
@@ -46,8 +53,15 @@ router.post("/:id/cart", (req, res, next) => {
       state: "pending"
     }
   })
-    .then(cart => {
-      cart[0].addProduct([req.body.product])
+    .then((cart)=>{
+      const cartfound = cart[0]
+      Product.findByPk(req.body.product.id)
+      .then(product => {
+        return cartfound.addProduct(product)
+      })
+    })
+    .then((cartorder)=>{
+      console.log(cartorder)
       res.sendStatus(201)
     })
 })

@@ -34,6 +34,9 @@ render () {
         usernameChange={this.usernameChange}
         passwordChange={this.passwordChange}
         handleSubmit={this.handleSubmit}
+        password={this.state.password}
+        username={this.state.username}
+        tipo="Iniciar Sesión"
         /> )
 }
 

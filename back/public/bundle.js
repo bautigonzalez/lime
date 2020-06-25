@@ -5350,7 +5350,25 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#navbar{\r\n    background-color: #12100E;\r\n}\r\n\r\n#SearchCentrado{\r\n    width: 450px\r\n}\r\n\r\n.TabsCentrados{\r\n    margin: 0 auto;\r\n}\r\n/* ____________________________________________\r\n */\r\n:root{\r\n    --negro: #000;\r\n    --blanco:#fff;\r\n    --grisOscuro:rgb(45,45,45,0.98)  ;\r\n    --grisClaro:#fafafa ;\r\n    --grisFooter: #f2f2f2 ;\r\n    --grisLetrasFooter: #333 ;\r\n    --grisBorde : #d6d6d6 ;\r\n    --azulCLaro: #6df ;\r\n    --azul: #0070c9\r\n}\r\n\r\nhtml{\r\n    box-sizing: border-box;\r\n    overflow: inherit ;\r\n\r\n}\r\n*,*::before, *:after{\r\n    box-sizing:inherit;\r\n}\r\n\r\n*{\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\nbody{\r\n    color: var(--negro);\r\n}\r\np{\r\n    margin:0;\r\n    \r\n    text-transform: uppercase;\r\n}\r\n\r\n.col-center{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.header{\r\n    width: 100%;\r\n    height: 44px;\r\n    background-color: var(--grisOscuro);\r\n    position: fixed ;\r\n    top: 0;\r\n    z-index: 5;\r\n}\r\n\r\n.nav-principal a{\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    color: var(--blanco);\r\n    transition: all 200ms;\r\n    \r\n}\r\n\r\n.nav-principal p{\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    color: var(--blanco);\r\n    transition: all 200ms;\r\n    color: blanchedalmond;\r\n}\r\n\r\n\r\n.nav-principal a:hover{\r\n    opacity: .5;\r\n    text-decoration: none;\r\n    color: #6df;\r\n}\r\n\r\n.icon{\r\n    max-width: 50px;\r\n    max-height: 45px;\r\n    margin-top: -10px;\r\n    \r\n}\r\n\r\n\r\n\r\ninput[type=text] {\r\n    width: 200px;\r\n    -webkit-transition: width 0.4s ease-in-out;\r\n    transition: width 0.4s ease-in-out;\r\n}\r\n  \r\n  \r\ninput[type=text]:focus {\r\n    width: 350px;\r\n}\r\n  \r\n#search{\r\n    margin: 5px;\r\n    height: 35px;\r\n}\r\n\r\n#serch{\r\n    position: relative;\r\n    left: 620px;\r\n}\r\n\r\n\r\n.cart{\r\n    position: relative;\r\n    left: 600px;\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    color: var(--blanco);\r\n    transition: all 200ms;\r\n}", ""]);
+exports.push([module.i, "#navbar{\n    background-color: #12100E;\n}\n\n#SearchCentrado{\n    width: 450px\n}\n\n.TabsCentrados{\n    margin: 0 auto;\n}\n/* ____________________________________________\n */\n:root{\n    --negro: #000;\n    --blanco:#fff;\n    --grisOscuro:rgb(45,45,45,0.98)  ;\n    --grisClaro:#fafafa ;\n    --grisFooter: #f2f2f2 ;\n    --grisLetrasFooter: #333 ;\n    --grisBorde : #d6d6d6 ;\n    --azulCLaro: #6df ;\n    --azul: #0070c9\n}\n\nhtml{\n    box-sizing: border-box;\n    overflow: inherit ;\n\n}\n*,*::before, *:after{\n    box-sizing:inherit;\n}\n\n*{\n    margin: 0;\n    padding: 0;\n}\nbody{\n    color: var(--negro);\n}\np{\n    margin:0;\n    \n    text-transform: uppercase;\n}\n\n.col-center{\n    margin: 0 auto;\n    text-align: center;\n}\n\n\n.header{\n    width: 100%;\n    height: 44px;\n    background-color: var(--grisOscuro);\n    position: fixed ;\n    top: 0;\n    z-index: 5;\n}\n\n.nav-principal a{\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    text-decoration: none;\n    color: var(--blanco);\n    transition: all 200ms;\n    \n}\n\n.nav-principal p{\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    color: var(--blanco);\n    transition: all 200ms;\n    color: blanchedalmond;\n}\n\n\n.nav-principal a:hover{\n    opacity: .5;\n    text-decoration: none;\n    color: #6df;\n}\n\n.icon{\n    max-width: 50px;\n    max-height: 45px;\n    margin-top: -10px;\n    \n}\n\n\n\ninput[type=text] {\n    width: 200px;\n    -webkit-transition: width 0.4s ease-in-out;\n    transition: width 0.4s ease-in-out;\n}\n  \n  \ninput[type=text]:focus {\n    width: 350px;\n}\n  \n#search{\n    margin: 5px;\n    height: 35px;\n}\n\n#serch{\n    position: relative;\n    left: 620px;\n}\n\n\n.cart{\n    position: relative;\n    left: 600px;\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    color: var(--blanco);\n    transition: all 200ms;\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/login/login.css":
+/*!******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/login/login.css ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".beneficios{\n    border-left: 1px solid #b0b0b0;\n}\n\n.loginh4{\n    font-family: 'Hind', sans-serif;\n    font-weight: bolder;\n}\n\n#login{\n    text-align: center;\n}\n\n.submitButton{\n    background-color: #E4B721 !important;\n    color: black !important;\n    border: 1px solid #E4B721 !important;\n    font-family: 'Hind', sans-serif !important;\n    font-weight: bolder !important;\n    width: 200px !important;\n    margin-left: auto !important;\n    margin-right: auto !important;\n}\n\n.submitButton:hover{\n    background-color: #D5AD2B !important;\n    color: black !important;\n}\n\n.centrado{\n    text-align: center;\n}\n\n.peliculas p{\n    margin-bottom: 0px;\n}\n\n.peliculas p:nth-child(3n){\n    margin-bottom: 5px;\n}\n\n.fondo{\n    margin-top: 70px;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5368,7 +5386,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "html,\r\nbody,\r\nheader,\r\n.carousel {\r\n  height: 150vh;\r\n}\r\n\r\n@media (max-width: 740px) {\r\n  html,\r\n  body,\r\n  header,\r\n  .carousel {\r\n    height: 100vh;\r\n  }\r\n}\r\n\r\n@media (min-width: 800px) and (max-width: 850px) {\r\n  html,\r\n  body,\r\n  header,\r\n  .carousel {\r\n    height: 100vh;\r\n  }\r\n}\r\n.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}\r\n\r\n\r\n#style{\r\n    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg');\r\n     background-repeat: no-repeat; \r\n     background-size: cover;\r\n}\r\n\r\n#alto{\r\n    position: relative;\r\n    top: 50px;\r\n}\r\n\r\n#prod{\r\n \r\n height: 325px;\r\n\r\n}\r\n#card2{\r\n    max-height: 100%;\r\n    padding: 20px;\r\n    \r\n}\r\n\r\n.hola{\r\n  font-weight: lighter;\r\n}\r\n\r\n.val{\r\n  font-weight: bolder;\r\n  color: rgb(153, 126, 6);\r\n  \r\n  \r\n}\r\n\r\n.prodName{\r\n  color: rgb(23, 73, 139);\r\n}\r\n\r\n#sombra{\r\n  -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n  -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n  box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n}\r\n\r\n.imagen{\r\n  display: flex;\r\n  \r\n  margin: 0 auto;\r\n \r\n  \r\n \r\n  justify-content: center;\r\n\r\n}", ""]);
+exports.push([module.i, "html,\nbody,\nheader,\n.carousel {\n  height: 150vh;\n}\n\n@media (max-width: 740px) {\n  html,\n  body,\n  header,\n  .carousel {\n    height: 100vh;\n  }\n}\n\n@media (min-width: 800px) and (max-width: 850px) {\n  html,\n  body,\n  header,\n  .carousel {\n    height: 100vh;\n  }\n}\n.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}\n\n\n#style{\n    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg');\n     background-repeat: no-repeat; \n     background-size: cover;\n}\n\n#alto{\n    position: relative;\n    top: 50px;\n}\n\n#prod{\n \n height: 325px;\n\n}\n#card2{\n    max-height: 100%;\n    padding: 20px;\n    \n}\n\n.hola{\n  font-weight: lighter;\n}\n\n.val{\n  font-weight: bolder;\n  color: rgb(153, 126, 6);\n  \n  \n}\n\n.prodName{\n  color: rgb(23, 73, 139);\n}\n\n#sombra{\n  -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n  -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n  box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n}\n\n.imagen{\n  display: flex;\n  \n  margin: 0 auto;\n \n  \n \n  justify-content: center;\n\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -52571,29 +52589,37 @@ module.exports = function(originalModule) {
 /*!************************************!*\
   !*** ./src/action-creator/Cart.js ***!
   \************************************/
-/*! exports provided: fetchCart */
+/*! exports provided: fetchCart, addToCart */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchCart", function() { return fetchCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addToCart", function() { return addToCart; });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
-var viewCart = function viewCart(cart) {
+var viewCart = function viewCart(orders) {
   return {
     type: _constants__WEBPACK_IMPORTED_MODULE_0__["VIEW_CART"],
-    cart: cart
+    orders: orders
   };
 };
 
 var fetchCart = function fetchCart(userId) {
   return function (dispatch) {
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/user/".concat(userId, "/cart")).then(function (res) {
-      return dispatch(viewCart(res.data[0]));
+      return dispatch(viewCart(res.data));
+    });
+  };
+};
+var addToCart = function addToCart(product, userId) {
+  return function (dispatch) {
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/user/".concat(userId, "/cart"), {
+      product: product
     });
   };
 };
@@ -52716,10 +52742,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var cart = _ref.cart;
+  var orders = _ref.orders;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "fondo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Este carrito es el numero ", cart.id));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Este carrito es el numero"), console.log(orders.products));
 });
 
 /***/ }),
@@ -52786,7 +52812,7 @@ var CartContainer = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        cart: this.props.cart
+        orders: this.props.orders
       });
     }
   }]);
@@ -52805,7 +52831,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
     userId: ownProps.match.params.id,
-    cart: state.cart.cart
+    orders: state.cart.orders
   };
 };
 
@@ -52878,8 +52904,7 @@ __webpack_require__.r(__webpack_exports__);
          <Navbar.Brand><Link to="/">LIME</Link></Navbar.Brand>
          <Nav className="mr-auto">
            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-  
-           {userId ? (<>
+            {userId ? (<>
            <Nav.Link>Hola {username}</Nav.Link>
            <Nav.Link><Link to={`/user/${userId}/cart`}>Mi carrito</Link></Nav.Link>
            </>):(<>
@@ -53017,38 +53042,64 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var _login_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./login.css */ "./src/components/login/login.css");
+/* harmony import */ var _login_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_login_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var handleSubmit = _ref.handleSubmit,
+  var passwordChange = _ref.passwordChange,
       usernameChange = _ref.usernameChange,
-      passwordChange = _ref.passwordChange;
+      handleSubmit = _ref.handleSubmit,
+      username = _ref.username,
+      password = _ref.password,
+      tipo = _ref.tipo;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "savbar",
-    style: {
-      position: "relative",
-      top: "50px"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "row",
-    onSubmit: handleSubmit
+    className: "fondo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "form-control",
+    className: "container peliculas"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-6 centrado"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    id: "login",
+    className: "loginh4"
+  }, "Iniciar sesi\xF3n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"], {
+    onSubmit: handleSubmit
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
+    controlId: "formBasicEmail"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, null, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
+    onChange: usernameChange,
+    name: "username",
     type: "email",
-    placeholder: "Email",
-    label: "Registrar Email",
-    onChange: usernameChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "form-control",
+    placeholder: "Ingrese su Email",
+    value: username
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
+    controlId: "formBasicPassword"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, null, "Contrase\xF1a"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
     type: "password",
-    placeholder: "Password",
-    label: "Registrar Password",
-    onChange: passwordChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "btn btn-primary",
+    placeholder: "Contrase\xF1a",
+    onChange: passwordChange,
+    name: "password",
+    value: password
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    className: "submitButton",
     type: "submit"
-  }, "login"))));
+  }, "Ingresar")), tipo == "Registrarse" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "centrado"
+  }, "O"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/register"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    className: "submitButton"
+  }, "Registrarse")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-6 beneficios"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "loginh4"
+  }, "Beneficios de tu cuenta OMDb gratuita"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Recomendaciones personalizadas")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Descubriras peliculas que amar\xE1s"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tu lista de favoritos")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Podras guardas las peliculas que m\xE1s te gusten")))));
 });
 
 /***/ }),
@@ -53143,7 +53194,10 @@ var LoginContainer = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Login__WEBPACK_IMPORTED_MODULE_2__["default"], {
         usernameChange: this.usernameChange,
         passwordChange: this.passwordChange,
-        handleSubmit: this.handleSubmit
+        handleSubmit: this.handleSubmit,
+        password: this.state.password,
+        username: this.state.username,
+        tipo: "Iniciar Sesi\xF3n"
       });
     }
   }]);
@@ -53162,6 +53216,35 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(null, mapDispatchToProps)(LoginContainer));
+
+/***/ }),
+
+/***/ "./src/components/login/login.css":
+/*!****************************************!*\
+  !*** ./src/components/login/login.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./login.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/login/login.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
@@ -53232,7 +53315,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var product = _ref.product;
+  var product = _ref.product,
+      addToCart = _ref.addToCart,
+      userId = _ref.userId;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -53274,6 +53359,9 @@ __webpack_require__.r(__webpack_exports__);
       fontSize: "45px"
     }
   }, product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, null, product.price, " ARS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, null, product.description, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    onClick: function onClick() {
+      addToCart(product, userId);
+    },
     variant: "primary"
   }, "Add to cart")))))));
 });
@@ -53294,6 +53382,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Product */ "./src/components/product/Product.jsx");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _action_creator_Products__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../action-creator/Products */ "./src/action-creator/Products.js");
+/* harmony import */ var _action_creator_Cart__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../action-creator/Cart */ "./src/action-creator/Cart.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53321,6 +53410,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var ProductContainer = /*#__PURE__*/function (_React$Component) {
   _inherits(ProductContainer, _React$Component);
 
@@ -53341,7 +53431,9 @@ var ProductContainer = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        product: this.props.product
+        product: this.props.product,
+        addToCart: this.props.addToCart,
+        userId: this.props.userId
       });
     }
   }]);
@@ -53352,7 +53444,8 @@ var ProductContainer = /*#__PURE__*/function (_React$Component) {
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
     id: ownProps.match.params.id,
-    product: state.products.product
+    product: state.products.product,
+    userId: state.user.loginUser.id
   };
 };
 
@@ -53360,6 +53453,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
     fetchProduct: function fetchProduct(id) {
       return dispatch(Object(_action_creator_Products__WEBPACK_IMPORTED_MODULE_3__["fetchProduct"])(id));
+    },
+    addToCart: function addToCart(product, userId) {
+      return dispatch(Object(_action_creator_Cart__WEBPACK_IMPORTED_MODULE_4__["addToCart"])(product, userId));
     }
   };
 };
@@ -53852,7 +53948,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
 /*!**************************!*\
   !*** ./src/constants.js ***!
   \**************************/
-/*! exports provided: REGISTER_USER, LOGIN_USER, SELECT_PRODUCT, RECEIVE_PRODUCTS, VIEW_CART */
+/*! exports provided: REGISTER_USER, LOGIN_USER, SELECT_PRODUCT, RECEIVE_PRODUCTS, VIEW_CART, ADD_CART */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53862,11 +53958,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SELECT_PRODUCT", function() { return SELECT_PRODUCT; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RECEIVE_PRODUCTS", function() { return RECEIVE_PRODUCTS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VIEW_CART", function() { return VIEW_CART; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_CART", function() { return ADD_CART; });
 var REGISTER_USER = "REGISTER_USER";
 var LOGIN_USER = "LOGIN_USER";
 var SELECT_PRODUCT = "SELECT_PRODUCT";
 var RECEIVE_PRODUCTS = "RECEIVE_PRODUCTS";
 var VIEW_CART = "VIEW_CART";
+var ADD_CART = "ADD_CART";
 
 /***/ }),
 
@@ -53923,7 +54021,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var initialState = {
-  cart: {}
+  orders: []
 };
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -53932,7 +54030,7 @@ var initialState = {
   switch (action.type) {
     case _constants__WEBPACK_IMPORTED_MODULE_0__["VIEW_CART"]:
       return _objectSpread(_objectSpread({}, state), {}, {
-        cart: action.cart
+        orders: action.orders
       });
 
     default:
