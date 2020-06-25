@@ -1,0 +1,9 @@
+#carrousel{
+     display:flex;
+     align-items: center;
+     height: 900px ;
+     width:800px ;
+     margin-top: 1000px; 
+
+}
+

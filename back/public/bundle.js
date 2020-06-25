@@ -5339,6 +5339,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/footer/foter.css":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/footer/foter.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "#footer{\r\n    background-color: black;\r\n    height: 360px;\r\n    color: #B0B0B0;\r\n    margin-top: -20px;\r\n    padding-top: 10px;\r\n}\r\n\r\n.col-8 span{\r\n    margin-left: 4%;\r\n    font-weight: 550;\r\n}\r\n\r\nh6{\r\n    font-size: smaller;\r\n    margin-left: 10%;\r\n}\r\n\r\n#primerfila{\r\n    margin-top: 70px;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.row{\r\n    margin-bottom: 20px;\r\n   padding-left: 100px;\r\n   padding-right: 100px;\r\n   display: flex;\r\n\r\njustify-content: center;\r\n}\r\n\r\n.red{\r\n    width: 30px;\r\n}\r\n\r\n.col-4 span{\r\n    margin-left: 12%;\r\n   \r\n}\r\n\r\n.company{\r\n    margin-top: 20px;\r\n}\r\n\r\n\r\n#hola{\r\n    display: flex;\r\n    justify-content:center;\r\n    position: relative;\r\n    left: 255px;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/navbar/navbar.css":
 /*!***************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/navbar/navbar.css ***!
@@ -5350,7 +5368,25 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#navbar{\n    background-color: #12100E;\n}\n\n#SearchCentrado{\n    width: 450px\n}\n\n.TabsCentrados{\n    margin: 0 auto;\n}\n/* ____________________________________________\n */\n:root{\n    --negro: #000;\n    --blanco:#fff;\n    --grisOscuro:rgb(45,45,45,0.98)  ;\n    --grisClaro:#fafafa ;\n    --grisFooter: #f2f2f2 ;\n    --grisLetrasFooter: #333 ;\n    --grisBorde : #d6d6d6 ;\n    --azulCLaro: #6df ;\n    --azul: #0070c9\n}\n\nhtml{\n    box-sizing: border-box;\n    overflow: inherit ;\n\n}\n*,*::before, *:after{\n    box-sizing:inherit;\n}\n\n*{\n    margin: 0;\n    padding: 0;\n}\nbody{\n    color: var(--negro);\n}\np{\n    margin:0;\n    \n    text-transform: uppercase;\n}\n\n.col-center{\n    margin: 0 auto;\n    text-align: center;\n}\n\n\n.header{\n    width: 100%;\n    height: 44px;\n    background-color: var(--grisOscuro);\n    position: fixed ;\n    top: 0;\n    z-index: 5;\n}\n\n.nav-principal a{\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    text-decoration: none;\n    color: var(--blanco);\n    transition: all 200ms;\n    \n}\n\n.nav-principal p{\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    color: var(--blanco);\n    transition: all 200ms;\n    color: blanchedalmond;\n}\n\n\n.nav-principal a:hover{\n    opacity: .5;\n    text-decoration: none;\n    color: #6df;\n}\n\n.icon{\n    max-width: 50px;\n    max-height: 45px;\n    margin-top: -10px;\n    \n}\n\n\n\ninput[type=text] {\n    width: 200px;\n    -webkit-transition: width 0.4s ease-in-out;\n    transition: width 0.4s ease-in-out;\n}\n  \n  \ninput[type=text]:focus {\n    width: 350px;\n}\n  \n#search{\n    margin: 5px;\n    height: 35px;\n}\n\n#serch{\n    position: relative;\n    left: 620px;\n}\n\n\n.cart{\n    position: relative;\n    left: 600px;\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    color: var(--blanco);\n    transition: all 200ms;\n}", ""]);
+exports.push([module.i, ":root{\r\n    --negro: #000;\r\n    --blanco:#fff;\r\n    --grisOscuro:rgb(45,45,45,0.98)  ;\r\n    --grisClaro:#fafafa ;\r\n    --grisFooter: #f2f2f2 ;\r\n    --grisLetrasFooter: #333 ;\r\n    --grisBorde : #d6d6d6 ;\r\n    --azulCLaro: #6df ;\r\n    --azul: #0070c9\r\n}\r\n\r\nhtml{\r\n    box-sizing: border-box;\r\n    overflow: inherit ;\r\n\r\n}\r\n\r\n\r\nbody{\r\n    color: var(--negro);\r\n}\r\np{\r\n    margin:0;\r\n    \r\n    text-transform: uppercase;\r\n}\r\n\r\n.col-center{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.header{\r\n    width: 100%;\r\n    height: 46px;\r\n    background-color: var(--grisOscuro);\r\n    position: fixed ;\r\n    top: 0;\r\n    z-index: 5;\r\n}\r\n\r\n.nav-principal a{\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    color: var(--blanco);\r\n    transition: all 200ms;\r\n    position: relative;\r\n    right: 190px;\r\n   \r\n    \r\n    \r\n}\r\n\r\n.nav-principal p{\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    color: var(--blanco);\r\n    transition: all 200ms;\r\n    color: blanchedalmond;\r\n    position: relative;\r\n    right: 250px;\r\n}\r\n\r\n\r\n.nav-principal a:hover{\r\n    opacity: .5;\r\n    text-decoration: none;\r\n    color: #6df;\r\n}\r\n\r\n.icon{\r\n    max-width: 50px;\r\n    max-height: 45px;\r\n    margin-top: -10px;\r\n    position: relative;\r\n    right: 50px;\r\n    \r\n    \r\n}\r\n\r\n\r\n\r\ninput[type=text] {\r\n    width: 200px;\r\n    -webkit-transition: width 0.4s ease-in-out;\r\n    transition: width 0.4s ease-in-out;\r\n}\r\n  \r\n  \r\ninput[type=text]:focus {\r\n    width: 350px;\r\n}\r\n  \r\n#search{\r\n  margin-top: 2px;\r\n    height: 35px;\r\n    position: relative;\r\n    right: 150px;\r\n    width: 650px;\r\n    \r\n}\r\n\r\n#botonSearch{\r\n    margin-left: 6px;\r\n}\r\n\r\n\r\n.cart{\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    color: var(--blanco);\r\n    position: relative;\r\n    left: 900px;\r\n    \r\n    \r\n}\r\n\r\n#costado{\r\n    position: relative;\r\n    right: 250px;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/presentation/presentacion.css":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/presentation/presentacion.css ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "#carrousel{\r\n     display:flex;\r\n     align-items: center;\r\n     height: 900px ;\r\n     width:800px ;\r\n     margin-top: 1000px; \r\n\r\n}\r\n\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5368,7 +5404,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".beneficios{\n    border-left: 1px solid #b0b0b0;\n}\n\n.loginh4{\n    font-family: 'Hind', sans-serif;\n    font-weight: bolder;\n}\n\n#login{\n    text-align: center;\n}\n\n.submitButton{\n    background-color: #E4B721 !important;\n    color: black !important;\n    border: 1px solid #E4B721 !important;\n    font-family: 'Hind', sans-serif !important;\n    font-weight: bolder !important;\n    width: 200px !important;\n    margin-left: auto !important;\n    margin-right: auto !important;\n}\n\n.submitButton:hover{\n    background-color: #D5AD2B !important;\n    color: black !important;\n}\n\n.centrado{\n    text-align: center;\n}\n\n.peliculas p{\n    margin-bottom: 0px;\n}\n\n.peliculas p:nth-child(3n){\n    margin-bottom: 5px;\n}\n\n.fondo{\n    margin-top: 70px;\n}", ""]);
+exports.push([module.i, ".beneficios{\r\n    border-left: 1px solid #b0b0b0;\r\n}\r\n\r\n.loginh4{\r\n    font-family: 'Hind', sans-serif;\r\n    font-weight: bolder;\r\n}\r\n\r\n#login{\r\n    text-align: center;\r\n}\r\n\r\n.submitButton{\r\n    background-color: #E4B721 !important;\r\n    color: black !important;\r\n    border: 1px solid #E4B721 !important;\r\n    font-family: 'Hind', sans-serif !important;\r\n    font-weight: bolder !important;\r\n    width: 200px !important;\r\n    margin-left: auto !important;\r\n    margin-right: auto !important;\r\n}\r\n\r\n.submitButton:hover{\r\n    background-color: #D5AD2B !important;\r\n    color: black !important;\r\n}\r\n\r\n.centrado{\r\n    text-align: center;\r\n}\r\n\r\n.peliculas p{\r\n    margin-bottom: 0px;\r\n}\r\n\r\n.peliculas p:nth-child(3n){\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.fondo{\r\n    margin-top: 70px;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5386,7 +5422,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "html,\nbody,\nheader,\n.carousel {\n  height: 150vh;\n}\n\n@media (max-width: 740px) {\n  html,\n  body,\n  header,\n  .carousel {\n    height: 100vh;\n  }\n}\n\n@media (min-width: 800px) and (max-width: 850px) {\n  html,\n  body,\n  header,\n  .carousel {\n    height: 100vh;\n  }\n}\n.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}\n\n\n#style{\n    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg');\n     background-repeat: no-repeat; \n     background-size: cover;\n}\n\n#alto{\n    position: relative;\n    top: 50px;\n}\n\n#prod{\n \n height: 325px;\n\n}\n#card2{\n    max-height: 100%;\n    padding: 20px;\n    \n}\n\n.hola{\n  font-weight: lighter;\n}\n\n.val{\n  font-weight: bolder;\n  color: rgb(153, 126, 6);\n  \n  \n}\n\n.prodName{\n  color: rgb(23, 73, 139);\n}\n\n#sombra{\n  -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n  -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n  box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n}\n\n.imagen{\n  display: flex;\n  \n  margin: 0 auto;\n \n  \n \n  justify-content: center;\n\n}", ""]);
+exports.push([module.i, "html,\r\nbody,\r\nheader,\r\n.carousel {\r\n  height: 150vh;\r\n}\r\n\r\n@media (max-width: 740px) {\r\n  html,\r\n  body,\r\n  header,\r\n  .carousel {\r\n    height: 100vh;\r\n  }\r\n}\r\n\r\n@media (min-width: 800px) and (max-width: 850px) {\r\n  html,\r\n  body,\r\n  header,\r\n  .carousel {\r\n    height: 100vh;\r\n  }\r\n}\r\n.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}\r\n\r\n\r\n#style{\r\n    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg');\r\n     background-repeat: no-repeat; \r\n     background-size: cover;\r\n}\r\n\r\n#alto{\r\n    position: relative;\r\n    top: 50px;\r\n}\r\n\r\n#prod{\r\n \r\n height: 325px;\r\n\r\n}\r\n#card2{\r\n    max-height: 100%;\r\n    padding: 20px;\r\n    \r\n}\r\n\r\n.hola{\r\n  font-weight: lighter;\r\n}\r\n\r\n.val{\r\n  font-weight: bolder;\r\n  color: rgb(153, 126, 6);\r\n  \r\n  \r\n}\r\n\r\n.prodName{\r\n  color: rgb(23, 73, 139);\r\n}\r\n\r\n#sombra{\r\n  -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n  -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n  box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n}\r\n\r\n.imagen{\r\n  display: flex;\r\n  \r\n  margin: 0 auto;\r\n \r\n  \r\n \r\n  justify-content: center;\r\n\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -52839,6 +52875,123 @@ var mapStateToProps = function mapStateToProps(state, ownProps) {
 
 /***/ }),
 
+/***/ "./src/components/common/footer/Footer.jsx":
+/*!*************************************************!*\
+  !*** ./src/components/common/footer/Footer.jsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _foter_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./foter.css */ "./src/components/common/footer/foter.css");
+/* harmony import */ var _foter_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_foter_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-fluid",
+    id: "footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-4"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "primerfila",
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "red",
+    src: "https://i.pinimg.com/originals/0f/38/15/0f3815e59ec1ab026baab9cfd95eefcb.png"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "red",
+    src: "https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "red",
+    src: "https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "red",
+    src: "https://images.vexels.com/media/users/3/137425/isolated/preview/f2ea1ded4d037633f687ee389a571086-icono-de-youtube-logo-by-vexels.png"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "red",
+    src: "https://lh3.googleusercontent.com/proxy/RfYmb3IyuYKV0b2rmeWHqgI7BSuHg2kbFbqT4FjiveOB-m6a7QQJZytFYZUOo2Jq7SMiy1zQuszG66O_b309S9gpZ1SnAisYJMteVFKt6oXsKbOho0w"
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-4"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "primero"
+  }, "Obtener Lime App"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Ayuda"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\xCDndice del sitio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "LimePro"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Para la empresa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Desarrolladores "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Servicio Tecnico"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-2"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Descubrir"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Accesibilidad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Nosotros"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Contactar a Lime"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Privacidad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "RRHH"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-2"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-3 company"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    id: "hola"
+  }, "LIME\xAE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-4"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-5"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "\xA9 2020 Plataforma5")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-5"
+  })));
+});
+
+/***/ }),
+
+/***/ "./src/components/common/footer/foter.css":
+/*!************************************************!*\
+  !*** ./src/components/common/footer/foter.css ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!./foter.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/footer/foter.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
 /***/ "./src/components/common/navbar/Navbar.jsx":
 /*!*************************************************!*\
   !*** ./src/components/common/navbar/Navbar.jsx ***!
@@ -52871,7 +53024,9 @@ __webpack_require__.r(__webpack_exports__);
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "icon",
     src: "https://cdn2.iconfinder.com/data/icons/fruit-and-vegetables-3/200/276-512.png"
-  })), userId ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Hola ", username, "   "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  })), userId ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "costado"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Hola ", username, "   ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: "cart",
     to: "/user/".concat(userId, "/cart")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -52882,43 +53037,21 @@ __webpack_require__.r(__webpack_exports__);
     to: "/user/register"
   }, "Register")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: "row nav-principal",
-    id: "serch"
+    id: "search"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     name: "search",
     "aria-describedby": "button-addon1",
     placeholder: "Search",
-    className: "form-control border-0 bg-light",
-    id: "search"
+    className: "form-control border-0 bg-light"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    id: "search",
+    id: "botonSearch",
     type: "button",
     className: "btn btn-outline-light"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fa fa-search"
   }))))));
 });
-{
-  /* <div>
-       <Navbar bg="dark" variant="dark">
-         <Navbar.Brand><Link to="/">LIME</Link></Navbar.Brand>
-         <Nav className="mr-auto">
-           <Nav.Link><Link to="/">Home</Link></Nav.Link>
-            {userId ? (<>
-           <Nav.Link>Hola {username}</Nav.Link>
-           <Nav.Link><Link to={`/user/${userId}/cart`}>Mi carrito</Link></Nav.Link>
-           </>):(<>
-             <Nav.Link><Link to="/user/login">Login</Link></Nav.Link>
-             <Nav.Link><Link to="/user/register">Register</Link></Nav.Link>
-           </>)}
-         </Nav>
-         <Form inline>
-           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-           <Button variant="outline-info">Search</Button>
-         </Form>
-       </Navbar>
-     </div>  */
-}
 
 /***/ }),
 
@@ -53011,6 +53144,143 @@ var NavbarContainer = /*#__PURE__*/function (_React$Component) {
 
 var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!./navbar.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/navbar/navbar.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/components/common/presentation/Presentacion.jsx":
+/*!*************************************************************!*\
+  !*** ./src/components/common/presentation/Presentacion.jsx ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _presentacion_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./presentacion.css */ "./src/components/common/presentation/presentacion.css");
+/* harmony import */ var _presentacion_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_presentacion_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Carousel"], {
+    style: {
+      height: "600px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Carousel"].Item, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "d-block w-100",
+    src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/banner-hero-app-store.image.large_2x.jpg",
+    style: {
+      height: "600px"
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "carousel-caption",
+    style: {
+      color: "black",
+      position: "relative",
+      top: "-500px",
+      left: "-400px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Notebooks Y Smarphones"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "ULTIMOS MODELOS DISPONIBLES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "outline-dark",
+    style: {
+      borderRadius: "20px"
+    }
+  }, "Ver mas"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Carousel"].Item, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "d-block w-100",
+    src: "https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/banner-hero-giveback-support.image.large_2x.jpg",
+    style: {
+      height: "600px"
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "class": "carousel-caption",
+    style: {
+      color: "black",
+      position: "relative",
+      top: "-300px",
+      left: "-500px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Los mejores accesorios"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "OFERTAS DE HASTA 50%"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "outline-dark",
+    style: {
+      borderRadius: "20px"
+    }
+  }, "Mas info"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+    className: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, {
+    style: {
+      margin: "40px",
+      marginTop: "100px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    "class": "fa fa-truck"
+  }), "\xA0 Envios a todo el Pais "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, null, "Para consultar el precio por envio a domicilio ingresa al siguiente link"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "outline-info"
+  }, "Informacion")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container",
+    style: {
+      marginBottom: "55px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["CardDeck"], {
+    style: {
+      margin: "35px",
+      marginBottom: "100px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Img, {
+    variant: "top",
+    src: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MXJA2?wid=445&hei=445&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1580420177108"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, null, "Accesorios"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, null, "This is a wider card with supporting text below as a natural lead-in to additional content.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Footer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-outline-success"
+  }, "VER OFERTAS"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Img, {
+    variant: "top",
+    src: "https://personal.vteximg.com.br/arquivos/ids/401504-275-275/Samsung-Galaxy-S20-Plus-Cosmic-Black-VPlan-20GB-Black-1-1223579.jpg?v=637280808090530000"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, null, "Celulares"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, null, "This card has supporting text below as a natural lead-in to additional content.", ' ')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Footer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-outline-success"
+  }, "VER OFERTAS"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Img, {
+    variant: "top",
+    src: "https://store.hp.com/app/assets/images/product/3MU06UA%23ABA/center_facing.png?_=1552332984150&imwidth=430&imdensity=1",
+    style: {
+      padding: "15px",
+      marginBottom: "50px"
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, null, "Notebooks"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, null, "This is a wider card with supporting text below as a natural lead-in to additional content..")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Footer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    "class": "btn btn-outline-success"
+  }, "VER OFERTAS")))))));
+});
+
+/***/ }),
+
+/***/ "./src/components/common/presentation/presentacion.css":
+/*!*************************************************************!*\
+  !*** ./src/components/common/presentation/presentacion.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!./presentacion.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/presentation/presentacion.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -53266,6 +53536,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _register_RegisterContainer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../register/RegisterContainer */ "./src/components/register/RegisterContainer.jsx");
 /* harmony import */ var _login_LoginContainer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../login/LoginContainer */ "./src/components/login/LoginContainer.jsx");
 /* harmony import */ var _cart_CartContainer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../cart/CartContainer */ "./src/components/cart/CartContainer.jsx");
+/* harmony import */ var _common_presentation_Presentacion__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/presentation/Presentacion */ "./src/components/common/presentation/Presentacion.jsx");
+/* harmony import */ var _common_footer_Footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../common/footer/Footer */ "./src/components/common/footer/Footer.jsx");
+
+
 
 
 
@@ -53279,7 +53553,11 @@ __webpack_require__.r(__webpack_exports__);
     id: "main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_navbar_NavbarContainer__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/",
+    path: "/home",
+    component: _common_presentation_Presentacion__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/products",
     component: _products_ProductsContainer__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/product/:id",
@@ -53293,7 +53571,10 @@ __webpack_require__.r(__webpack_exports__);
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/user/:id/cart",
     component: _cart_CartContainer__WEBPACK_IMPORTED_MODULE_7__["default"]
-  })));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Redirect"], {
+    from: "/",
+    to: "/home"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_footer_Footer__WEBPACK_IMPORTED_MODULE_9__["default"], null));
 });
 
 /***/ }),

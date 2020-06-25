@@ -1,1 +1,4 @@
 node_modules
+db/index.js
+back/public/bundle.js.map
+back/public/bundle.js
