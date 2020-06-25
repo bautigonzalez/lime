@@ -1,0 +1,23 @@
+.tarjeta{
+ margin: auto;
+  width: 50%;
+    padding: 10px;
+}
+
+#imagenes{
+    width: 0 auto; 
+    height: 0 auto; 
+    display: "flex";
+}
+
+#cardcita{
+    width: "450px"; 
+    flex-wrap: wrap;
+    height: "600px"; 
+    display: "flex"
+}
+
+#agregarAlCarrito:hover{
+    background-color: #819E31 !important;
+    color: black !important;
+}
