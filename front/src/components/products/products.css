@@ -1,0 +1,80 @@
+html,
+body,
+header,
+.carousel {
+  height: 150vh;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .carousel {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .carousel {
+    height: 100vh;
+  }
+}
+.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}
+
+
+#style{
+    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg');
+     background-repeat: no-repeat; 
+     background-size: cover;
+}
+
+#alto{
+    position: relative;
+    top: 50px;
+}
+
+#prod{
+ 
+ height: 325px;
+
+}
+#card2{
+    max-height: 100%;
+    padding: 20px;
+    
+}
+
+.hola{
+  font-weight: lighter;
+}
+
+.val{
+  font-weight: bolder;
+  color: rgb(153, 126, 6);
+  
+  
+}
+
+.prodName{
+  color: rgb(23, 73, 139);
+}
+
+#sombra{
+  -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);
+  -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);
+  box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);
+}
+
+.imagen{
+  display: flex;
+  
+  margin: 0 auto;
+ 
+  
+ 
+  justify-content: center;
+
+}

@@ -3,7 +3,7 @@ import React from "react"
 export default ({ handleSubmit, usernameChange, passwordChange })=> {
 return (
 
-    <div className = "savbar">
+    <div className = "savbar" style={{position: "relative", top: "50px"}}>
 
          <h3>Register</h3>
           <form className= "row" onSubmit={handleSubmit}>
