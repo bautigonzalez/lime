@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Carousel, Card, Button } from "react-bootstrap";
 
 export default ({ product }) => (
-  <div style={{ display: "flex", padding: "3rem" }}>
+  <div className="container">
+<div style={{ display: "flex", padding: "3rem" }}>
     <div>
       <Carousel style={{ width: "850px", height: "600px", display: "flex" }}>
         <Carousel.Item>
@@ -38,5 +39,8 @@ export default ({ product }) => (
         </Card.Body>
       </Card>
     </div>
+  </div>
+
+
   </div>
 );
