@@ -1,9 +1,11 @@
 import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import Navbar from "./Navbar"
+import { deslogueandome } from "../../../action-creator/Users"
 import { connect } from "react-redux"
 import { withRouter } from "react-router"
 import { searching } from '../../../action-creator/Navbar'
+
 
 class NavbarContainer extends React.Component{
 
@@ -30,11 +32,13 @@ class NavbarContainer extends React.Component{
           });
     }
     render(){
+
         return (<Navbar 
             userId={this.props.userId} 
             username={this.props.username} 
             handlerChange={this.handlerChange} 
             handlerSubmit={this.handlerSubmit}
+            deslogueandome={this.props.deslogueandome}
             />)
     }
 }
@@ -51,7 +55,11 @@ const mapDispatchToProps = function(dispatch) {
     return {
         searching : (search) => {
             dispatch (searching(search))
-        }
+
+        },
+        deslogueandome: ()=>dispatch(deslogueandome())
+
+
     }
 }
 

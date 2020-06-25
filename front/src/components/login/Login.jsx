@@ -34,17 +34,13 @@
                               Ingresar
                           </Button>
                       </Form>
-                      {tipo=="Registrarse" ? (<></>):(<>
-                          <p className="centrado">O</p>
-                      <Link to="/register"><Button className="submitButton">Registrarse</Button></Link>
-                      </>)}
                   </div>
                   <div className="col-6 beneficios">
-                      <h4 className="loginh4">Beneficios de tu cuenta OMDb gratuita</h4>     
-                      <p><strong>Recomendaciones personalizadas</strong></p>
-                      <p>Descubriras peliculas que amarás</p>
-                      <p><strong>Tu lista de favoritos</strong></p>
-                      <p>Podras guardas las peliculas que más te gusten</p>
+                      <h4 className="loginh4">CREAR UNA CUENTA</h4>     
+                      <p>Crear una cuenta es fácil. Introduce tu dirección de correo electrónico, diligencia el formulario de la página siguiente y disfruta de los beneficios de tener una cuenta.</p>
+                      {tipo=="Registrarse" ? (<></>):(<>
+                      <Link to="/user/register"><Button className="submitButton">Registrarse</Button></Link>
+                      </>)}
                   </div>
               </div>
           </div>
