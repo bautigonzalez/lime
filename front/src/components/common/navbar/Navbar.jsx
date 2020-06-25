@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import "./navbar.css";
 
 
-export default ( {userId, username}) => {
+export default ( {userId, username, deslogueandome}) => {
   return (
     <header className="header">
     <div className="container">
@@ -13,10 +13,10 @@ export default ( {userId, username}) => {
     <Link to="/" ><img className='icon' src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetables-3/200/276-512.png" /></Link>
     {userId ? (<>
           <p > Hola {username}   </p>
-          <Link className='cart' to={`/user/${userId}/cart`}><i className="fas fa-shopping-cart"></i>&nbsp;Cart</Link>
+          <Link className='cart' to={`/user/${userId}/cart`}><i className="fas fa-shopping-cart"></i>&nbsp;Carrito</Link>
+          <Link className='cart' onClick={deslogueandome}>Cerrar sesión</Link>
           </>):(<>
-            <Link to="/user/login">Login</Link>
-            <Link to="/user/register">Register</Link>
+            <Link to="/user/login">Iniciar sesión</Link>
           </>)}
           
           <form className="row nav-principal" id='serch'>

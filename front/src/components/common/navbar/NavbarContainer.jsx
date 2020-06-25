@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import Navbar from "./Navbar"
-//import { buscarPeliculas } from "../action-creators/peliculas"
-//import { deslogueandome } from "../action-creators/user"
+import { deslogueandome } from "../../../action-creator/Users"
 import { connect } from "react-redux"
 import { withRouter } from "react-router"
 
@@ -12,6 +11,13 @@ const mapStateToProps = function(state, ownProps){
         username: state.user.loginUser.username,
     }
 }
+
+const mapDispatchToProps = function(dispatch, ownProps){
+    return {
+        deslogueandome: ()=>dispatch(deslogueandome())
+    }
+}
+
 class NavbarContainer extends React.Component{
 
     constructor(props){
@@ -20,8 +26,8 @@ class NavbarContainer extends React.Component{
     }
 
     render(){
-        return (<Navbar userId={this.props.userId} username={this.props.username} />)
+        return (<Navbar userId={this.props.userId} username={this.props.username} deslogueandome={this.props.deslogueandome}/>)
     }
 }
 
-export default withRouter(connect(mapStateToProps, null)(NavbarContainer))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(NavbarContainer))
