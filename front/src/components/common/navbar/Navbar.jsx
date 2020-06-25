@@ -4,7 +4,8 @@ import { Link } from "react-router-dom"
 import "./navbar.css";
 
 
-export default ( {userId, username}) => {
+export default ( {userId, username, handlerChange, handlerSubmit}) => {
+  
   return (
     <header className="header">
     <div className="container">
@@ -19,8 +20,10 @@ export default ( {userId, username}) => {
             <Link to="/user/register">Register</Link>
           </>)}
           
-          <form className="row nav-principal" id='serch'>
-          <input type="text" name="search" aria-describedby="button-addon1" placeholder="Search" className="form-control border-0 bg-light" id="search"/>
+          <form className="row nav-principal" onSubmit={handlerSubmit} id='serch'>
+          
+          <input type="text" name="search" onChange={handlerChange} aria-describedby="button-addon1" placeholder="Search" className="form-control border-0 bg-light" id="search"/>
+
           <button id="search" type="button" className="btn btn-outline-light"><i className="fa fa-search"></i></button>
           </form>
     </nav>
