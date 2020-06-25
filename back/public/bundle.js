@@ -5386,7 +5386,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".beneficios{\n    border-left: 1px solid #b0b0b0;\n}\n\n.loginh4{\n    font-family: 'Hind', sans-serif;\n    font-weight: bolder;\n}\n\n#login{\n    text-align: center;\n}\n\n.submitButton{\n    background-color: #E4B721 !important;\n    color: black !important;\n    border: 1px solid #E4B721 !important;\n    font-family: 'Hind', sans-serif !important;\n    font-weight: bolder !important;\n    width: 200px !important;\n    margin-left: auto !important;\n    margin-right: auto !important;\n}\n\n.submitButton:hover{\n    background-color: #D5AD2B !important;\n    color: black !important;\n}\n\n.centrado{\n    text-align: center;\n}\n\n.peliculas p{\n    margin-bottom: 0px;\n}\n\n.peliculas p:nth-child(3n){\n    margin-bottom: 5px;\n}\n\n.fondo{\n    margin-top: 70px;\n}", ""]);
+exports.push([module.i, ".beneficios{\n    border-left: 1px solid #b0b0b0;\n}\n\n.loginh4{\n    font-family: 'Hind', sans-serif;\n    font-weight: bolder;\n}\n\n#login{\n    text-align: center;\n}\n\n.submitButton{\n    background-color: #A6CD3B !important;\n    color: black !important;\n    border: 1px solid #A6CD3B !important;\n    font-family: 'Hind', sans-serif !important;\n    font-weight: bolder !important;\n    width: 200px !important;\n    margin-left: auto !important;\n    margin-right: auto !important;\n}\n\n.submitButton:hover{\n    background-color: #819E31 !important;\n    color: black !important;\n}\n\n.centrado{\n    text-align: center;\n}\n\n.peliculas p{\n    margin-bottom: 0px;\n}\n\n.peliculas p:nth-child(3n){\n    margin-bottom: 5px;\n}\n\n.fondo{\n    margin-top: 70px;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -52662,6 +52662,37 @@ var addToCart = function addToCart(product, userId) {
 
 /***/ }),
 
+/***/ "./src/action-creator/Navbar.js":
+/*!**************************************!*\
+  !*** ./src/action-creator/Navbar.js ***!
+  \**************************************/
+/*! exports provided: searching */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "searching", function() { return searching; });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var searchProducts = function searchProducts(search) {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__["SEARCH_PRODUCTS"],
+    search: search
+  };
+};
+
+var searching = function searching(search) {
+  return function (dispatch) {
+    dispatch(searchProducts(search));
+  };
+};
+
+/***/ }),
+
 /***/ "./src/action-creator/Products.js":
 /*!****************************************!*\
   !*** ./src/action-creator/Products.js ***!
@@ -52718,13 +52749,14 @@ var fetchProduct = function fetchProduct(id) {
 /*!*************************************!*\
   !*** ./src/action-creator/Users.js ***!
   \*************************************/
-/*! exports provided: logueandome, registrandome */
+/*! exports provided: logueandome, registrandome, deslogueandome */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logueandome", function() { return logueandome; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "registrandome", function() { return registrandome; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deslogueandome", function() { return deslogueandome; });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
@@ -52735,6 +52767,13 @@ var loginUser = function loginUser(user) {
   return {
     type: _constants__WEBPACK_IMPORTED_MODULE_0__["LOGIN_USER"],
     user: user
+  };
+};
+
+var logoutUser = function logoutUser() {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__["LOGOUT"],
+    user: {}
   };
 };
 
@@ -52755,6 +52794,13 @@ var registrandome = function registrandome(username, password) {
       password: password
     }).then(function (res) {
       return dispatch(loginUser(res.data));
+    });
+  };
+};
+var deslogueandome = function deslogueandome() {
+  return function (dispatch) {
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/user/logout").then(function () {
+      return dispatch(logoutUser());
     });
   };
 };
@@ -52956,7 +53002,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var userId = _ref.userId,
-      username = _ref.username;
+      username = _ref.username,
+      deslogueandome = _ref.deslogueandome,
+      handlerChange = _ref.handlerChange,
+      handlerSubmit = _ref.handlerSubmit;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
     className: "header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -52973,16 +53022,19 @@ __webpack_require__.r(__webpack_exports__);
     to: "/user/".concat(userId, "/cart")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fas fa-shopping-cart"
-  }), "\xA0Cart")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }), "\xA0Carrito"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "cart",
+    onClick: deslogueandome
+  }, "Cerrar sesi\xF3n")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/user/login"
-  }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/user/register"
-  }, "Register")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+  }, "Iniciar sesi\xF3n")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: "row nav-principal",
+    onSubmit: handlerSubmit,
     id: "serch"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     name: "search",
+    onChange: handlerChange,
     "aria-describedby": "button-addon1",
     placeholder: "Search",
     className: "form-control border-0 bg-light",
@@ -53032,8 +53084,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./src/components/common/navbar/Navbar.jsx");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _action_creator_Users__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../action-creator/Users */ "./src/action-creator/Users.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _action_creator_Navbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../action-creator/Navbar */ "./src/action-creator/Navbar.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53058,11 +53112,66 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
- //import { buscarPeliculas } from "../action-creators/peliculas"
-//import { deslogueandome } from "../action-creators/user"
 
 
 
+
+
+
+var NavbarContainer = /*#__PURE__*/function (_React$Component) {
+  _inherits(NavbarContainer, _React$Component);
+
+  var _super = _createSuper(NavbarContainer);
+
+  function NavbarContainer(props) {
+    var _this;
+
+    _classCallCheck(this, NavbarContainer);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      input: ""
+    };
+    _this.handlerChange = _this.handlerChange.bind(_assertThisInitialized(_this));
+    _this.handlerSubmit = _this.handlerSubmit.bind(_assertThisInitialized(_this));
+    return _this;
+  } //vemos que captura el input 
+
+
+  _createClass(NavbarContainer, [{
+    key: "handlerChange",
+    value: function handlerChange(evt) {
+      var value = evt.target.value;
+      console.log("i am handling change: ", value);
+      this.setState({
+        input: value
+      });
+    }
+  }, {
+    key: "handlerSubmit",
+    value: function handlerSubmit() {
+      var _this2 = this;
+
+      event.preventDefault();
+      this.props.searching(this.state.input).then(function () {
+        return _this2.props.history.push("/products");
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        userId: this.props.userId,
+        username: this.props.username,
+        handlerChange: this.handlerChange,
+        handlerSubmit: this.handlerSubmit,
+        deslogueandome: this.props.deslogueandome
+      });
+    }
+  }]);
+
+  return NavbarContainer;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
@@ -53071,31 +53180,18 @@ var mapStateToProps = function mapStateToProps(state, ownProps) {
   };
 };
 
-var NavbarContainer = /*#__PURE__*/function (_React$Component) {
-  _inherits(NavbarContainer, _React$Component);
-
-  var _super = _createSuper(NavbarContainer);
-
-  function NavbarContainer(props) {
-    _classCallCheck(this, NavbarContainer);
-
-    return _super.call(this, props);
-  }
-
-  _createClass(NavbarContainer, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        userId: this.props.userId,
-        username: this.props.username
-      });
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    searching: function searching(search) {
+      dispatch(Object(_action_creator_Navbar__WEBPACK_IMPORTED_MODULE_6__["searching"])(search));
+    },
+    deslogueandome: function deslogueandome() {
+      return dispatch(Object(_action_creator_Users__WEBPACK_IMPORTED_MODULE_3__["deslogueandome"])());
     }
-  }]);
+  };
+};
 
-  return NavbarContainer;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router__WEBPACK_IMPORTED_MODULE_4__["withRouter"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, null)(NavbarContainer)));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router__WEBPACK_IMPORTED_MODULE_5__["withRouter"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, mapDispatchToProps)(NavbarContainer)));
 
 /***/ }),
 
@@ -53186,17 +53282,15 @@ __webpack_require__.r(__webpack_exports__);
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     className: "submitButton",
     type: "submit"
-  }, "Ingresar")), tipo == "Registrarse" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "centrado"
-  }, "O"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/register"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    className: "submitButton"
-  }, "Registrarse")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Ingresar"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-6 beneficios"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
     className: "loginh4"
-  }, "Beneficios de tu cuenta OMDb gratuita"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Recomendaciones personalizadas")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Descubriras peliculas que amar\xE1s"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tu lista de favoritos")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Podras guardas las peliculas que m\xE1s te gusten")))));
+  }, "CREAR UNA CUENTA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Crear una cuenta es f\xE1cil. Introduce tu direcci\xF3n de correo electr\xF3nico, diligencia el formulario de la p\xE1gina siguiente y disfruta de los beneficios de tener una cuenta."), tipo == "Registrarse" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/user/register"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    className: "submitButton"
+  }, "Registrarse")))))));
 });
 
 /***/ }),
@@ -53377,6 +53471,10 @@ __webpack_require__.r(__webpack_exports__);
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_navbar_NavbarContainer__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/",
+    component: _products_ProductsContainer__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/products",
     component: _products_ProductsContainer__WEBPACK_IMPORTED_MODULE_2__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/product/:id",
@@ -53635,7 +53733,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var products = _ref.products;
-  console.log(products);
+  console.log("esto es products: ", products);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     id: "alto"
@@ -53801,6 +53899,7 @@ var ProductsContainer = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      console.log("search: ", this.props.search);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Products__WEBPACK_IMPORTED_MODULE_1__["default"], {
         products: this.props.products
       });
@@ -53811,15 +53910,20 @@ var ProductsContainer = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
+  var searchP = state.navbar.search;
   return {
-    products: state.products.products
+    //mas o menos asi
+    products: searchP.length ? state.products.products.filter(function (product) {
+      return product.name.includes(searchP);
+    }) : state.products.products,
+    search: state.navbar.search
   };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
-    fetchProducts: function fetchProducts() {
-      return dispatch(Object(_action_creator_Products__WEBPACK_IMPORTED_MODULE_3__["fetchProducts"])());
+    fetchProducts: function fetchProducts(name) {
+      return dispatch(Object(_action_creator_Products__WEBPACK_IMPORTED_MODULE_3__["fetchProducts"])(name));
     }
   };
 };
@@ -53868,38 +53972,55 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
-  var handleSubmit = _ref.handleSubmit,
+  var passwordChange = _ref.passwordChange,
       usernameChange = _ref.usernameChange,
-      passwordChange = _ref.passwordChange;
+      handleSubmit = _ref.handleSubmit,
+      username = _ref.username,
+      password = _ref.password,
+      tipo = _ref.tipo;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "savbar",
-    style: {
-      position: "relative",
-      top: "50px"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Register"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "row",
-    onSubmit: handleSubmit
+    className: "fondo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "form-control",
+    className: "container peliculas"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-6 centrado"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    id: "login",
+    className: "loginh4"
+  }, "Registrarse"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"], {
+    onSubmit: handleSubmit
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
+    controlId: "formBasicEmail"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, null, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
+    onChange: usernameChange,
+    name: "username",
     type: "email",
-    placeholder: "Email",
-    label: "Registrar Email",
-    onChange: usernameChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "form-control",
+    placeholder: "Ingrese su Email",
+    value: username
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
+    controlId: "formBasicPassword"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, null, "Contrase\xF1a"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
     type: "password",
-    placeholder: "Password",
-    label: "Registrar Password",
-    onChange: passwordChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "btn btn-primary",
+    placeholder: "Contrase\xF1a",
+    onChange: passwordChange,
+    name: "password",
+    value: password
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    className: "submitButton",
     type: "submit"
-  }, "login"))));
+  }, "Registrarse"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-6 beneficios"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "loginh4"
+  }, "Beneficios de tu cuenta OMDb gratuita"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Recomendaciones personalizadas")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Descubriras peliculas que amar\xE1s"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Tu lista de favoritos")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Podras guardas las peliculas que m\xE1s te gusten")))));
 });
 
 /***/ }),
@@ -54021,7 +54142,10 @@ var RegisterContainer = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Register__WEBPACK_IMPORTED_MODULE_2__["default"], {
         usernameChange: this.usernameChange,
         passwordChange: this.passwordChange,
-        handleSubmit: this.handleSubmit
+        handleSubmit: this.handleSubmit,
+        password: this.state.password,
+        username: this.state.username,
+        tipo: "Registrarse"
       });
     }
   }]);
@@ -54047,7 +54171,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
 /*!**************************!*\
   !*** ./src/constants.js ***!
   \**************************/
-/*! exports provided: REGISTER_USER, LOGIN_USER, SELECT_PRODUCT, RECEIVE_PRODUCTS, VIEW_CART, ADD_CART */
+/*! exports provided: REGISTER_USER, LOGIN_USER, SELECT_PRODUCT, RECEIVE_PRODUCTS, VIEW_CART, ADD_CART, SEARCH_PRODUCTS, LOGOUT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -54058,12 +54182,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RECEIVE_PRODUCTS", function() { return RECEIVE_PRODUCTS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VIEW_CART", function() { return VIEW_CART; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ADD_CART", function() { return ADD_CART; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SEARCH_PRODUCTS", function() { return SEARCH_PRODUCTS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOGOUT", function() { return LOGOUT; });
 var REGISTER_USER = "REGISTER_USER";
 var LOGIN_USER = "LOGIN_USER";
 var SELECT_PRODUCT = "SELECT_PRODUCT";
 var RECEIVE_PRODUCTS = "RECEIVE_PRODUCTS";
 var VIEW_CART = "VIEW_CART";
 var ADD_CART = "ADD_CART";
+var SEARCH_PRODUCTS = "SEARCH_PRODUCTS";
+var LOGOUT = "LOGOUT";
 
 /***/ }),
 
@@ -54130,6 +54258,43 @@ var initialState = {
     case _constants__WEBPACK_IMPORTED_MODULE_0__["VIEW_CART"]:
       return _objectSpread(_objectSpread({}, state), {}, {
         orders: action.orders
+      });
+
+    default:
+      return state;
+  }
+});
+
+/***/ }),
+
+/***/ "./src/reducer/Navbar-Reducer.js":
+/*!***************************************!*\
+  !*** ./src/reducer/Navbar-Reducer.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+var initialState = {
+  search: ""
+};
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _constants__WEBPACK_IMPORTED_MODULE_0__["SEARCH_PRODUCTS"]:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        search: action.search
       });
 
     default:
@@ -54212,6 +54377,11 @@ var initialState = {
         loginUser: action.user
       });
 
+    case _constants__WEBPACK_IMPORTED_MODULE_0__["LOGOUT"]:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        loginUser: action.user
+      });
+
     default:
       return state;
   }
@@ -54232,6 +54402,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _User_Reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./User-Reducer */ "./src/reducer/User-Reducer.js");
 /* harmony import */ var _Products_Reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Products-Reducer */ "./src/reducer/Products-Reducer.js");
 /* harmony import */ var _Cart_Reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Cart-Reducer */ "./src/reducer/Cart-Reducer.js");
+/* harmony import */ var _Navbar_Reducer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Navbar-Reducer */ "./src/reducer/Navbar-Reducer.js");
+
 
 
 
@@ -54239,7 +54411,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   products: _Products_Reducer__WEBPACK_IMPORTED_MODULE_2__["default"],
   user: _User_Reducer__WEBPACK_IMPORTED_MODULE_1__["default"],
-  cart: _Cart_Reducer__WEBPACK_IMPORTED_MODULE_3__["default"]
+  cart: _Cart_Reducer__WEBPACK_IMPORTED_MODULE_3__["default"],
+  navbar: _Navbar_Reducer__WEBPACK_IMPORTED_MODULE_4__["default"]
 }));
 
 /***/ }),

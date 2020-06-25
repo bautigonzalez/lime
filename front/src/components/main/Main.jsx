@@ -12,10 +12,12 @@ export default () => (
     <NavbarContainer/>
     <Switch>
       <Route exact path="/" component={ProductsContainer}/>
+      <Route exact path="/products" component={ProductsContainer}/>
       <Route path="/product/:id" component={ProductContainer} />
       <Route path="/user/register" component={RegisterContainer}/>
       <Route path="/user/login" component={LoginContainer}/>
       <Route path="/user/:id/cart" component={CartContainer}/>
+
     </Switch>
   </div>
 );

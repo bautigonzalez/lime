@@ -4,7 +4,7 @@ import "./products.css";
 
 
 export default ({ products}) => {
-console.log(products)
+console.log("esto es products: ", products)
 return (
   
  

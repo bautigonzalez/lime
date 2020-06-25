@@ -45,9 +45,12 @@ class RegisterContainer extends React.Component {
   render() {
     return (
       <Register
-        usernameChange={this.usernameChange}
-        passwordChange={this.passwordChange}
-        handleSubmit={this.handleSubmit}
+      usernameChange={this.usernameChange}
+      passwordChange={this.passwordChange}
+      handleSubmit={this.handleSubmit}
+      password={this.state.password}
+      username={this.state.username}
+      tipo="Registrarse"
       />
     )
   }
