@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Carousel, Card, Button } from "react-bootstrap";
 
-export default ({ product }) => (
+export default ({ product, addToCart, userId }) => (
   <div className="container">
 <div style={{ display: "flex", padding: "3rem" }}>
     <div>
@@ -33,7 +33,7 @@ export default ({ product }) => (
               <br/>
               <br/>
               <br/>
-                        <Button variant="primary">Add to cart</Button>
+                        <Button onClick={()=>{addToCart(product, userId)}} variant="primary">Add to cart</Button>
 
           </Card.Text>
         </Card.Body>

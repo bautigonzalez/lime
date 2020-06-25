@@ -1,25 +1,52 @@
-import React from "react"
-
-export default ({ handleSubmit, usernameChange, passwordChange })=> {
-return (
-
-    <div className = "savbar" style={{position: "relative", top: "50px"}}>
-
-         <h3>Login</h3>
-          <form className= "row" onSubmit={handleSubmit}>
-            <div className= "col-md-3">
-            <input className= "form-control" type= "email" placeholder= "Email" label="Registrar Email"
-            onChange={usernameChange} />
-            </div>
-            <div>
-            <input className= "form-control" type= "password" placeholder= "Password" label="Registrar Password"
-            onChange={passwordChange} />
-            </div>
-            <div>
-            <button className="btn btn-primary" type="submit">login</button>
-            </div>
-          </form>
-
-    </div>
-)
-}
+  import React from 'react';
+  import { Link } from 'react-router-dom';
+  import { Form, Button } from "react-bootstrap"
+  import "./login.css"
+  
+  export default ({ passwordChange, usernameChange, handleSubmit, username, password, tipo }) => (
+      <div className="fondo">
+          <div className="container peliculas">
+              <div className="row">
+                  <div className="col-6 centrado">
+                      <h4 id="login" className="loginh4">Iniciar sesión</h4>
+                      <Form onSubmit={handleSubmit}>
+                          <Form.Group controlId="formBasicEmail">
+                              <Form.Label>Email</Form.Label>
+                              <Form.Control 
+                              onChange={usernameChange} 
+                              name="username" 
+                              type="email" 
+                              placeholder="Ingrese su Email"
+                              value={username}
+                              />
+                          </Form.Group>
+                          <Form.Group controlId="formBasicPassword">
+                              <Form.Label>Contraseña</Form.Label>
+                              <Form.Control 
+                              type="password" 
+                              placeholder="Contraseña"
+                              onChange={passwordChange}
+                              name="password" 
+                              value={password}
+                              />
+                          </Form.Group>
+                          <Button className="submitButton" type="submit">
+                              Ingresar
+                          </Button>
+                      </Form>
+                      {tipo=="Registrarse" ? (<></>):(<>
+                          <p className="centrado">O</p>
+                      <Link to="/register"><Button className="submitButton">Registrarse</Button></Link>
+                      </>)}
+                  </div>
+                  <div className="col-6 beneficios">
+                      <h4 className="loginh4">Beneficios de tu cuenta OMDb gratuita</h4>     
+                      <p><strong>Recomendaciones personalizadas</strong></p>
+                      <p>Descubriras peliculas que amarás</p>
+                      <p><strong>Tu lista de favoritos</strong></p>
+                      <p>Podras guardas las peliculas que más te gusten</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  );
