@@ -34,6 +34,6 @@ export default ({ orders, total, username }) => (
       </tbody>
     </Table>
   </div>
-    {orders.products ? <h1 className="total">Total {total(orders.products)} ARS</h1> : 0}
+    {orders.products ? <h1 className="total">Total {total(orders.products)} ARS</h1> : <h1 className="total">Total 0 ARS</h1>}
   </div>
 );

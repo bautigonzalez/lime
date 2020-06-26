@@ -50,9 +50,6 @@ p{
     transition: all 200ms;
     position: relative;
     right: 190px;
-   
-    
-    
 }
 
 .nav-principal p{
@@ -97,12 +94,11 @@ input[type=text]:focus {
 }
   
 #search{
-  margin-top: 2px;
+  margin-top: 4px;
     height: 35px;
     position: relative;
     right: 150px;
     width: 650px;
-    
 }
 
 #botonSearch{
