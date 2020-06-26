@@ -1,5 +1,6 @@
 import React from 'react'
 import "./presentacion.css";
+import {Link} from "react-router-dom"
 import { Carousel, Card ,Button , CardDeck , Badge} from "react-bootstrap";
 
 export default ()=>{
@@ -21,7 +22,7 @@ return(
          
                 <h3>Notebooks Y Smarphones</h3>
                 <p>ULTIMOS MODELOS DISPONIBLES</p>
-                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Ver mas</Button>
+            <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px" }}>Ver mas</Button></Link>
             </div>
         </Carousel.Item>
         <Carousel.Item >

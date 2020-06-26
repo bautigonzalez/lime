@@ -19,7 +19,7 @@ return (
 
 <section className="text-center mb-4" >
   
-<h3 className="hola" >PRODUCTOS :</h3>
+<h3 className="proddd" >PRODUCTOS :</h3>
 <hr className="solid"/>
 <div className="row wow fadeIn"  >
   
@@ -28,13 +28,13 @@ return (
     <div className="col-lg-3 col-md-6 mb-4" key={product.id} id="card2">
       <div className="card" id="sombra" >
          <div className="view overlay" id="prod">
-         <Link  to={`/product/${product.id}`}><img src={product.image} className="card-img-top" style={{maxHeight:"345px", maxWidth:"200px"}}/></Link>
+         <Link  to={`/product/${product.id}`}><img src={product.image} className="card-img-top" style={{maxHeight:"345px", maxWidth:"200px", borderRadius: "12px"}}/></Link>
        </div>
        <hr className="solid"/>
           <div className="card-body text-center" style={{height:"215px"}}>
          <h5>
            <strong>
-             <p className="prodName">{product.name}</p>
+              <Link to={`/product/${product.id}`}><p className="prodName">{product.name}</p></Link>
            </strong>
          </h5>
          <p className=" text-uppercase">Categoria...</p>

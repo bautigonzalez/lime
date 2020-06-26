@@ -28,8 +28,8 @@ class NavbarContainer extends React.Component{
     handlerSubmit() { 
         event.preventDefault()
         this.props.searching(this.state.input)
+        this.setState({input:""})
         return this.props.history.push("/products");
-          
     }
 
     logout(){
@@ -45,6 +45,7 @@ class NavbarContainer extends React.Component{
             handlerChange={this.handlerChange} 
             handlerSubmit={this.handlerSubmit}
             deslogueandome={this.logout}
+            value={this.state.input}
             />)
     }
 }

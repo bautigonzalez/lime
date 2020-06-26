@@ -39,7 +39,7 @@ header,
 #prod{
  
  height: 325px;
-
+border-radius: 12px;
 }
 #card2{
     max-height: 100%;
@@ -49,6 +49,7 @@ header,
 
 .hola{
   font-weight: lighter;
+
 }
 
 .val{
@@ -66,6 +67,7 @@ header,
   -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);
   -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);
   box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);
+  border-radius: 12px;
 }
 
 .imagen{
@@ -77,4 +79,10 @@ header,
  
   justify-content: center;
 
+}
+
+.proddd{
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
