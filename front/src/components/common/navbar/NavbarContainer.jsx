@@ -16,6 +16,7 @@ class NavbarContainer extends React.Component{
         }
         this.handlerChange = this.handlerChange.bind(this)
         this.handlerSubmit = this.handlerSubmit.bind(this)
+        this.logout = this.logout.bind(this)
 
     } //vemos que captura el input 
     handlerChange(evt) {
@@ -30,6 +31,12 @@ class NavbarContainer extends React.Component{
         return this.props.history.push("/products");
           
     }
+
+    logout(){
+        this.props.deslogueandome()
+        return this.props.history.push("/");
+
+    }
     render(){
 
         return (<Navbar 
@@ -37,7 +44,7 @@ class NavbarContainer extends React.Component{
             username={this.props.username} 
             handlerChange={this.handlerChange} 
             handlerSubmit={this.handlerSubmit}
-            deslogueandome={this.props.deslogueandome}
+            deslogueandome={this.logout}
             />)
     }
 }
