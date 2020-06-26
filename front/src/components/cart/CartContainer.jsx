@@ -10,7 +10,6 @@ constructor(props) {
     }
 
 componentDidMount() {
-    console.log(this.props.orders.products)
     this.props.fetchCart(this.props.userId)
     }
 

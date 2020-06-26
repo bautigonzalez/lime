@@ -6,6 +6,7 @@ import "./style.css";
 
 export default ({ orders, total, username }) => (
   <div>
+    {console.log("me estoy renderizando", orders)}
     <p className="division">carrito de {username.split("@").shift()}:</p>
   <div>
     <Table striped bordered hover className="tabla">
@@ -18,13 +19,18 @@ export default ({ orders, total, username }) => (
       </thead>
       <tbody>
 {
-orders.products && orders.products.map((product) => (
-  <tr>
-<td>{product.name}</td>
-<td>{product.valoration}</td>
-<td>{product.price}</td>
-  </tr>
-))}
+            orders.products ? (<>{orders.products.map((product) => (
+              <tr>
+                <td>{product.name}</td>
+                <td>{product.valoration}</td>
+                <td>{product.price}</td>
+              </tr>
+            ))}</>) : (<><tr>
+              <td>NA</td>
+              <td>NA</td>
+              <td>NA</td>
+            </tr></>)
+}
       </tbody>
     </Table>
   </div>

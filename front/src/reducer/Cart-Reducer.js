@@ -1,7 +1,7 @@
 import { VIEW_CART } from '../constants'
 
 const initialState = {
-    orders : []
+    orders : {}
 }
 
 export default ( state = initialState, action) => {

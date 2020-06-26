@@ -9,7 +9,10 @@ const viewCart = (orders) => ({
 export const fetchCart = function(userId){
     return (dispatch)=>{
         return axios.get(`/api/user/${userId}/cart`)
-        .then(res=>dispatch(viewCart(res.data)))
+        .then(res=>
+        { let cart = res.data ? res.data : {}
+            return dispatch(viewCart(cart))}
+        ) 
     }
 }
 
