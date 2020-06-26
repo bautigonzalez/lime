@@ -26,7 +26,7 @@ export default () => (
                     <span>LimePro</span>
                     <span>Para la empresa</span>
                     <span>Desarrolladores </span>
-                    <span>Servicio Tecnico</span>
+                    <span>Servicio</span>
                 </div>
             </div>
             <div className="col-2"></div>

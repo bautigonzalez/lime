@@ -4,44 +4,14 @@ import "./products.css";
 
 
 export default ({ products}) => {
-console.log(products)
+console.log("esto es products: ", products)
 return (
   
  
   <div className="container" id='alto' >
 
 {/* NAVAR DE FILTROS */}
-<nav className="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5" style={{backgroundColor:"#333"}}>
-<span className="navbar-brand">Categories:</span>
-<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-  aria-expanded="false" aria-label="Toggle navigation">
-  <span className="navbar-toggler-icon"></span>
-</button>
-<div className="collapse navbar-collapse" id="basicExampleNav">
-  <ul className="navbar-nav mr-auto">
-    <li className="nav-item active">
-      <a className="nav-link" href="#">All
-        <span className="sr-only">(current)</span>
-      </a>
-    </li>
-    <li className="nav-item">
-      <a className="nav-link" href="#">Smartphones</a>
-    </li>
-    <li className="nav-item">
-      <a className="nav-link" href="#">Notebooks</a>
-    </li>
-    <li className="nav-item">
-      <a className="nav-link" href="#">Accessories</a>
-    </li>
-  </ul>
-  <form className="form-inline">
-    <div className="md-form my-0">
-      <input className="form-control mr-sm-2" type="text" placeholder="⌕" aria-label="Search"/>
-     
-    </div>
-  </form>
-</div>
-</nav>
+
   {/* NAVAR DE FILTROS */}
   
 
@@ -90,56 +60,6 @@ return (
 
 
 </section>
-
-
-<nav class="d-flex justify-content-center wow fadeIn">
-        <ul class="pagination pg-blue">
-
-          <li class="page-item disabled">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-
-          <li class="page-item active">
-            <a class="page-link" href="#">1
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">4</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">5</a>
-          </li>
-
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-
-
-
-
-
-
-
-
-
-
-  
 
 
 

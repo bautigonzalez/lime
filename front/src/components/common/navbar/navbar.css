@@ -112,11 +112,12 @@ input[type=text]:focus {
 
 .cart{
     font-size: 15px;
-    margin: 10px;
     font-weight: 200;
     color: var(--blanco);
     position: relative;
+    top: -33px;
     left: 900px;
+    
     
     
 }

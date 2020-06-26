@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import "./navbar.css";
 
 
-export default ( {userId, username}) => {
+export default ( {userId, username, deslogueandome, handlerChange, handlerSubmit}) => {
   return (
     <header className="header">
     <div className="container">
@@ -14,17 +14,16 @@ export default ( {userId, username}) => {
     {userId ? (<>
           <div className="costado">
           <p > Hola {username}   </p>
+          <Link className='cart' to={`/user/${userId}/cart`}><i className="fas fa-shopping-cart"></i>&nbsp;Carrito</Link>
+          <Link className='cart' onClick={deslogueandome}>Cerrar sesión</Link>
           </div>
-          <Link className='cart' to={`/user/${userId}/cart`}><i className="fas fa-shopping-cart"></i>&nbsp;Cart</Link>
-          
           </>):(<>
-            <Link to="/user/login">Login</Link>
-            <Link to="/user/register">Register</Link>
+            <Link to="/user/login">Iniciar sesión</Link>
           </>)}
           
-          <form className="row nav-principal" id='search'>
-          <input type="text" name="search" aria-describedby="button-addon1" placeholder="Search" className="form-control border-0 bg-light" />
-          <button id="botonSearch" type="button" className="btn btn-outline-light"><i className="fa fa-search"></i></button>
+          <form className="row nav-principal" onSubmit={handlerSubmit} id='search'>
+          <input onChange={handlerChange} type="text" name="search" aria-describedby="button-addon1" placeholder="Buscar" className="form-control border-0 bg-light" />
+          <button id="botonSearch" type="submit" className="btn btn-outline-light"><i className="fa fa-search"></i></button>
           </form>
     </nav>
   </div>
