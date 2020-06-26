@@ -5350,7 +5350,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".division{\r\n    margin-top: 48px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-size: 150%\r\n}\r\n\r\n.tabla{\r\n    margin-top: 0;\r\n    padding: 0;\r\n    width: 50%;\r\n}\r\n\r\n.total{\r\n font-family: Arial, Helvetica, sans-serif;\r\nfont-size: 150%;\r\ntext-align: end;\r\nmargin-right: 100px;\r\n}", ""]);
+exports.push([module.i, ".division{\n    margin-top: 48px;\n    font-family: Arial, Helvetica, sans-serif;\n    font-size: 150%\n}\n\n.tabla{\n    margin-top: 0;\n    padding: 0;\n    width: 50%;\n}\n\n.total{\n font-family: Arial, Helvetica, sans-serif;\nfont-size: 150%;\ntext-align: end;\nmargin-right: 100px;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5368,7 +5368,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#footer{\r\n    background-color: black;\r\n    height: 360px;\r\n    color: #B0B0B0;\r\n   \r\n    padding-top: 10px;\r\n}\r\n\r\n.col-8 span{\r\n    margin-left: 4%;\r\n    font-weight: 550;\r\n}\r\n\r\nh6{\r\n    font-size: smaller;\r\n    margin-left: 10%;\r\n}\r\n\r\n#primerfila{\r\n    margin-top: 70px;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.row{\r\n    margin-bottom: 20px;\r\n   padding-left: 100px;\r\n   padding-right: 100px;\r\n   display: flex;\r\n\r\njustify-content: center;\r\n}\r\n\r\n.red{\r\n    width: 30px;\r\n}\r\n\r\n.col-4 span{\r\n    margin-left: 12%;\r\n   \r\n}\r\n\r\n.company{\r\n    margin-top: 20px;\r\n}\r\n\r\n\r\n#hola{\r\n    display: flex;\r\n    justify-content:center;\r\n    position: relative;\r\n    left: 255px;\r\n}", ""]);
+exports.push([module.i, "#footer{\n    background-color: black;\n    height: 360px;\n    color: #B0B0B0;\n   \n    padding-top: 10px;\n}\n\n.col-8 span{\n    margin-left: 4%;\n    font-weight: 550;\n}\n\nh6{\n    font-size: smaller;\n    margin-left: 10%;\n}\n\n#primerfila{\n    margin-top: 70px;\n    margin-bottom: 30px;\n}\n\n.row{\n    margin-bottom: 20px;\n   padding-left: 100px;\n   padding-right: 100px;\n   display: flex;\n\njustify-content: center;\n}\n\n.red{\n    width: 30px;\n}\n\n.col-4 span{\n    margin-left: 12%;\n   \n}\n\n.company{\n    margin-top: 20px;\n}\n\n\n#hola{\n    display: flex;\n    justify-content:center;\n    position: relative;\n    left: 255px;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5386,7 +5386,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root{\r\n    --negro: #000;\r\n    --blanco:#fff;\r\n    --grisOscuro:rgb(45,45,45,0.98)  ;\r\n    --grisClaro:#fafafa ;\r\n    --grisFooter: #f2f2f2 ;\r\n    --grisLetrasFooter: #333 ;\r\n    --grisBorde : #d6d6d6 ;\r\n    --azulCLaro: #6df ;\r\n    --azul: #0070c9\r\n}\r\n\r\nhtml{\r\n    box-sizing: border-box;\r\n    overflow: inherit ;\r\n\r\n}\r\n\r\n\r\nbody{\r\n    color: var(--negro);\r\n}\r\np{\r\n    margin:0;\r\n    \r\n    text-transform: uppercase;\r\n}\r\n\r\n.col-center{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.header{\r\n    width: 100%;\r\n    height: 46px;\r\n    background-color: var(--grisOscuro);\r\n    position: fixed ;\r\n    top: 0;\r\n    z-index: 5;\r\n}\r\n\r\n.nav-principal a{\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    color: var(--blanco);\r\n    transition: all 200ms;\r\n    position: relative;\r\n    right: 190px;\r\n   \r\n    \r\n    \r\n}\r\n\r\n.nav-principal p{\r\n    font-size: 15px;\r\n    margin: 10px;\r\n    font-weight: 200;\r\n    color: var(--blanco);\r\n    transition: all 200ms;\r\n    color: blanchedalmond;\r\n    position: relative;\r\n    right: 250px;\r\n}\r\n\r\n\r\n.nav-principal a:hover{\r\n    opacity: .5;\r\n    text-decoration: none;\r\n    color: #6df;\r\n}\r\n\r\n.icon{\r\n    max-width: 50px;\r\n    max-height: 45px;\r\n    margin-top: -10px;\r\n    position: relative;\r\n    right: 50px;\r\n    \r\n    \r\n}\r\n\r\n\r\n\r\ninput[type=text] {\r\n    width: 200px;\r\n    -webkit-transition: width 0.4s ease-in-out;\r\n    transition: width 0.4s ease-in-out;\r\n}\r\n  \r\n  \r\ninput[type=text]:focus {\r\n    width: 350px;\r\n}\r\n  \r\n#search{\r\n  margin-top: 2px;\r\n    height: 35px;\r\n    position: relative;\r\n    right: 150px;\r\n    width: 650px;\r\n    \r\n}\r\n\r\n#botonSearch{\r\n    margin-left: 6px;\r\n}\r\n\r\n\r\n.cart{\r\n    font-size: 15px;\r\n    font-weight: 200;\r\n    color: var(--blanco);\r\n    position: relative;\r\n    top: -33px;\r\n    left: 900px;\r\n    \r\n    \r\n    \r\n}\r\n\r\n#costado{\r\n    position: relative;\r\n    right: 250px;\r\n}", ""]);
+exports.push([module.i, ":root{\n    --negro: #000;\n    --blanco:#fff;\n    --grisOscuro:rgb(45,45,45,0.98)  ;\n    --grisClaro:#fafafa ;\n    --grisFooter: #f2f2f2 ;\n    --grisLetrasFooter: #333 ;\n    --grisBorde : #d6d6d6 ;\n    --azulCLaro: #6df ;\n    --azul: #0070c9\n}\n\nhtml{\n    box-sizing: border-box;\n    overflow: inherit ;\n\n}\n\n\nbody{\n    color: var(--negro);\n}\np{\n    margin:0;\n    \n    text-transform: uppercase;\n}\n\n.col-center{\n    margin: 0 auto;\n    text-align: center;\n}\n\n\n.header{\n    width: 100%;\n    height: 46px;\n    background-color: var(--grisOscuro);\n    position: fixed ;\n    top: 0;\n    z-index: 5;\n}\n\n.nav-principal a{\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    text-decoration: none;\n    color: var(--blanco);\n    transition: all 200ms;\n    position: relative;\n    right: 190px;\n   \n    \n    \n}\n\n.nav-principal p{\n    font-size: 15px;\n    margin: 10px;\n    font-weight: 200;\n    color: var(--blanco);\n    transition: all 200ms;\n    color: blanchedalmond;\n    position: relative;\n    right: 250px;\n}\n\n\n.nav-principal a:hover{\n    opacity: .5;\n    text-decoration: none;\n    color: #6df;\n}\n\n.icon{\n    max-width: 50px;\n    max-height: 45px;\n    margin-top: -10px;\n    position: relative;\n    right: 50px;\n    \n    \n}\n\n\n\ninput[type=text] {\n    width: 200px;\n    -webkit-transition: width 0.4s ease-in-out;\n    transition: width 0.4s ease-in-out;\n}\n  \n  \ninput[type=text]:focus {\n    width: 350px;\n}\n  \n#search{\n  margin-top: 2px;\n    height: 35px;\n    position: relative;\n    right: 150px;\n    width: 650px;\n    \n}\n\n#botonSearch{\n    margin-left: 6px;\n}\n\n\n.cart{\n    font-size: 15px;\n    font-weight: 200;\n    color: var(--blanco);\n    position: relative;\n    top: -33px;\n    left: 900px;\n    \n    \n    \n}\n\n#costado{\n    position: relative;\n    right: 250px;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5404,7 +5404,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#carrousel{\r\n     display:flex;\r\n     align-items: center;\r\n     height: 900px ;\r\n     width:800px ;\r\n     margin-top: 1000px; \r\n\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "#carrousel{\n     display:flex;\n     align-items: center;\n     height: 900px ;\n     width:800px ;\n     margin-top: 1000px; \n\n}\n\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5422,7 +5422,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".beneficios{\r\n    border-left: 1px solid #b0b0b0;\r\n}\r\n\r\n.loginh4{\r\n    font-family: 'Hind', sans-serif;\r\n    font-weight: bolder;\r\n    text-align: center;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n#login{\r\n    text-align: center;\r\n}\r\n\r\n.submitButton{\r\n    background-color: #A6CD3B !important;\r\n    color: black !important;\r\n    border: 1px solid #A6CD3B !important;\r\n    font-family: 'Hind', sans-serif !important;\r\n    font-weight: bolder !important;\r\n    width: 200px !important;\r\n    margin-left: auto !important;\r\n    margin-right: auto !important;\r\n    margin-top: 20px;\r\n}\r\n\r\n.submitButton:hover{\r\n    background-color: #819E31 !important;\r\n    color: black !important;\r\n}\r\n\r\n.centrado{\r\n    text-align: center;\r\n}\r\n\r\n.peliculas p{\r\n    margin-bottom: 0px;\r\n}\r\n\r\n.peliculas p:nth-child(3n){\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.fondo{\r\n    margin-top: 70px;\r\n    margin-bottom: 20%;\r\n}\r\n\r\n#minuscula{\r\n    text-transform: lowercase ;\r\n    \r\n}\r\n\r\n.mayuscula{\r\n    text-transform: uppercase;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n#minuscula::first-letter{\r\n    text-transform: uppercase;\r\n}\r\n\r\nul {\r\n    list-style: none;\r\n}\r\n  \r\nul li:before {\r\n  content: '✓';\r\n}\r\n\r\n.bajar{\r\n    margin-bottom: 20px !important\r\n}\r\n#ingresar{\r\n    margin-top: 50px !important\r\n}\r\n\r\n#registrase{\r\n    margin-left: 119px !important\r\n}", ""]);
+exports.push([module.i, ".beneficios{\n    border-left: 1px solid #b0b0b0;\n}\n\n.loginh4{\n    font-family: 'Hind', sans-serif;\n    font-weight: bolder;\n    text-align: center;\n    margin-bottom: 35px;\n}\n\n#login{\n    text-align: center;\n}\n\n.submitButton{\n    background-color: #A6CD3B !important;\n    color: black !important;\n    border: 1px solid #A6CD3B !important;\n    font-family: 'Hind', sans-serif !important;\n    font-weight: bolder !important;\n    width: 200px !important;\n    margin-left: auto !important;\n    margin-right: auto !important;\n    margin-top: 20px;\n}\n\n.submitButton:hover{\n    background-color: #819E31 !important;\n    color: black !important;\n}\n\n.centrado{\n    text-align: center;\n}\n\n.peliculas p{\n    margin-bottom: 0px;\n}\n\n.peliculas p:nth-child(3n){\n    margin-bottom: 5px;\n}\n\n.fondo{\n    margin-top: 70px;\n    margin-bottom: 20%;\n}\n\n#minuscula{\n    text-transform: lowercase ;\n    \n}\n\n.mayuscula{\n    text-transform: uppercase;\n    margin-bottom: 35px;\n}\n\n#minuscula::first-letter{\n    text-transform: uppercase;\n}\n\nul {\n    list-style: none;\n}\n  \nul li:before {\n  content: '✓';\n}\n\n.bajar{\n    margin-bottom: 20px !important\n}\n#ingresar{\n    margin-top: 50px !important\n}\n\n#registrase{\n    margin-left: 119px !important\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5440,7 +5440,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".tarjeta{\r\n margin: auto;\r\n  width: 50%;\r\n    padding: 10px;\r\n}\r\n\r\n#imagenes{\r\n    width: 0 auto; \r\n    height: 0 auto; \r\n    display: \"flex\";\r\n}\r\n\r\n#cardcita{\r\n    width: \"450px\"; \r\n    flex-wrap: wrap;\r\n    height: \"600px\"; \r\n    display: \"flex\"\r\n}\r\n\r\n#agregarAlCarrito:hover{\r\n    background-color: #819E31 !important;\r\n    color: black !important;\r\n}", ""]);
+exports.push([module.i, ".tarjeta{\n margin: auto;\n  width: 50%;\n    padding: 10px;\n}\n\n#imagenes{\n    width: 0 auto; \n    height: 0 auto; \n    display: \"flex\";\n}\n\n#cardcita{\n    width: \"450px\"; \n    flex-wrap: wrap;\n    height: \"600px\"; \n    display: \"flex\"\n}\n\n#agregarAlCarrito:hover{\n    background-color: #819E31 !important;\n    color: black !important;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -5458,7 +5458,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "html,\r\nbody,\r\nheader,\r\n.carousel {\r\n  height: 150vh;\r\n}\r\n\r\n@media (max-width: 740px) {\r\n  html,\r\n  body,\r\n  header,\r\n  .carousel {\r\n    height: 100vh;\r\n  }\r\n}\r\n\r\n@media (min-width: 800px) and (max-width: 850px) {\r\n  html,\r\n  body,\r\n  header,\r\n  .carousel {\r\n    height: 100vh;\r\n  }\r\n}\r\n.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}\r\n\r\n\r\n#style{\r\n    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg');\r\n     background-repeat: no-repeat; \r\n     background-size: cover;\r\n}\r\n\r\n#alto{\r\n    position: relative;\r\n    top: 50px;\r\n}\r\n\r\n#prod{\r\n \r\n height: 325px;\r\n\r\n}\r\n#card2{\r\n    max-height: 100%;\r\n    padding: 20px;\r\n    \r\n}\r\n\r\n.hola{\r\n  font-weight: lighter;\r\n}\r\n\r\n.val{\r\n  font-weight: bolder;\r\n  color: rgb(153, 126, 6);\r\n  \r\n  \r\n}\r\n\r\n.prodName{\r\n  color: rgb(23, 73, 139);\r\n}\r\n\r\n#sombra{\r\n  -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n  -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n  box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\r\n}\r\n\r\n.imagen{\r\n  display: flex;\r\n  \r\n  margin: 0 auto;\r\n \r\n  \r\n \r\n  justify-content: center;\r\n\r\n}", ""]);
+exports.push([module.i, "html,\nbody,\nheader,\n.carousel {\n  height: 150vh;\n}\n\n@media (max-width: 740px) {\n  html,\n  body,\n  header,\n  .carousel {\n    height: 100vh;\n  }\n}\n\n@media (min-width: 800px) and (max-width: 850px) {\n  html,\n  body,\n  header,\n  .carousel {\n    height: 100vh;\n  }\n}\n.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}\n\n\n#style{\n    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg');\n     background-repeat: no-repeat; \n     background-size: cover;\n}\n\n#alto{\n    position: relative;\n    top: 50px;\n}\n\n#prod{\n \n height: 325px;\n\n}\n#card2{\n    max-height: 100%;\n    padding: 20px;\n    \n}\n\n.hola{\n  font-weight: lighter;\n}\n\n.val{\n  font-weight: bolder;\n  color: rgb(153, 126, 6);\n  \n  \n}\n\n.prodName{\n  color: rgb(23, 73, 139);\n}\n\n#sombra{\n  -webkit-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n  -moz-box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n  box-shadow: -1px 1px 17px 1px rgba(0,0,0,0.27);\n}\n\n.imagen{\n  display: flex;\n  \n  margin: 0 auto;\n \n  \n \n  justify-content: center;\n\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -53267,6 +53267,7 @@ var NavbarContainer = /*#__PURE__*/function (_React$Component) {
     };
     _this.handlerChange = _this.handlerChange.bind(_assertThisInitialized(_this));
     _this.handlerSubmit = _this.handlerSubmit.bind(_assertThisInitialized(_this));
+    _this.logout = _this.logout.bind(_assertThisInitialized(_this));
     return _this;
   } //vemos que captura el input 
 
@@ -53288,6 +53289,12 @@ var NavbarContainer = /*#__PURE__*/function (_React$Component) {
       return this.props.history.push("/products");
     }
   }, {
+    key: "logout",
+    value: function logout() {
+      this.props.deslogueandome();
+      return this.props.history.push("/");
+    }
+  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -53295,7 +53302,7 @@ var NavbarContainer = /*#__PURE__*/function (_React$Component) {
         username: this.props.username,
         handlerChange: this.handlerChange,
         handlerSubmit: this.handlerSubmit,
-        deslogueandome: this.props.deslogueandome
+        deslogueandome: this.logout
       });
     }
   }]);
