@@ -2,13 +2,14 @@
     background-color: black;
     height: 360px;
     color: #B0B0B0;
-   
+
     padding-top: 10px;
 }
 
 .col-8 span{
     margin-left: 4%;
     font-weight: 550;
+
 }
 
 h6{
@@ -36,7 +37,8 @@ justify-content: center;
 
 .col-4 span{
     margin-left: 12%;
-   
+
+
 }
 
 .company{
@@ -46,7 +48,21 @@ justify-content: center;
 
 #hola{
     display: flex;
-    justify-content:center;
-    position: relative;
-    left: 255px;
+    justify-content: center;
+}
+
+span a{
+    color: rgb(70, 70, 70);
+    text-decoration: none !important;
+
+}
+span a:hover{
+    color: rgb(96, 167, 78);
+    text-decoration: none !important;
+
+}
+
+
+.p5{
+    margin-left: 100px;
 }
