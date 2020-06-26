@@ -7,7 +7,7 @@ export default ({ passwordChange, usernameChange, handleSubmit, username, passwo
         <div className="container peliculas">
             <div className="row">
                 <div className="col-6 centrado">
-                    <h4 id="login" className="loginh4">Registrarse</h4>
+                    <h4 id="login" className="loginh4">REGISTRARSE</h4>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
@@ -35,12 +35,25 @@ export default ({ passwordChange, usernameChange, handleSubmit, username, passwo
                     </Form>
                 </div>
                 <div className="col-6 beneficios">
-                    <h4 className="loginh4">Beneficios de tu cuenta OMDb gratuita</h4>     
-                    <p><strong>Recomendaciones personalizadas</strong></p>
-                    <p>Descubriras peliculas que amarás</p>
-                    <p><strong>Tu lista de favoritos</strong></p>
-                    <p>Podras guardas las peliculas que más te gusten</p>
-                </div>
+                      <h4 className="loginh4 centrado">CREAR UNA CUENTA</h4>     
+                      <p className="bajar" id="minuscula">Crear una cuenta es fácil. Introduce tu dirección de correo electrónico, diligencia el formulario de la página siguiente y disfruta de los beneficios de tener una cuenta.</p>
+                      <ul>
+                          <li>
+                          Una sola cuenta global con la que podrás acceder a todos los productos y servicios de adidas.
+                          </li>
+                          <li>
+                          Finalizar tus pedidos más rápido
+
+                          </li>
+                          <li>
+                          Consultar tu historial de pedidos
+
+                          </li>
+                      </ul>
+                      {tipo=="Registrarse" ? (<></>):(<>
+                      <Link to="/user/register"><Button className="submitButton" id="registrase">Registrarse</Button></Link>
+                      </>)}
+                  </div>
             </div>
         </div>
     </div>

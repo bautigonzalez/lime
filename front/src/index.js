@@ -6,6 +6,8 @@ import Main from './components/main/Main';
 import store from './store';
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
+
 ReactDOM.render(
 
   <Provider store={store}>

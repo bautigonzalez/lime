@@ -5,6 +5,8 @@
 .loginh4{
     font-family: 'Hind', sans-serif;
     font-weight: bolder;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 #login{
@@ -20,6 +22,7 @@
     width: 200px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: 20px;
 }
 
 .submitButton:hover{
@@ -41,4 +44,38 @@
 
 .fondo{
     margin-top: 70px;
+    margin-bottom: 20%;
+}
+
+#minuscula{
+    text-transform: lowercase ;
+    
+}
+
+.mayuscula{
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+#minuscula::first-letter{
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+  
+ul li:before {
+  content: '✓';
+}
+
+.bajar{
+    margin-bottom: 20px !important
+}
+#ingresar{
+    margin-top: 50px !important
+}
+
+#registrase{
+    margin-left: 119px !important
 }

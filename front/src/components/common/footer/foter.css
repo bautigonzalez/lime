@@ -1,0 +1,52 @@
+#footer{
+    background-color: black;
+    height: 360px;
+    color: #B0B0B0;
+   
+    padding-top: 10px;
+}
+
+.col-8 span{
+    margin-left: 4%;
+    font-weight: 550;
+}
+
+h6{
+    font-size: smaller;
+    margin-left: 10%;
+}
+
+#primerfila{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.row{
+    margin-bottom: 20px;
+   padding-left: 100px;
+   padding-right: 100px;
+   display: flex;
+
+justify-content: center;
+}
+
+.red{
+    width: 30px;
+}
+
+.col-4 span{
+    margin-left: 12%;
+   
+}
+
+.company{
+    margin-top: 20px;
+}
+
+
+#hola{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    left: 255px;
+}

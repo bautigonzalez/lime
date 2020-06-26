@@ -19,15 +19,15 @@ class ProductsContainer extends React.Component{
     }
 }
 
-const mapStateToProps = function(state, ownProps){
-     const searchP = state.navbar.search
+const mapStateToProps = function(state){
+     const searchP = state.navbar.search.toLowerCase()
   return { //mas o menos asi
-    products : searchP.length ? state.products.products.filter(product => product.name.includes(searchP)) : state.products.products,
+    products : searchP.length ? state.products.products.filter(product => product.name.toLowerCase().includes(searchP)) : state.products.products,
     search : state.navbar.search
   }
 }
 
-const mapDispatchToProps = function(dispatch, ownProps){
+const mapDispatchToProps = function(dispatch){
     return{
         fetchProducts: (name)=>dispatch(fetchProducts(name))
     }

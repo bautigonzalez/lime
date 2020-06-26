@@ -8,7 +8,7 @@
           <div className="container peliculas">
               <div className="row">
                   <div className="col-6 centrado">
-                      <h4 id="login" className="loginh4">Iniciar sesión</h4>
+                      <h4 id="login" className="loginh4 mayuscula">Iniciar sesión</h4>
                       <Form onSubmit={handleSubmit}>
                           <Form.Group controlId="formBasicEmail">
                               <Form.Label>Email</Form.Label>
@@ -30,16 +30,29 @@
                               value={password}
                               />
                           </Form.Group>
-                          <Button className="submitButton" type="submit">
+                          <Button className="submitButton" type="submit" id="ingresar">
                               Ingresar
                           </Button>
                       </Form>
                   </div>
                   <div className="col-6 beneficios">
-                      <h4 className="loginh4">CREAR UNA CUENTA</h4>     
-                      <p>Crear una cuenta es fácil. Introduce tu dirección de correo electrónico, diligencia el formulario de la página siguiente y disfruta de los beneficios de tener una cuenta.</p>
+                      <h4 className="loginh4 centrado">CREAR UNA CUENTA</h4>     
+                      <p className="bajar" id="minuscula">Crear una cuenta es fácil. Introduce tu dirección de correo electrónico, diligencia el formulario de la página siguiente y disfruta de los beneficios de tener una cuenta.</p>
+                      <ul>
+                          <li>
+                          Una sola cuenta global con la que podrás acceder a todos los productos y servicios de adidas.
+                          </li>
+                          <li>
+                          Finalizar tus pedidos más rápido
+
+                          </li>
+                          <li>
+                          Consultar tu historial de pedidos
+
+                          </li>
+                      </ul>
                       {tipo=="Registrarse" ? (<></>):(<>
-                      <Link to="/user/register"><Button className="submitButton">Registrarse</Button></Link>
+                      <Link to="/user/register"><Button className="submitButton" id="registrase">Registrarse</Button></Link>
                       </>)}
                   </div>
               </div>

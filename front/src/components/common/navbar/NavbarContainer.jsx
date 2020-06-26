@@ -21,15 +21,14 @@ class NavbarContainer extends React.Component{
     handlerChange(evt) {
         const value = evt.target.value
         console.log("i am handling change: ", value)
-        this.setState({ input : value })
+        this.setState({ input : value })        
     }
 
     handlerSubmit() { 
         event.preventDefault()
         this.props.searching(this.state.input)
-        .then(() => {
-            return this.props.history.push("/products");
-          });
+        return this.props.history.push("/products");
+          
     }
     render(){
 
