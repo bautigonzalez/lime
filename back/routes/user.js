@@ -10,7 +10,6 @@ router.post("/register", (req, res, next)=>{
 })
 
 router.post("/login", passport.authenticate("local"), (req, res, next)=>{
-  console.log("ESTAS LOGGEADO");
   res.json(req.user)
 })
 
@@ -18,11 +17,18 @@ router.post("/login", passport.authenticate("local"), (req, res, next)=>{
 router.get("/logout", (req, res, next) => {
   if (req.isAuthenticated()) {
     req.logout()  
-    console.log("ESTAS DESLOGGEADO");
   }
   res.sendStatus(200);
 })
 
+router.get("/check", (req, res, next) => {
+  // if (req.isAuthenticated()) {
+  //   res.json(req.user)
+  // } else {
+  //   res.json({})
+  // }
+  res.json(req.user)
+})
 
 router.get("/:id", (req, res, next) => {
   User.findByPk(req.params.id)
@@ -65,6 +71,7 @@ router.post("/:id/cart", (req, res, next) => {
       res.sendStatus(201)
     })
 })
+
 
 router.get("/admin", (req, res, next) => {
   

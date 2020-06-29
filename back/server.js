@@ -21,17 +21,17 @@ app.use(express.urlencoded({ extended: false }))
 //Static
 app.use(express.static(__dirname + "/public"))
 
+app.use(session({
+  secret: "lime",
+  resave: true,
+  saveUninitialized: true,
+})
+)
+
 //passport
 app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
-
-app.use(session({
-    secret: "lime",
-    resave: false,
-    saveUninitialized: true,
-  })
-)
 
 passport.use(
   new LocalStrategy(function (username, password, done) {
@@ -49,10 +49,8 @@ passport.use(
   })
 )
 
-
-
 passport.serializeUser(function(user,done){
-  done(null,user)
+  done(null,user.id)
 })
 
 passport.deserializeUser(function(id,done){

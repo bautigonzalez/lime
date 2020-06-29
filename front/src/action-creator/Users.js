@@ -33,3 +33,6 @@ export const deslogueandome = function(){
         .then(()=>dispatch(logoutUser()))
     }
 }
+
+export const authenticate = () => (dispatch) =>
+    axios.get(`/api/user/check`).then((res) => dispatch(loginUser(res.data)))
