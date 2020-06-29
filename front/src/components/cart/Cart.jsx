@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.css";
 
 
-export default ({ orders, total, username, handleChange, disabledButton }) => (
+export default ({ orders, total, username, handleChange, disabledButton, handleClick, handleComplete }) => (
   <div className="container">
    
 <div className="card" style={{marginTop:"50px" ,marginBottom:"20px"}}>
@@ -52,13 +52,13 @@ export default ({ orders, total, username, handleChange, disabledButton }) => (
                     <td className="tds"></td>
                     <td className="tds">${product.price}</td>
                     <td className="tds">
-                      <input id={product.id} placeholder="1" min="1" max="10" onChange={(e)=>handleChange(product.id, product.price, e)} type="number" aria-label="Search" className="form-control"  style={{width: "100px"}}/>
+                      <input id={product.id} placeholder={product.order.cant} min="1" max="10" onChange={(e)=>handleChange(product.id, product.price, e)} type="number" aria-label="Search" className="form-control"  style={{width: "100px"}}/>
                     </td>
                     <td className="tds">
                       <strong id={`total${product.id}`}>{product.price}</strong>
                     </td>
                     <td className="tds">
-                      <button type="button" className="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
+              <button type="button" className="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" onClick={() => handleClick(product.id)} 
                         title="Remove item">X
                       </button>
                     </td>
@@ -90,7 +90,7 @@ export default ({ orders, total, username, handleChange, disabledButton }) => (
    </h4>
  </td>
  <td colspan="3" className="text-right">
-   <button type="button" className="btn btn-primary btn-rounded">Completar Compra</button>
+   <button type="button" className="btn btn-primary btn-rounded" onClick = {()=> handleComplete()}>Completar Compra</button>
  </td>
 </tr>
 </tbody>

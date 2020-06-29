@@ -6,3 +6,6 @@ export const VIEW_CART = "VIEW_CART"
 export const ADD_CART = "ADD_CART"
 export const SEARCH_PRODUCTS = "SEARCH_PRODUCTS"
 export const LOGOUT = "LOGOUT"
+export const UPDATE_PRODUCT = "UPDATE_PRODUCT"
+export const DELETE_PRODUCT = "DELETE_PRODUCT"
+
