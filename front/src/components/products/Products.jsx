@@ -6,7 +6,7 @@ import {MDBIcon} from "mdbreact"
 
 
 
-export default ({ products}) => {
+export default ({ products, addToCart, userId}) => {
 console.log("esto es products: ", products)
 return (
   
@@ -56,7 +56,7 @@ return (
                   </h5>
                 </span>
                 <span className='float-right' style={{backgroundColor:'white', border:"none"}}>
-                   <MDBIcon icon="cart-plus" id="cart" />
+              <MDBIcon icon="cart-plus" id="cart" onClick={() => { addToCart(product, userId)}}/>
                 </span>
               </div>
        </div>
