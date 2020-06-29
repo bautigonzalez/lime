@@ -8,8 +8,8 @@ export default ({ orders, total, username, handleChange, disabledButton }) => (
 <div className="card" style={{marginTop:"50px" ,marginBottom:"20px"}}>
 <div className="card-body">
 
-<p className="division">carrito de {username.split("@").shift()}:</p>
- <div className="table-responsive">
+<p className="division">carrito de {username ? username.split("@").shift() : "Invitado"}:</p>
+ <div class="table-responsive">
 
    <table className="table product-table">
 
