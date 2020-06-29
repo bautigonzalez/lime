@@ -4,7 +4,6 @@ const passport = require('passport')
 const { User, Cart, Order, Product } = require("../models");
 
 router.post("/register", (req, res, next)=>{
-  console.log("me estoy registrando")
   User.create(req.body)
   .then((user)=>res.status(201).json(user))
 })
@@ -22,11 +21,6 @@ router.get("/logout", (req, res, next) => {
 })
 
 router.get("/check", (req, res, next) => {
-  // if (req.isAuthenticated()) {
-  //   res.json(req.user)
-  // } else {
-  //   res.json({})
-  // }
   res.json(req.user)
 })
 

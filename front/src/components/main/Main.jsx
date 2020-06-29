@@ -8,7 +8,6 @@ import LoginContainer from "../login/LoginContainer";
 import CartContainer from "../cart/CartContainer";
 import PresentacionContainer from "../common/presentation/PresentacionContainer";
 import Footer from "../common/footer/Footer";
-import PRUEBA from "../cart/prueba";
 import Contact from "../common/extrasFooter/contacs";
 import Developers from "../common/extrasFooter/developers";
 import { authenticate } from "../../action-creator/Users"
