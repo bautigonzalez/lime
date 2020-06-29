@@ -17,6 +17,8 @@ class NavbarContainer extends React.Component{
         this.handlerChange = this.handlerChange.bind(this)
         this.handlerSubmit = this.handlerSubmit.bind(this)
         this.logout = this.logout.bind(this)
+        this.handleClick = this.handleClick.bind(this)
+
 
     } //vemos que captura el input 
     handlerChange(evt) {
@@ -32,6 +34,10 @@ class NavbarContainer extends React.Component{
         return this.props.history.push("/products");
     }
 
+    handleClick(category) {
+        this.props.searching(category)
+    }
+
     logout(){
         this.props.deslogueandome()
         return this.props.history.push("/");
@@ -45,6 +51,7 @@ class NavbarContainer extends React.Component{
             handlerChange={this.handlerChange} 
             handlerSubmit={this.handlerSubmit}
             deslogueandome={this.logout}
+            handleClick={this.handleClick}
             value={this.state.input}
             />)
     }
@@ -53,8 +60,7 @@ class NavbarContainer extends React.Component{
 const mapStateToProps = function(state, ownProps){
     return {
         userId: state.user.loginUser.id,
-        username: state.user.loginUser.username,
-        
+        username: state.user.loginUser.username, 
     }
 }
 
@@ -62,11 +68,8 @@ const mapDispatchToProps = function(dispatch) {
     return {
         searching : (search) => {
             dispatch (searching(search))
-
         },
         deslogueandome: ()=>dispatch(deslogueandome())
-
-
     }
 }
 
