@@ -66,6 +66,22 @@ router.post("/:id/cart", (req, res, next) => {
     })
 })
 
+router.put("/:id/cart", (req, res, next) => {
+  Cart.findOne({
+    include :[
+      {
+          model: Product,
+          through: Order
+      }],
+    where: {
+      userId: req.params.id,
+      state: "pending"
+    }
+  })
+  .then(orders=>{
+    console.log(orders)
+    res.json(orders)})
+});
 
 router.get("/admin", (req, res, next) => {
   
