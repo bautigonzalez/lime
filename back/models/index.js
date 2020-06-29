@@ -1,9 +1,9 @@
 const User = require("./users");
 const Product = require("./products");
 const Cart = require("./carts")
-const Category = require("./categorys")
+//const Category = require("./categorys")
 const Review = require("./reviews")
-const Mark = require("./mark")
+//const Mark = require("./mark")
 const Order = require("./orders")
 
 
@@ -19,8 +19,8 @@ Review.belongsTo(Product)
 
 
 //Relaciones de Producto ?? ya seteamos la marca y categoria
-Product.belongsTo(Mark)
-Product.belongsTo(Category)
+/* Product.belongsTo(Mark)
+Product.belongsTo(Category) */
 
 
 //Relacion de Orden
@@ -42,4 +42,4 @@ Product.belongsToMany(User, { through: Review });
 
 
 
-module.exports = { User, Product, Cart, Category, Review, Mark, Order};
+module.exports = { User, Product, Cart, Review, Order};

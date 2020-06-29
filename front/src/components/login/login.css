@@ -34,9 +34,7 @@
     text-align: center;
 }
 
-.peliculas p{
-    margin-bottom: 0px;
-}
+
 
 .peliculas p:nth-child(3n){
     margin-bottom: 5px;
@@ -67,10 +65,12 @@ ul {
   
 ul li:before {
   content: '✓';
+  margin-right: 10px;
 }
 
 .bajar{
-    margin-bottom: 20px !important
+    margin-bottom: 20px !important ;
+    margin-left: 30px;
 }
 #ingresar{
     margin-top: 50px !important

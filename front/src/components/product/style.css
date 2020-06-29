@@ -21,3 +21,9 @@
     background-color: #819E31 !important;
     color: black !important;
 }
+
+
+.precioFinal{
+    display: flex;
+    justify-content: flex-end;
+}
