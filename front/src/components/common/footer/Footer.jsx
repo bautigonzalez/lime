@@ -1,5 +1,6 @@
 import React from 'react';
 import "./foter.css"
+import { Link } from 'react-router-dom';
 
 export default () => (
     <div className="container-fluid" id="footer">
@@ -25,7 +26,7 @@ export default () => (
                     <span><a href="#">Ayuda</a></span>
                     <span><a href="#">Obtener Lime App</a></span>
                     <span><a href="#">Empresa</a></span>
-                    <span><a href="#">Desarrolladores</a></span>
+                    <span><Link to="/developers">Desarrolladores</Link></span>
                     <span><a href="#">Servicio</a></span>
                 </div>
             </div>
@@ -39,7 +40,7 @@ export default () => (
                     <span></span>
                     <span><a href="#">Accesibilidad</a></span>
                     <span><a href="#">Nosotros</a></span>
-                    <span><a href="#">Contactar</a></span>
+                    <span><Link to="/contact">Contactar</Link></span>
                     <span><a href="#">Privacidad</a></span>
                     <span><a href="#">RRHH</a></span>
                 </div>

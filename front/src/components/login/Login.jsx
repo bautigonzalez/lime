@@ -5,8 +5,8 @@
   
   export default ({ passwordChange, usernameChange, handleSubmit, username, password, tipo }) => (
       <div className="fondo">
-          <div className="container peliculas">
-              <div className="row">
+          <div className="container peliculas" id="peliculas">
+              <div className="row" style={{marginTop:"90px"}}>
                   <div className="col-6 centrado">
                       <h4 id="login" className="loginh4 mayuscula">Iniciar sesión</h4>
                       <Form onSubmit={handleSubmit}>
@@ -40,7 +40,7 @@
                       <p className="bajar" id="minuscula">Crear una cuenta es fácil. Introduce tu dirección de correo electrónico, diligencia el formulario de la página siguiente y disfruta de los beneficios de tener una cuenta.</p>
                       <ul>
                           <li>
-                          Una sola cuenta global con la que podrás acceder a todos los productos y servicios de adidas.
+                          Una sola cuenta global con la que podrás acceder a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;todos los productos y servicios de adidas.
                           </li>
                           <li>
                           Finalizar tus pedidos más rápido

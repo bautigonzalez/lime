@@ -12,6 +12,9 @@ Product.init(
             type: Sequelize.TEXT,
             allowNull: false,
         },
+        category:{
+            type:Sequelize.ENUM(['Celulares', 'Notebooks','Accesorios'])
+        },
         valoration:{
             type: Sequelize.INTEGER
         },

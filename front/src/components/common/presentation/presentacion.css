@@ -7,3 +7,28 @@
 
 }
 
+.tecnologia{
+     margin-top: 115px;
+     margin-bottom: 79px ;
+     margin-right: 200px;
+    margin-left: 200px;
+ 
+}
+ 
+
+
+ .unooo:hover{
+      transform: scale(1);
+      box-shadow: 5px 5px 15px black ;
+      transition: 0.5s ease;
+      cursor: pointer;
+ }
+
+ #ja{
+     width: 520px;
+     margin: 20px;
+     padding: 0px;
+     padding-top: 20px;
+     padding-bottom: 10px;
+     border-radius: 0.5rem  1.5rem 1.5rem 2.5rem ;
+ }
