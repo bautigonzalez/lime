@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Dropdown, Button } from "react-bootstrap";
+import { Dropdown, Button, NavDropdown } from "react-bootstrap";
 import "./navbar.css";
 
 export default ({
@@ -14,9 +14,9 @@ export default ({
 }) => {
   return (
     <header className="header">
-      <div className="container">
-        <nav className="row nav-principal">
-          <Link to="/">
+      <div className="container" style={{maxWidth:"1240px"}}>
+        <nav className="row nav-principal" style={{display:'flex', justifyContent:"space-around"}}>
+          <Link to="/" >
             <img
               className="icon"
               src="https://cdn2.iconfinder.com/data/icons/fruit-and-vegetables-3/200/276-512.png"
@@ -24,28 +24,25 @@ export default ({
           </Link>
           {userId ? (
             <>
-              <div className="costado">
-                <p> Hola {username.split("@").shift()} </p>
-                <Link className="cart" to={`/user/${userId}/cart`}>
-                  <i className="fas fa-shopping-cart"></i>&nbsp;Carrito
-                </Link>
-                <Link className="cart" onClick={deslogueandome}>
-                  Cerrar sesión
-                </Link>
+              <div >
+                <h6 className='saludo'> Hola {username.split("@").shift()} </h6>
+                
               </div>
             </>
           ) : (
             <>
-              <Link to="/user/login">Iniciar sesión</Link>
+              <Link className="navv" to="/user/login">Iniciar sesión</Link>
             </>
             
           )}
-
+            
           <form
-            className="row nav-principal"
+          
+            className="buscador"
             onSubmit={handlerSubmit}
             id="search"
           >
+            
             <input
               onChange={handlerChange}
               value={value}
@@ -59,16 +56,56 @@ export default ({
               id="botonSearch"
               type="submit"
               className="btn btn-outline-light"
+              id="buscador"
             >
               <i className="fa fa-search"></i>
             </button>
+            
           </form>
           
-          <Button onClick={() => handleClick("celulares")}>Celulares</Button>
-          <Button onClick={() => handleClick("notebooks")}>Notebooks</Button>
-          <Button onClick={() => handleClick("accesorios")}>Accesorios</Button>
+         
 
+
+
+
+
+
+          <div className='drop'>
+        <a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          Categorias
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="menudrop"  onClick={() => handleClick("celulares")}>Celulares</a>
+          <a class="menudrop"  onClick={() => handleClick("notebooks")}>Notebooks</a>
+          <a class="menudrop"  onClick={() => handleClick("accesorios")}>Accesorios</a>
+          <div class="dropdown-divider"></div>
+          <a class="menudrop"  onClick={() => handleClick("")} >Todos</a>
+        </div>
+      </div>
+         
+        {userId ? (
+            <>
+              <div style={{display:'flex'}}>
+                <Link className="navv2" to={`/user/${userId}/cart`}>
+                  <i className="fas fa-shopping-cart"></i>&nbsp;Carrito
+                </Link>
+                <Link to="#" className="navv2" onClick={deslogueandome}>
+                  Cerrar sesión
+                </Link>
+                
+              </div>
+            </>
+          ) : (
+           null
+            
+          )}
+ 
         </nav>
+
+
+
+
+
       </div>
     </header>
   );

@@ -36,6 +36,7 @@ class NavbarContainer extends React.Component{
 
     handleClick(category) {
         this.props.searching(category)
+        this.props.history.push("/products")
     }
 
     logout(){
@@ -66,9 +67,8 @@ const mapStateToProps = function(state, ownProps){
 
 const mapDispatchToProps = function(dispatch) {
     return {
-        searching : (search) => {
-            dispatch (searching(search))
-        },
+        searching : (search) =>dispatch (searching(search))
+        ,
         deslogueandome: ()=>dispatch(deslogueandome())
     }
 }

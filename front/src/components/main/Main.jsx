@@ -10,6 +10,7 @@ import PresentacionContainer from "../common/presentation/PresentacionContainer"
 import Footer from "../common/footer/Footer";
 import Contact from "../common/extrasFooter/contacs";
 import Developers from "../common/extrasFooter/developers";
+import Prueba from "../common/prueba"
 import { authenticate } from "../../action-creator/Users"
 import { connect } from 'react-redux'
 

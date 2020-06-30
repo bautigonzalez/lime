@@ -41,16 +41,17 @@ p{
     z-index: 5;
 }
 
-.nav-principal a{
+.navv{
+   
     font-size: 15px;
-    margin: 10px;
     font-weight: 200;
     text-decoration: none;
     color: var(--blanco);
     transition: all 200ms;
-    position: relative;
-    right: 190px;
+    margin-left: -151px;
+    margin-top: 10px;
 }
+
 
 .nav-principal p{
     font-size: 15px;
@@ -74,9 +75,8 @@ p{
     max-width: 50px;
     max-height: 45px;
     margin-top: -10px;
-    position: relative;
-    right: 50px;
-    
+    margin-left: -102px;
+    margin-top: -2px;
     
 }
 
@@ -86,23 +86,42 @@ input[type=text] {
     width: 200px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+    height: 33px;
+    margin-top: 2px;
 }
   
   
 input[type=text]:focus {
     width: 350px;
 }
+
+.input-icono{
+  
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding-left: 28px;
+    height: 30px;
+    border: 1px solid rgba(9, 113, 163, 1);
+    border-radius: 3px;
+  }
   
 #search{
   margin-top: 4px;
-    height: 35px;
-    position: relative;
-    right: 150px;
-    width: 650px;
+    width: 570px;
+    padding-left: 70px;
 }
 
 #botonSearch{
-    margin-left: 6px;
+    margin-left: 4px;
+    height: 34px;
+    margin-top: 2px;
+    border: rgba(255, 0, 0, 0);
+    width: 40px;
+    margin-left: 7px;
 }
 
 
@@ -121,4 +140,70 @@ input[type=text]:focus {
 #costado{
     position: relative;
     right: 250px;
+}
+
+.saludo{
+    text-transform: uppercase;
+    color: #d2cfcf;
+    margin-top: 11px;
+    margin-left: -57px;
+    padding-left: 46px;
+    font-weight: 400;
+    margin-right: 45px;
+}
+
+.drop{
+
+    color:black;
+    position: relative;
+    z-index: 50;
+    color: var(--blanco);
+    transition: all 200ms;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+.menudrop{
+    cursor: pointer;
+    font-size: 17px;
+    font-family: unset;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 13px;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center
+}
+
+
+
+#buscador{
+	background-color: #ff000000;
+    border: 0px;
+    position: relative;
+    top: 0px;
+    right: 37px;
+    color: #7a7878;
+    display: flex;
+    align-items: center;
+    height: 37px;
+
+}
+
+.navv2{
+    display: flex;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--blanco);
+    transition: all 200ms;
+    margin-left: 30px;
+    /* margin-top: 10px; */
+    align-items: center;
 }
