@@ -1,4 +1,4 @@
-import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT } from "../constants"
+import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT, HISTORY_CART, ADD_INVITADO_CART, DELETE_INVITADO_CART, DELETE_INVITADO_PRODUCT } from "../constants"
 import axios from "axios"
 
 const viewCart = (orders) => ({
@@ -6,36 +6,87 @@ const viewCart = (orders) => ({
     orders,
 })
 
+const viewHistory = (carts) => ({
+    type: HISTORY_CART,
+    carts,})
+
+const addInvitadoCart=(product) =>({
+  type: ADD_INVITADO_CART ,
+  product
+})
+
+const deleteInvitadoCart=()=>({
+    type: DELETE_INVITADO_CART
+})
+
+const deleteInvitadoProduct=(productId)=>({
+    type: DELETE_INVITADO_PRODUCT,
+    productId
+})
+
 export const fetchCart = function(userId){
     return (dispatch)=>{
-        return axios.get(`/api/user/${userId}/cart`)
-        .then(res=>
-        { let cart = res.data ? res.data : {}
-            return dispatch(viewCart(cart))}
-        ) 
+        if(userId !== "invitado"){
+            return axios.get(`/api/user/${userId}/cart`)
+            .then(res=>{ 
+                let cart = res.data ? res.data : {}
+                return dispatch(viewCart(cart))}
+            )  
+        }
+
+       
     }
 }
 
 export const addToCart = function(product, userId){
     return (dispatch)=>{
-        return axios.post(`/api/user/${userId}/cart`, {product})
+        if(userId == "invitado"){
+            return dispatch(addInvitadoCart(product))
+        }
+        else{
+            return axios.post(`/api/user/${userId}/cart`, {product})
+        }
     }
 }
 
 export const deleteProduct = function (productId, userId) {
     return (dispatch) => {
-        return axios.post(`/api/user/${userId}/cart/delete`, { productId })
+        if(userId!=="invitado"){
+            return axios.post(`/api/user/${userId}/cart/delete`, { productId })
+        }
+        else{
+            dispatch(deleteInvitadoProduct(productId))
+        }
     }
 }
 
 export const updateProduct = function (productId, userId, cant) {
     return (dispatch) => {
-        return axios.put(`/api/user/${userId}/cart`, { productId, cant })
+        if(userId!=="invitado"){
+            return axios.put(`/api/user/${userId}/cart`, { productId, cant })
+        }
     }
 }
 
 export const completeCart = function (userId) {
     return (dispatch) => {
         return axios.put(`/api/user/${userId}/cart/checkout`)
+    }
+}
+
+export const deleteCart = function(){
+    return (dispatch)=>{
+        return dispatch(deleteInvitadoCart())
+    }
+}
+
+export const fetchHistoryCart = function (userId) {
+    return (dispatch) => {
+        return axios.get(`/api/user/${userId}/profile`)
+            .then(res => {
+                let cart = res.data ? res.data : []
+                return dispatch(viewHistory(cart))
+            }
+            )
     }
 }

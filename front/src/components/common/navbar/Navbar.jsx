@@ -25,10 +25,8 @@ export default ({
           </Link>
           {userId ? (
             <>
-              <div >
-                <h6 className='saludo'> Hola {name} </h6>
-                
-              </div>
+                <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "0.1px" }}> Hola {name}</Link>
+              </>
             </>
           ) : (
             <>
@@ -83,6 +81,8 @@ export default ({
           <a class="menudrop"  onClick={() => handleClick("")} >Todos</a>
         </div>
       </div>
+
+      
          
         {userId ? (
             <>
@@ -93,11 +93,12 @@ export default ({
                 <Link to="#" className="navv2" onClick={deslogueandome}>
                   Cerrar sesión
                 </Link>
-                
               </div>
             </>
           ) : (
-           null
+            <Link className="navv2" to={`/user/invitado/cart`}>
+            <i className="fas fa-shopping-cart"></i>&nbsp;Carrito
+          </Link>
             
           )}
  

@@ -36,7 +36,7 @@ const mapStateToProps = function (state) {
 const mapDispatchToProps = function(dispatch){
     return{
         fetchProducts: (name)=>dispatch(fetchProducts(name)),
-        addToCart: (product, userId) => dispatch(addToCart(product, userId))
+        addToCart: (product, userId) => dispatch(addToCart(product, userId)),
     }
 }
 

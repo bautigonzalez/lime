@@ -56,7 +56,7 @@ return (
                   </h5>
                 </span>
                 <span className='float-right' style={{backgroundColor:'white', border:"none"}}>
-              <MDBIcon icon="cart-plus" id="cart" onClick={() => { addToCart(product, userId)}}/>
+              <MDBIcon icon="cart-plus" id="cart" onClick={ userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")}/>
                 </span>
               </div>
        </div>

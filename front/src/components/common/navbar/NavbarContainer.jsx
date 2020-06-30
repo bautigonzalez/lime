@@ -5,7 +5,7 @@ import { deslogueandome } from "../../../action-creator/Users"
 import { connect } from "react-redux"
 import { withRouter } from "react-router"
 import { searching } from '../../../action-creator/Navbar'
-
+import { deleteCart } from '../../../action-creator/Cart'
 
 class NavbarContainer extends React.Component{
 
@@ -41,6 +41,7 @@ class NavbarContainer extends React.Component{
 
     logout(){
         this.props.deslogueandome()
+        this.props.deleteCart()
         return this.props.history.push("/");
 
     }
@@ -71,7 +72,8 @@ const mapDispatchToProps = function(dispatch) {
     return {
         searching : (search) =>dispatch (searching(search))
         ,
-        deslogueandome: ()=>dispatch(deslogueandome())
+        deslogueandome: ()=>dispatch(deslogueandome()),
+        deleteCart: ()=>dispatch(deleteCart())
     }
 }
 

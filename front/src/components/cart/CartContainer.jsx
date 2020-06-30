@@ -6,22 +6,43 @@ import {
   deleteProduct,
   updateProduct,
   completeCart,
+  addToCart
 } from "../../action-creator/Cart";
 
 class CartContainer extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      cartInvitado : [],
+      showModal: false,
+    };
     this.total = this.total.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleComplete = this.handleComplete.bind(this);
     this.subtotal = this.subtotal.bind(this);
-
-    //this.disabledButton = this.disabledButton.bind(this)
+    this.mergeCart = this.mergeCart.bind(this);
+    this.closeModal = this.closeModal.bind(this)
+    this.openModal = this.openModal.bind(this)
   }
 
   componentDidMount() {
-    this.props.fetchCart(this.props.userId);
+    if(this.props.userId !== "invitado"){
+      this.mergeCart(this.props.userId)
+      .then(()=>this.props.fetchCart(this.props.userId))
+    }
+    
+    this.subtotal()
+    
+  }
+
+  mergeCart(userId){
+    let prod = JSON.parse(localStorage.getItem('cartInvitado'))
+    let array = []
+    for(let i = 0; i < prod.length; i++ ){
+      array.push(this.props.addToCart(prod[i], userId))
+    }
+    return Promise.all(array)
   }
 
   subtotal(){
@@ -60,28 +81,38 @@ class CartContainer extends React.Component {
     this.props.history.push('/home')
   }
 
-  /* disabledButton(id){
-    document.getElementById(`${id}`).disabled =document.getElementById(`${id}`).value
-} */
+  closeModal() {
+    this.setState({
+      showModal: false,
+    });
+  }
+
+  openModal() {
+    this.setState({
+      showModal: true,
+    });
+  }
 
   render() {
-    console.log("orders", this.props.orders);
+    let cart = JSON.parse(localStorage.getItem('cartInvitado'))
     return (
       <Cart
         orders={this.props.orders}
         total={this.total}
         username={this.props.username}
         handleChange={this.handleChange}
-        //disabledButton={this.disabledButton}
-        //deleteProduct = {this.props.deleteProduct}
         userId={this.props.userId}
         handleClick={this.handleClick}
         handleComplete={this.handleComplete}
+        cartInvitado={cart}
+        openModal={this.openModal}
+        closeModal={this.closeModal}
+        showModal={this.state.showModal}
       />
     );
   }
 }
-const mapDispatchToProps = function (dispatch, ownProps) {
+const mapDispatchToProps = function (dispatch) {
   return {
     fetchCart: (id) => dispatch(fetchCart(id)),
     deleteProduct: (productId, userId) =>
@@ -89,10 +120,12 @@ const mapDispatchToProps = function (dispatch, ownProps) {
     updateProduct: (productId, userId, cant) =>
       dispatch(updateProduct(productId, userId, cant)),
     completeCart: (userId) => dispatch(completeCart(userId)),
+    addToCart: (product, userId) => dispatch(addToCart(product, userId))
   };
 };
 const mapStateToProps = function (state, ownProps) {
   return {
+    cartInvitado: state.cart.products,
     userId: ownProps.match.params.id,
     orders: state.cart.orders,
     username: state.user.loginUser.username,
