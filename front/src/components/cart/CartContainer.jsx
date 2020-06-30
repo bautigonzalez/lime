@@ -16,12 +16,12 @@ class CartContainer extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleComplete = this.handleComplete.bind(this);
     this.subtotal = this.subtotal.bind(this);
-
-    //this.disabledButton = this.disabledButton.bind(this)
+    
   }
 
   componentDidMount() {
-    this.props.fetchCart(this.props.userId);
+    if(this.props.userId !== "invitado") this.props.fetchCart(this.props.userId);
+    
   }
 
   subtotal(){
@@ -65,7 +65,7 @@ class CartContainer extends React.Component {
 } */
 
   render() {
-    console.log("orders", this.props.orders);
+    console.log("CARTINVIDADO:", this.props.cartInvitado)
     return (
       <Cart
         orders={this.props.orders}
@@ -77,11 +77,12 @@ class CartContainer extends React.Component {
         userId={this.props.userId}
         handleClick={this.handleClick}
         handleComplete={this.handleComplete}
+        cartInvitado={this.props.cartInvitado}
       />
     );
   }
 }
-const mapDispatchToProps = function (dispatch, ownProps) {
+const mapDispatchToProps = function (dispatch) {
   return {
     fetchCart: (id) => dispatch(fetchCart(id)),
     deleteProduct: (productId, userId) =>
@@ -93,6 +94,7 @@ const mapDispatchToProps = function (dispatch, ownProps) {
 };
 const mapStateToProps = function (state, ownProps) {
   return {
+    cartInvitado: state.cart.products,
     userId: ownProps.match.params.id,
     orders: state.cart.orders,
     username: state.user.loginUser.username,
