@@ -15,6 +15,7 @@ class CartContainer extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleComplete = this.handleComplete.bind(this);
+    this.subtotal = this.subtotal.bind(this);
 
     //this.disabledButton = this.disabledButton.bind(this)
   }
@@ -23,10 +24,19 @@ class CartContainer extends React.Component {
     this.props.fetchCart(this.props.userId);
   }
 
+  subtotal(){
+      let cont = 0
+      let subtotales = document.getElementsByClassName("subtotal")
+      for(let i = 0; i< subtotales.length; i++){
+          cont += Number(subtotales[i].textContent)
+      }
+      document.getElementById("totalfinal").textContent = cont + " ARS"
+  }
+
   total(products) {
     let contador = 0;
     for (let i = 0; i < products.length; i++) {
-      contador += products[i].price;
+      contador += products[i].price * products[i].order.cant;
     }
     return contador;
   }
@@ -35,11 +45,14 @@ class CartContainer extends React.Component {
     document.getElementById(`total${id}`).textContent =
       Number(e.target.value) * price;
     this.props.updateProduct(id, this.props.userId, Number(e.target.value));
+    this.subtotal()
   }
 
   handleClick(productId) {
-    console.log("LLEGUE", productId, this.props.userId);
+    document.getElementById(`total${productId}`).textContent = 0
+    document.getElementsByClassName(`c${productId}`)[0].className = "invisible"
     this.props.deleteProduct(productId, this.props.userId);
+    this.subtotal()
   }
 
   handleComplete() {
