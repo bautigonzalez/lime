@@ -1,4 +1,4 @@
-import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT, HISTORY_CART } from "../constants"
+import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT, HISTORY_CART, ADD_INVITADO_CART } from "../constants"
 import axios from "axios"
 
 const viewCart = (orders) => ({
@@ -8,22 +8,35 @@ const viewCart = (orders) => ({
 
 const viewHistory = (carts) => ({
     type: HISTORY_CART,
-    carts,
+    carts,})
+
+const addInvitadoCart=(product) =>({
+  type: ADD_INVITADO_CART ,
+  product
 })
 
 export const fetchCart = function(userId){
     return (dispatch)=>{
-        return axios.get(`/api/user/${userId}/cart`)
-        .then(res=>
-        { let cart = res.data ? res.data : {}
-            return dispatch(viewCart(cart))}
-        ) 
+        if(userId !== "invitado"){
+            return axios.get(`/api/user/${userId}/cart`)
+            .then(res=>{ 
+                let cart = res.data ? res.data : {}
+                return dispatch(viewCart(cart))}
+            )  
+        }
+
+       
     }
 }
 
 export const addToCart = function(product, userId){
     return (dispatch)=>{
-        return axios.post(`/api/user/${userId}/cart`, {product})
+        if(userId == "invitado"){
+            return dispatch(addInvitadoCart(product))
+        }
+        else{
+            return axios.post(`/api/user/${userId}/cart`, {product})
+        }
     }
 }
 
