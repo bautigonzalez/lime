@@ -82,6 +82,8 @@ export default ({
           <a class="menudrop"  onClick={() => handleClick("")} >Todos</a>
         </div>
       </div>
+
+      
          
         {userId ? (
             <>
@@ -92,11 +94,12 @@ export default ({
                 <Link to="#" className="navv2" onClick={deslogueandome}>
                   Cerrar sesión
                 </Link>
-                
               </div>
             </>
           ) : (
-           null
+            <Link className="navv2" to={`/user/invitado/cart`}>
+            <i className="fas fa-shopping-cart"></i>&nbsp;Carrito
+          </Link>
             
           )}
  
