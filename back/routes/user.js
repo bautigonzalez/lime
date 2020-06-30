@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const passport = require("passport");
 const { User, Cart, Order, Product } = require("../models");
+const { Op } = require("sequelize");
 
 router.post("/register", (req, res, next) => {
   User.create(req.body).then((user) => res.status(201).json(user));
@@ -28,6 +29,22 @@ router.get("/orders", (req, res, next) => {
 
 router.get("/:id", (req, res, next) => {
   User.findByPk(req.params.id).then((user) => res.json(user));
+});
+
+router.get("/:id/profile", (req, res, next) => {
+  Cart.findAll({
+    include: [
+      {
+        model: Product,
+        through: Order,
+      }],
+    where: {
+      userId: req.params.id,
+      state: {[Op.not]: "pending"}
+    },
+  }).then((orders) => {
+    res.json(orders);
+  });
 });
 
 router.get("/:id/cart", (req, res, next) => {

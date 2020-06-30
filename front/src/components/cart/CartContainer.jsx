@@ -11,13 +11,16 @@ import {
 class CartContainer extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      showModal: false,
+    };
     this.total = this.total.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleComplete = this.handleComplete.bind(this);
     this.subtotal = this.subtotal.bind(this);
-
-    //this.disabledButton = this.disabledButton.bind(this)
+    this.closeModal = this.closeModal.bind(this)
+    this.openModal = this.openModal.bind(this)
   }
 
   componentDidMount() {
@@ -60,9 +63,17 @@ class CartContainer extends React.Component {
     this.props.history.push('/home')
   }
 
-  /* disabledButton(id){
-    document.getElementById(`${id}`).disabled =document.getElementById(`${id}`).value
-} */
+  closeModal() {
+    this.setState({
+      showModal: false,
+    });
+  }
+
+  openModal() {
+    this.setState({
+      showModal: true,
+    });
+  }
 
   render() {
     console.log("orders", this.props.orders);
@@ -72,11 +83,12 @@ class CartContainer extends React.Component {
         total={this.total}
         username={this.props.username}
         handleChange={this.handleChange}
-        //disabledButton={this.disabledButton}
-        //deleteProduct = {this.props.deleteProduct}
         userId={this.props.userId}
         handleClick={this.handleClick}
         handleComplete={this.handleComplete}
+        openModal={this.openModal}
+        closeModal={this.closeModal}
+        showModal={this.state.showModal}
       />
     );
   }

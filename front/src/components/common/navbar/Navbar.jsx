@@ -24,10 +24,10 @@ export default ({
           </Link>
           {userId ? (
             <>
-              <div >
-                <h6 className='saludo'> Hola {username.split("@").shift()} </h6>
+              < >
+                <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "0.1px" }}> Hola {username.split("@").shift()}</Link>
                 
-              </div>
+              </>
             </>
           ) : (
             <>

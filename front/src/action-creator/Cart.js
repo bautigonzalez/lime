@@ -1,9 +1,14 @@
-import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT } from "../constants"
+import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT, HISTORY_CART } from "../constants"
 import axios from "axios"
 
 const viewCart = (orders) => ({
     type: VIEW_CART,
     orders,
+})
+
+const viewHistory = (carts) => ({
+    type: HISTORY_CART,
+    carts,
 })
 
 export const fetchCart = function(userId){
@@ -37,5 +42,16 @@ export const updateProduct = function (productId, userId, cant) {
 export const completeCart = function (userId) {
     return (dispatch) => {
         return axios.put(`/api/user/${userId}/cart/checkout`)
+    }
+}
+
+export const fetchHistoryCart = function (userId) {
+    return (dispatch) => {
+        return axios.get(`/api/user/${userId}/profile`)
+            .then(res => {
+                let cart = res.data ? res.data : []
+                return dispatch(viewHistory(cart))
+            }
+            )
     }
 }

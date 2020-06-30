@@ -6,11 +6,12 @@ import NavbarContainer from "../common/navbar/NavbarContainer";
 import RegisterContainer from "../register/RegisterContainer";
 import LoginContainer from "../login/LoginContainer";
 import CartContainer from "../cart/CartContainer";
+import UsersContainer from "../users/UsersContainer";
+import ReviewsContainer from "../reviews/ReviewsContainer";
 import PresentacionContainer from "../common/presentation/PresentacionContainer";
 import Footer from "../common/footer/Footer";
 import Contact from "../common/extrasFooter/contacs";
 import Developers from "../common/extrasFooter/developers";
-import Prueba from "../common/prueba"
 import { authenticate } from "../../action-creator/Users"
 import { connect } from 'react-redux'
 
@@ -41,10 +42,12 @@ class Main extends React.Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/developers" component={Developers} />
           <Route exact path="/products" component={ProductsContainer} />
-          <Route path="/product/:id" component={ProductContainer} />
+          <Route exact path="/product/:id" component={ProductContainer} />
           <Route path="/user/register" component={RegisterContainer} />
           <Route path="/user/login" component={LoginContainer} />
           <Route path="/user/:id/cart" component={CartContainer} />
+          <Route path="/user/:id/profile" component={UsersContainer} />
+          <Route path="/product/:id/review" component={ReviewsContainer} />
           <Redirect from="/" to="/home" />
         </Switch>
         <Footer />

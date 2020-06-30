@@ -8,4 +8,6 @@ export const SEARCH_PRODUCTS = "SEARCH_PRODUCTS"
 export const LOGOUT = "LOGOUT"
 export const UPDATE_PRODUCT = "UPDATE_PRODUCT"
 export const DELETE_PRODUCT = "DELETE_PRODUCT"
-
+export const HISTORY_CART = "HISTORY_CART"
+export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS"
+export const ADD_REVIEW = "ADD_REVIEW"
