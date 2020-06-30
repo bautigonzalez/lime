@@ -1,10 +1,14 @@
-import { VIEW_CART, ADD_INVITADO_CART, DELETE_INVITADO_CART, DELETE_INVITADO_PRODUCT } from "../constants"
+import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT, HISTORY_CART, ADD_INVITADO_CART, DELETE_INVITADO_CART, DELETE_INVITADO_PRODUCT } from "../constants"
 import axios from "axios"
 
 const viewCart = (orders) => ({
     type: VIEW_CART,
     orders,
 })
+
+const viewHistory = (carts) => ({
+    type: HISTORY_CART,
+    carts,})
 
 const addInvitadoCart=(product) =>({
   type: ADD_INVITADO_CART ,
@@ -73,5 +77,16 @@ export const completeCart = function (userId) {
 export const deleteCart = function(){
     return (dispatch)=>{
         return dispatch(deleteInvitadoCart())
+    }
+}
+
+export const fetchHistoryCart = function (userId) {
+    return (dispatch) => {
+        return axios.get(`/api/user/${userId}/profile`)
+            .then(res => {
+                let cart = res.data ? res.data : []
+                return dispatch(viewHistory(cart))
+            }
+            )
     }
 }
