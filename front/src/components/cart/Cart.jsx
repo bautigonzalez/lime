@@ -1,12 +1,10 @@
 import React from 'react';
 import "./style.css";
+import { Modal, Button, Form } from "react-bootstrap";
 
 
-export default ({ orders, total, username, handleChange, disabledButton, handleClick, handleComplete, cartInvitado }) => {
-  
-  
-  return(
-  
+export default ({ orders, total, username, handleChange, disabledButton, handleClick, handleComplete, openModal, closeModal, showModal, cartInvitado }) => (
+
   <div className="container">
    
 <div className="card" style={{marginTop:"50px" ,marginBottom:"20px"}}>
@@ -124,7 +122,7 @@ export default ({ orders, total, username, handleChange, disabledButton, handleC
    </h4>
  </td>
  <td colspan="3" className="text-right">
-   <button type="button" className="btn btn-primary btn-rounded" onClick = {()=> handleComplete()}>Completar Compra</button>
+   <button type="button" className="btn btn-primary btn-rounded" onClick = {()=> openModal()}>Completar Compra</button>
  </td>
 </tr>
 </tbody>
@@ -138,6 +136,37 @@ export default ({ orders, total, username, handleChange, disabledButton, handleC
 
 </div>
 </div>
+    <Modal show={showModal} onHide={closeModal}>
+      <Form>
+        <Modal.Header>
+          <Modal.Title>Antes de finalizar...</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+
+          <Form.Group>
+            <Form.Label>Confirmar direccion</Form.Label>
+            <Form.Control type="text" style={{ width: "100%" }} placeholder="Direccion" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Codigo postal</Form.Label>
+            <Form.Control type="text" style={{ width: "100%" }} placeholder="CP" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Numero de tarjeta de credito</Form.Label>
+            <Form.Control type="text" style={{width:"100%"}} placeholder="Ingrese los 16 digitos del frente de su tarjeta" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>CCV</Form.Label>
+            <Form.Control type="password" placeholder="Ingrese los 3 digitos del dorso de la tarjeta" />
+          </Form.Group>
+        </Modal.Body>
+
+                <Modal.Footer>
+          <Button onClick={() => handleComplete()} bsStyle="success">Confirmar</Button>
+          <Button onClick={closeModal} >Cerrar</Button>
+        </Modal.Footer>
+      </Form>
+    </Modal>
 </div>
  
-)}
+)

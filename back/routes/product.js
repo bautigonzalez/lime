@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const {Product , Review} =require('../models')
+const {Product , Review, User} =require('../models')
 
 
 /// MARCA Y CATEGORIA ??
@@ -54,13 +54,14 @@ router.post('/:id/review', (req,res,next)=>{
 
 router.get('/:id/review',(req,res)=>{
     Review.findAll({
+        include: [
+            {
+                model: User
+            }],
         where:{productId: req.params.id}
     })
     .then(reviews => res.json(reviews))
 })
-
-
-
 
 module.exports = router;
 
