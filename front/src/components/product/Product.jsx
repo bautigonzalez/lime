@@ -38,7 +38,7 @@ export default ({ product, addToCart, userId, reviews }) => (
               <br />
               <br />
               <Rating value={product.valoration} readOnly size="medium" />              
-              <Button onClick={() => { addToCart(product, userId) }} variant="primary" style={{ marginLeft: '115px', backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
+              <Button onClick={userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")} variant="primary" style={{ marginLeft: '115px', backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
               <br/>
           </Card.Text>
         </Card.Body>

@@ -6,12 +6,14 @@ import {
   deleteProduct,
   updateProduct,
   completeCart,
+  addToCart
 } from "../../action-creator/Cart";
 
 class CartContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      cartInvitado : [],
       showModal: false,
     };
     this.total = this.total.bind(this);
@@ -19,13 +21,28 @@ class CartContainer extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleComplete = this.handleComplete.bind(this);
     this.subtotal = this.subtotal.bind(this);
+    this.mergeCart = this.mergeCart.bind(this);
     this.closeModal = this.closeModal.bind(this)
     this.openModal = this.openModal.bind(this)
   }
 
   componentDidMount() {
-    if(this.props.userId !== "invitado") this.props.fetchCart(this.props.userId);
+    if(this.props.userId !== "invitado"){
+      this.mergeCart(this.props.userId)
+      .then(()=>this.props.fetchCart(this.props.userId))
+    }
     
+    this.subtotal()
+    
+  }
+
+  mergeCart(userId){
+    let prod = JSON.parse(localStorage.getItem('cartInvitado'))
+    let array = []
+    for(let i = 0; i < prod.length; i++ ){
+      array.push(this.props.addToCart(prod[i], userId))
+    }
+    return Promise.all(array)
   }
 
   subtotal(){
@@ -77,7 +94,7 @@ class CartContainer extends React.Component {
   }
 
   render() {
-    console.log("CARTINVIDADO:", this.props.cartInvitado)
+    let cart = JSON.parse(localStorage.getItem('cartInvitado'))
     return (
       <Cart
         orders={this.props.orders}
@@ -87,13 +104,10 @@ class CartContainer extends React.Component {
         userId={this.props.userId}
         handleClick={this.handleClick}
         handleComplete={this.handleComplete}
-
+        cartInvitado={cart}
         openModal={this.openModal}
         closeModal={this.closeModal}
         showModal={this.state.showModal}
-
-        cartInvitado={this.props.cartInvitado}
-
       />
     );
   }
@@ -106,6 +120,7 @@ const mapDispatchToProps = function (dispatch) {
     updateProduct: (productId, userId, cant) =>
       dispatch(updateProduct(productId, userId, cant)),
     completeCart: (userId) => dispatch(completeCart(userId)),
+    addToCart: (product, userId) => dispatch(addToCart(product, userId))
   };
 };
 const mapStateToProps = function (state, ownProps) {

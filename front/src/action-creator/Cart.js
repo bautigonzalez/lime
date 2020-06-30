@@ -1,4 +1,4 @@
-import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT, HISTORY_CART, ADD_INVITADO_CART } from "../constants"
+import { VIEW_CART, UPDATE_PRODUCT, DELETE_PRODUCT, HISTORY_CART, ADD_INVITADO_CART, DELETE_INVITADO_CART, DELETE_INVITADO_PRODUCT } from "../constants"
 import axios from "axios"
 
 const viewCart = (orders) => ({
@@ -13,6 +13,15 @@ const viewHistory = (carts) => ({
 const addInvitadoCart=(product) =>({
   type: ADD_INVITADO_CART ,
   product
+})
+
+const deleteInvitadoCart=()=>({
+    type: DELETE_INVITADO_CART
+})
+
+const deleteInvitadoProduct=(productId)=>({
+    type: DELETE_INVITADO_PRODUCT,
+    productId
 })
 
 export const fetchCart = function(userId){
@@ -42,19 +51,32 @@ export const addToCart = function(product, userId){
 
 export const deleteProduct = function (productId, userId) {
     return (dispatch) => {
-        return axios.post(`/api/user/${userId}/cart/delete`, { productId })
+        if(userId!=="invitado"){
+            return axios.post(`/api/user/${userId}/cart/delete`, { productId })
+        }
+        else{
+            dispatch(deleteInvitadoProduct(productId))
+        }
     }
 }
 
 export const updateProduct = function (productId, userId, cant) {
     return (dispatch) => {
-        return axios.put(`/api/user/${userId}/cart`, { productId, cant })
+        if(userId!=="invitado"){
+            return axios.put(`/api/user/${userId}/cart`, { productId, cant })
+        }
     }
 }
 
 export const completeCart = function (userId) {
     return (dispatch) => {
         return axios.put(`/api/user/${userId}/cart/checkout`)
+    }
+}
+
+export const deleteCart = function(){
+    return (dispatch)=>{
+        return dispatch(deleteInvitadoCart())
     }
 }
 

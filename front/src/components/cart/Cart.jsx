@@ -132,7 +132,9 @@ export default ({ orders, total, username, handleChange, disabledButton, handleC
  : 
  
  
- <h1 id="totalfinal" className="total">Total 0 ARS</h1>}
+ <h4 >
+ <strong>Total: </strong><strong id="totalfinal">0 ARS</strong>
+</h4>}
 
 </div>
 </div>
