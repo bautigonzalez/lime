@@ -16,6 +16,18 @@ return(
         <Carousel.Item >
           <img
             className="d-block w-100"
+            src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/banner-hero-giveback-support.image.large_2x.jpg" 
+            style={{height:"600px"}}
+          />
+          <div class="carousel-caption" style={{color:"black", position:"relative", top:"-360px" , left:"-500px"}}>
+          <h3>Los mejores accesorios</h3>
+                <p>OFERTAS DE HASTA 50%</p>
+                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Mas info</Button>
+            </div>
+        </Carousel.Item>
+        <Carousel.Item >
+          <img
+            className="d-block w-100"
             src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/banner-hero-app-store.image.large_2x.jpg"
             style={{height:"600px"}}
           />
@@ -24,18 +36,6 @@ return(
                 <h3>Notebooks Y Smarphones</h3>
                 <p>ULTIMOS MODELOS DISPONIBLES</p>
             <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px" }}>Ver mas</Button></Link>
-            </div>
-        </Carousel.Item>
-        <Carousel.Item >
-          <img
-            className="d-block w-100"
-            src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/banner-hero-giveback-support.image.large_2x.jpg" 
-            style={{height:"600px"}}
-          />
-          <div class="carousel-caption" style={{color:"black", position:"relative", top:"-360px" , left:"-500px"}}>
-          <h3>Los mejores accesorios</h3>
-                <p>OFERTAS DE HASTA 50%</p>
-                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Mas info</Button>
             </div>
         </Carousel.Item>
       </Carousel>
