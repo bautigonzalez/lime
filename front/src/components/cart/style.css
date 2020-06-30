@@ -20,3 +20,7 @@ height: 180px;
 .tds{
     vertical-align: middle !important ;
 }
+
+.invisible{
+    display: none;
+}

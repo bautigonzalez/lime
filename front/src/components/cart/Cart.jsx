@@ -38,7 +38,7 @@ export default ({ orders, total, username, handleChange, disabledButton, handleC
     
      <tbody>
         { orders.products ? (<>{orders.products.map((product) => (
-                    <tr key={product.id} id="the" style={{verticalAlign:"initial"}}>
+                    <tr key={product.id} id="the" className={`c${product.id}`} style={{verticalAlign:"initial"}}>
                     <th scope="row" className="img" style={{verticalAlign:"middle"}}>
                       <img src={product.image} alt="" className="img-fluid z-depth-0"/>
                     </th>
@@ -55,7 +55,7 @@ export default ({ orders, total, username, handleChange, disabledButton, handleC
                       <input id={product.id} placeholder={product.order.cant} min="1" max="10" onChange={(e)=>handleChange(product.id, product.price, e)} type="number" aria-label="Search" className="form-control"  style={{width: "100px"}}/>
                     </td>
                     <td className="tds">
-                      <strong id={`total${product.id}`}>{product.price}</strong>
+                      <strong className={"subtotal"} id={`total${product.id}`}>{product.price * product.order.cant}</strong>
                     </td>
                     <td className="tds">
               <button type="button" className="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" onClick={() => handleClick(product.id)} 
@@ -86,7 +86,7 @@ export default ({ orders, total, username, handleChange, disabledButton, handleC
  </td>
  <td className="total">
    <h4 >
-     <strong>{total(orders.products)} ARS</strong>
+     <strong id="totalfinal">{total(orders.products)} ARS</strong>
    </h4>
  </td>
  <td colspan="3" className="text-right">
