@@ -20,9 +20,9 @@ export const logueandome = function(username, password){
     }
 }
 
-export const registrandome = function(username, password){
+export const registrandome = function(data){
     return (dispatch)=>{
-        return axios.post("/api/user/register", {username, password})
+        return axios.post("/api/user/register", data)
         .then(res=>dispatch(loginUser(res.data)))
     }
 }

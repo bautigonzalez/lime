@@ -10,7 +10,8 @@ export default ({
   handlerChange,
   handlerSubmit,
   value,
-  handleClick
+  handleClick,
+  name
 }) => {
   return (
     <header className="header">
@@ -24,9 +25,7 @@ export default ({
           </Link>
           {userId ? (
             <>
-              < >
-                <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "0.1px" }}> Hola {username.split("@").shift()}</Link>
-                
+                <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "0.1px" }}> Hola {name}</Link>
               </>
             </>
           ) : (

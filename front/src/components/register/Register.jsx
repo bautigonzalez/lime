@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Form, Button } from "react-bootstrap"
+import { Form, Button, Alert } from "react-bootstrap"
 
-export default ({ passwordChange, usernameChange, handleSubmit, username, password, tipo }) => (
+export default ({ passwordChange, passChange, usernameChange,nameChange, addressChange, handleSubmit, username, password, pass, name, address, alert, tipo }) => (
     <div className="fondo">
         <div className="container peliculas">
             <div className="row">
@@ -19,6 +19,16 @@ export default ({ passwordChange, usernameChange, handleSubmit, username, passwo
                             value={username}
                             />
                         </Form.Group>
+                        <Form.Group >
+                            <Form.Label>Nombre</Form.Label>
+                            <Form.Control 
+                            onChange={nameChange} 
+                            name="name" 
+                            type="text" 
+                            placeholder="Nombre"
+                            value={name}
+                            />
+                        </Form.Group>
                         <Form.Group controlId="formBasicPassword">
                             <Form.Label>Contraseña</Form.Label>
                             <Form.Control 
@@ -27,6 +37,30 @@ export default ({ passwordChange, usernameChange, handleSubmit, username, passwo
                             onChange={passwordChange}
                             name="password" 
                             value={password}
+                            />
+                        </Form.Group>
+                        {<Form.Group controlId="formBasicPassword">
+                            <Form.Label>Verificar Contraseña</Form.Label>
+                            <Form.Control 
+                            type="password" 
+                            placeholder="Contraseña"
+                            onChange={passChange}
+                            name="password" 
+                            value={pass}
+                            />
+                            {alert ? (<Alert variant={"danger"}>
+                            Las contraseñas no coinciden 
+                             </Alert>   ):null }
+                        
+                            </Form.Group>}
+                            <Form.Group controlId="formBasicEmail">
+                            <Form.Label>Direccion</Form.Label>
+                            <Form.Control 
+                            onChange={addressChange} 
+                            name="address" 
+                            type="text" 
+                            placeholder="Direccion"
+                            value={address}
                             />
                         </Form.Group>
                         <Button className="submitButton" type="submit">
