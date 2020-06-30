@@ -54,6 +54,7 @@ class NavbarContainer extends React.Component{
             deslogueandome={this.logout}
             handleClick={this.handleClick}
             value={this.state.input}
+            name={this.props.name}
             />)
     }
 }
@@ -62,6 +63,7 @@ const mapStateToProps = function(state, ownProps){
     return {
         userId: state.user.loginUser.id,
         username: state.user.loginUser.username, 
+        name:state.user.loginUser.name
     }
 }
 

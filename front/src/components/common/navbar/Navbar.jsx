@@ -10,7 +10,8 @@ export default ({
   handlerChange,
   handlerSubmit,
   value,
-  handleClick
+  handleClick,
+  name
 }) => {
   return (
     <header className="header">
@@ -25,7 +26,7 @@ export default ({
           {userId ? (
             <>
               <div >
-                <h6 className='saludo'> Hola {username.split("@").shift()} </h6>
+                <h6 className='saludo'> Hola {name} </h6>
                 
               </div>
             </>
