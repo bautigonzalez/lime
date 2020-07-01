@@ -86,7 +86,7 @@ export default ({ passwordChange, passChange, usernameChange,nameChange, address
                           Consultar tu historial de pedidos
 
                           </li>
-                      </ul>
+                      </ul>ok, le puse publicar. Me llevo 5min olvidarme mi propia idea. 
                       {tipo=="Registrarse" ? (<></>):(<>
                       <Link to="/user/register"><Button className="submitButton" id="registrase">Registrarse</Button></Link>
                       </>)}
