@@ -8,10 +8,8 @@ export default ({ carts, userId, user }) => {
     console.log(user)
     return (
         <div className="container" style={{marginTop:"50px", maxWidth:"70%"}}>
-
+            <h3 className="proddd" style={{textAlign:"center", marginTop:"70px"}}>PERFIL DE USUARIO DE {user.username ? user.username.split("@").shift().toUpperCase() : ""}</h3>
             <Card>
-                <Card.Header>PERFIL DE USUARIO DE {user ? user.username.split("@").shift().toUpperCase() : ""}
-</Card.Header>
                 <Card.Body>
                     <Card.Text className="tds">- Mail: {user.username} </Card.Text>
                     <Card.Text className="tds">- Direccion de entrega: {user.address} </Card.Text>
