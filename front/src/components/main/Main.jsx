@@ -14,22 +14,45 @@ import Contact from "../common/extrasFooter/contacs";
 import Developers from "../common/extrasFooter/developers";
 import { authenticate } from "../../action-creator/Users"
 import { connect } from 'react-redux'
+import {
+  fetchCart,
+  addToCart
+} from "../../action-creator/Cart";
 
 const mapStateToProps = function (state, ownProps) {
   return {
-    username: state.user.loginUser.username
+    username: state.user.loginUser.username,
+    userId: state.user.loginUser.id,
   };
 };
 
 const mapDispatchToProps = function (dispatch) {
   return {
     authenticate: () => dispatch(authenticate()),
+    addToCart: (product, userId) => dispatch(addToCart(product, userId))
   };
 };
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.mergeCart = this.mergeCart.bind(this);
+  }
+  
   componentDidMount() {
     this.props.authenticate();
+    if (this.props.userId ? true : false) {
+      this.mergeCart(this.props.userId)
+    }
+  }
+
+  mergeCart(userId) {
+    let prod = JSON.parse(localStorage.getItem('cartInvitado'))
+    let array = []
+    for (let i = 0; i < prod.length; i++) {
+      array.push(this.props.addToCart(prod[i], userId))
+    }
+    return Promise.all(array)
   }
 
   render() {
