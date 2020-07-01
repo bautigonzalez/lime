@@ -25,7 +25,12 @@ User.init(
         },
         image: {
             type: Sequelize.STRING
+        },
+        state:{
+            type:Sequelize.INTEGER,
+            defaultValue:0
         }
+
     },
     { sequelize: db, modelName: "user" }
 );
