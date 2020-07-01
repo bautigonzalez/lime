@@ -1,58 +1,70 @@
-#carrousel{
-     display:flex;
-     align-items: center;
-     height: 900px ;
-     width:800px ;
-     margin-top: 1000px; 
-
+#carrousel {
+  display: flex;
+  align-items: center;
+  height: 900px;
+  width: 800px;
+  margin-top: 1000px;
 }
 
-.tecnologia{
-     margin-top: 115px;
-     margin-bottom: 79px ;
-     margin-right: 200px;
-    margin-left: 200px;
- 
+.tecnologia {
+  margin-top: 115px;
+  margin-bottom: 79px;
+  margin-right: 200px;
+  margin-left: 200px;
 }
- 
+
+.unooo:hover {
+  transform: scale(1);
+  box-shadow: 5px 5px 15px black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#ja {
+  width: 520px;
+  margin: 20px;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 0.5rem 1.5rem 1.5rem 2.5rem;
+}
+
+.parallax {
+  height: 600px;
+  background-image: url("https://media.wired.com/photos/5ba42991d876900c69b0916b/191:100/w_2400,h_1256,c_limit/iphonexs-howto.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+  color: white;
+  font-size: large;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-family: unset;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.parallax2 {
+  height: 600px;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/deecies/images/macbookbanner.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  color: white;
+  font-size: large;
+}
+
+.texto2 {
+  display: flex;
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-family: unset;
+  font-weight: 300;
+  font-size: 40px;
+}
 
 
- .unooo:hover{
-      transform: scale(1);
-      box-shadow: 5px 5px 15px black ;
-      transition: 0.5s ease;
-      cursor: pointer;
- }
-
- #ja{
-     width: 520px;
-     margin: 20px;
-     padding: 0px;
-     padding-top: 20px;
-     padding-bottom: 10px;
-     border-radius: 0.5rem  1.5rem 1.5rem 2.5rem ;
- }
-
- 
-     
-     
- .parallax{
-     height:500px;
-     background-image:url('https://www.three.ie/web/images/comms/apple-iphone-11/apple-iphone-11-range.png');
-     background-size:contain;
-     background-attachment: fixed;
-     color: black;
-     font-size: large;
-     }
-
-
-     .texto{
-     display: flex;
-    justify-content: center;
-    padding-top: 136px;
-    padding-left: 650px;
-    text-transform: uppercase;
-    font-family: unset;
-    font-weight: 300;
-    font-size: -webkit-xxx-large;
-     }

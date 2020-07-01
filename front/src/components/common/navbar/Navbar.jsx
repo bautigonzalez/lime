@@ -25,7 +25,7 @@ export default ({
           </Link>
           {userId ? (
             <>
-                <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "0.1px" }}> Hola {name}</Link>
+                <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "-58.9px" }}> Hola {name}</Link>
               </>
           ) : (
             <>

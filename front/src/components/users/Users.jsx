@@ -22,7 +22,7 @@ export default ({ carts, userId, user }) => {
                 <Accordion defaultActiveKey="0" className="mdb-color lighten-5">
                     <Card>
                         <Card.Header>
-                            <Accordion.Toggle as={Button} eventKey="0" className="font-weight-bold" style={{ backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }}>
+                            <Accordion.Toggle as={Button} eventKey="0" id="boton" className="font-weight-bold" style={{ backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }}>
                                 Compra del {cart.updatedAt.slice(5, 10)}
       </Accordion.Toggle>
                         </Card.Header>
@@ -31,6 +31,7 @@ export default ({ carts, userId, user }) => {
                 <ul className="tds">
                     <li><strong>{product.name}</strong>: {product.price} ARS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                     <Card.Link  style={{fontSize:"12px"}}><Link to={`/product/${product.id}/review`}>Agregar review </Link></Card.Link>
+                    <Card.Link  style={{fontSize:"12px"}}><Link to={`/product/${product.id}`}>Volver a comprar </Link></Card.Link>
 </li>
                 </ul>)}</Card.Body>
                         </Accordion.Collapse>

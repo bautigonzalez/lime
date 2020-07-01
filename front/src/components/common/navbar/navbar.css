@@ -7,7 +7,8 @@
     --grisLetrasFooter: #333 ;
     --grisBorde : #d6d6d6 ;
     --azulCLaro: #6df ;
-    --azul: #0070c9
+    --azul: #0070c9 ;
+    --limon: #a6cd3c
 }
 
 html{
@@ -48,7 +49,7 @@ p{
     text-decoration: none;
     color: var(--blanco);
     transition: all 200ms;
-    margin-left: -151px;
+    margin-left: -104px;
     margin-top: 10px;
 }
 
@@ -68,7 +69,7 @@ p{
 .nav-principal a:hover{
     opacity: .5;
     text-decoration: none;
-    color: #6df;
+    color:var(--grisClaro);
 }
 
 .icon{

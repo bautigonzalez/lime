@@ -1,127 +1,144 @@
 import React from "react";
-
+import Typography from '@material-ui/core/Typography'; 
+import { MDBIcon} from "mdbreact";
 export default () => {
   return (
 
-    <div>
-        <h1 style={{marginTop:"100px", display:'flex', justifyContent:'center', }} ><span class="badge badge-info"style={{boxShadow:'10px 5px 5px black'}}>GRACIAS AL STAFF DE PLATAFORMA 5:</span></h1>
-    <div className="container" style={{ display: "flex", "flex-wrap": "wrap" ,justifyContent:'center', marginTop:"100px" , marginLeft:"0 auto" ,marginRight:"0 auto" , marginBottom:"40px"}}>
-      
-      <div className="card" style={{ width: "250px" , margin: "25px" , boxShadow: '5px -1px 21px -6px rgba(0,0,0,0.75)'}}>
-        <img
-          top
-          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
-          alt="MDBCard image cap"
-          style={{ width: "250px", height: "250px" }}
-        />
-        <div className="card-body" style={{textAlign:'center'}}>
-          <h4 style={{marginBottom:"40px"}}>
-            <p>
-              Cata
-            </p>
-          </h4>
-          <p className="card-meta">&#128203;</p>
-          <p>Manager P5</p>
-          <hr />
-          <span style={{textTransform:'uppercase', color:'#ff062e', fontWeight:"bold"}}>
-             
-             Bootcamp 2020
-           </span>
-        </div>
-      </div>
+    <div className="my-5 px-5 pb-5 text-center">
+        <div className="card-body">
+          
+          <Typography className="h1-responsive my-5" variant="h3" gutterBottom>
+          Nuestro increíble equipo
+           </Typography>
+          <p className="grey-text w-responsive mx-auto mb-5">
+          Cuando se habla específicamente de “equipo de desarrollo” se refiere al conjunto de personas que de manera conjunta desarrollan el producto del proyecto. Tienen un objetivo común, comparten la responsabilidad del trabajo que realizan en cada iteración y en el proyecto.
+          </p>
 
-      <div className="card" style={{ width: "250px", margin: "25px" , boxShadow: '5px -1px 21px -6px rgba(0,0,0,0.75)'}}>
-        {" "}
-        <img
-          top
-          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
-          alt="MDBCard image cap"
-          style={{ width: "250px", height: "250px" }}
-        />
-        <div className="card-body" style={{textAlign:'center'}}>
-        <h4 style={{marginBottom:"40px"}}>            <p>
-              Vico
-            </p>
-          </h4>
-          <p className="card-meta">&#128187;</p>
-          <p>Developer P5</p>
-          <hr />
-          <span style={{ textTransform:'uppercase', color:'#ff062e' , fontWeight:"bold"}}>
-             
-              Bootcamp 2020
-            </span>
-        </div>
-      </div>
+          
+          <div className="row">
+          <div lg="3" md="6" className="col">
+              <img
+                tag="img"
+                src="https://cdn.discordapp.com/attachments/712423426731540531/727919939951788073/Captura_de_pantalla_2020-07-01_a_las_13.13.37.png"                
+                className="rounded-circle z-depth-1 img-fluid"
+                alt="Sample avatar"
+                style={{height:"230px",width:"200px"}}
+              />
+              <h5 className="font-weight-bold mt-4 mb-3">Vicky</h5>
+              <p className="text-uppercase blue-text">Web Developer</p>
+              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
+                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
+                </em>
+              <ul className="list-unstyled mb-0">
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="facebook-f" className="blue-text" />
+                </a>
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="twitter" className="blue-text" />
+                </a>
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="instagram" className="blue-text" />
+                </a>
+              </ul>
+            </div>
 
-      <div className="card" style={{ width: "250px" , margin: "25px", boxShadow: '5px -1px 21px -6px rgba(0,0,0,0.75)'}}>
-        {" "}
-        <img
-          top
-          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
-          alt="MDBCard image cap"
-          style={{ width: "250px", height: "250px" }}
-        />
-        <div className="card-body" style={{textAlign:'center'}}>
-        <h4 style={{marginBottom:"40px"}}>          <p>
-              Nacho
-            </p>
-          </h4>
-          <p className="card-meta">&#128187;</p>
-          <p>Developer P5</p>
-          <hr />
-          <span style={{ textTransform:'uppercase', color:'#ff062e', fontWeight:"bold"}}>
-             
-              Developer 2020
-            </span>
-        </div>
-      </div>
+            <div lg="3" md="6" className="col">
+              <img
+                tag="img"
+                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"                className="rounded-circle z-depth-1 img-fluid"
+                style={{height:"230px",width:"200px"}}
+                alt="Sample avatar"
+                style={{height:"230px",width:"200px"}}
+              />
+              <h5 className="font-weight-bold mt-4 mb-3">Bruno</h5>
+              <p className="text-uppercase blue-text">Web Developer</p>
+              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
+                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
+                </em>
+              <ul className="list-unstyled mb-0">
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="facebook-f" className="blue-text" />
+                </a>
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="instagram" className="blue-text" />
+                </a>
+              </ul>
+            </div>
+            <div lg="3" md="6" className="col">
+              <img
+                tag="img"
+                src="https://cdn.discordapp.com/attachments/708038502662537217/727920740883759114/WhatsApp_Image_2020-04-27_at_10.28.28_AM.jpeg"                
+                className="rounded-circle z-depth-1 img-fluid"
+                alt="Sample avatar"
+                style={{height:"230px",width:"200px"}}
+              />
+              <h5 className="font-weight-bold mt-4 mb-3">Bauti</h5>
+              <p className="text-uppercase blue-text">Backend Developer</p>
+              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
+                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
+                </em>
+              <ul className="list-unstyled mb-0">
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="facebook-f" className="blue-text" />
+                </a>
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="github" className="blue-text" />
+                </a>
+              </ul>
+            </div>
 
-      <div className="card" style={{ width: "250px" , margin: "25px", boxShadow: '5px -1px 21px -6px rgba(0,0,0,0.75)'}}>
-        {" "}
-        <img
-          top
-          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
-          alt="MDBCard image cap"
-          style={{ width: "250px", height: "250px" }}
-        />
-        <div className="card-body" style={{textAlign:'center'}}>
-        <h4 style={{marginBottom:"40px"}}>          <p>
-              Jesu
-            </p>
-          </h4>
-          <p className="card-meta">&#128187;</p>
-          <p>Developer P5</p>
-          <hr />
-          <span style={{ textTransform:'uppercase', color:'#ff062e', fontWeight:"bold"}}>
-             
-              Bootcamp 2020
-            </span>
-        </div>
-      </div>
+            <div lg="3" md="6" className="col">
+              <img
+                tag="img"
+                src="https://cdn.discordapp.com/attachments/708038502662537217/727920740883759114/WhatsApp_Image_2020-04-27_at_10.28.28_AM.jpeg"                
+                className="rounded-circle z-depth-1 img-fluid"
+                alt="Sample avatar"
+                style={{height:"230px",width:"200px"}}
+              />
+              <h5 className="font-weight-bold mt-4 mb-3">Gastivi</h5>
+              <p className="text-uppercase blue-text">Web Developer</p>
+              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
+                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
+                </em>
+              <ul className="list-unstyled mb-0">
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="facebook-f" className="blue-text" />
+                </a>
+                <a href="#!" className="p-2 fa-lg">
+                  <MDBIcon fab icon="instagram" className="blue-text" />
+                </a>
+              </ul>
+            </div>
 
-      <div className="card" style={{ width: "250px", margin: "25px" , boxShadow: '5px -1px 21px -6px rgba(0,0,0,0.75)'}}>
-        <img
-          top
-          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
-          alt="MDBCard image cap"
-          style={{ width: "250px", height: "250px" }}
-        />
-        <div className="card-body" style={{textAlign:'center'}}>
-        <h4 style={{marginBottom:"40px"}}>          <p>
-              Facu
-            </p>
-          </h4>
-          <p className="card-meta">&#128187;</p>
-          <p>Developer P5</p>
-          <hr />
-          <span style={{ textTransform:'uppercase', color:'#ff062e', fontWeight:"bold"}}>
+            <div lg="3" md="6" className="col">
+              <img
+                tag="img"
+                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"
+                className="rounded-circle z-depth-1 img-fluid"
+                alt="Sample avatar"
+                style={{height:"230px",width:"200px"}}
+              />
+              <h5 className="font-weight-bold mt-4 mb-3">Lucho</h5>
+              <p className="text-uppercase blue-text">Backend Developer</p>
+              
+                <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
+                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
+                </em>
+               
              
-              Bootcamp 2020
-            </span>
+              <ul className="list-unstyled mb-0">
+                <a href="https://www.facebook.com/Lulobarone" className="p-2 fa-lg">
+                  <MDBIcon fab icon="facebook-f" className="blue-text" />
+                </a>
+                <a href="https://github.com/Lucianobarone" className="p-2 fa-lg">
+                  <MDBIcon fab icon="github" className="blue-text" />
+                </a>
+              </ul>
+            </div>
+            
+          </div>
         </div>
       </div>
-    </div>
-    </div>
   );
 };
 
