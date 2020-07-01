@@ -78,6 +78,7 @@ class CartContainer extends React.Component {
   handleComplete() {
     this.props.completeCart(this.props.userId);
     this.props.deleteCart()
+    this.subtotal()
     this.props.history.push('/home')
   }
 
