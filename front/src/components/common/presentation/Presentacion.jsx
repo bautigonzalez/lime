@@ -17,24 +17,24 @@ return(
           <img
             className="d-block w-100"
             src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/banner-hero-giveback-support.image.large_2x.jpg" 
-            style={{height:"600px"}}
+            style={{ height: "600px", objectFit: "cover"}}
           />
           <div class="carousel-caption" style={{color:"black", position:"relative", top:"-360px" , left:"-500px"}}>
-          <h3>Los mejores accesorios</h3>
-                <p>OFERTAS DE HASTA 50%</p>
-                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Mas info</Button>
+            <h3 style={{ fontWeight: "lighter"}}>NUEVOS ACCESORIOS</h3>
+                <p>Hasta 20% de descuento</p>
+                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Ver más</Button>
             </div>
         </Carousel.Item>
         <Carousel.Item >
           <img
             className="d-block w-100"
             src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/banner-hero-app-store.image.large_2x.jpg"
-            style={{height:"600px"}}
+            style={{ objectFit: "cover", height: "600px"}}
           />
            <div class="carousel-caption" style={{color:"black", position:"relative", top:"-500px" , left:"-400px"}}>
          
-                <h3>Notebooks Y Smarphones</h3>
-                <p>ULTIMOS MODELOS DISPONIBLES</p>
+            <h3 style={{ fontWeight: "lighter" }}>NOTEBOOKS Y SMARTPHONES</h3>
+                <p>ÚLTIMA GENERACIÓN</p>
             <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px" }}>Ver mas</Button></Link>
             </div>
         </Carousel.Item>
@@ -45,15 +45,15 @@ return(
     <Card className="text-center">
  
 
-  <Card.Body style={{margin:"40px" , marginTop:"100px"}}>
-    <Card.Title><i class="fa fa-truck"></i>&nbsp; ENVIO A TODO EL PAIS </Card.Title>
+      <Card.Body style={{ margin: "40px", marginTop: "50px", fontWeight: "lighter" }}>
+    <Card.Title><i class="fa fa-truck"></i>&nbsp; ENVÍOS A TODO EL PAÍS </Card.Title>
 
     
 
-    <h5 class="lead">
-  Para consultar el precio por envio a domicilio ingresa Aqui
+        <h5 style={{ fontWeight: "lighter" }}>
+  Consultá el precio por envío a domicilio
     </h5>
-    <Link to='/contact'> <Button variant="outline-info">Informacion</Button>   </Link>
+    <Link to='/contact'> <Button variant="outline-info" style={{margin:"10px"}}>Información</Button>   </Link>
   </Card.Body>
 
 
@@ -77,7 +77,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+    <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
@@ -94,7 +94,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+              <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
@@ -111,7 +111,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+              <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
 </CardDeck>
@@ -119,39 +119,11 @@ return(
 
 </Card>
 
-
-{
-
-<div style={{height:"500px"}}>
-        <div >
-          <img
-            className="d-block w-100"
-            src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp-hero-banner-safari.image.large_2x.jpg"
-            style={{height:"480px", zIndex:"-50"}}
-            
-          />
-           <div class="carousel-caption" style={{color: "white",position: "relative",top: '-437px',left: '-25px',borderRadius:'15px',backgroundColor: 'rgb(159, 159, 161)',width:'460px', height:"170px" , zIndex:'1', boxShadow:"6px 6px 19px -1px black"}}>
-              {username? (  <div> <h1 style={{margin:"9px"}}>LO ULTIMO!</h1>
-                <p style={{margin:"11px" , marginLeft:"37px"}}>Descuento en productos de la categoria Notebooks de hasta <strong>{username.split("@").shift().length-1}0%</strong></p></div> ) :( <div> <h1 style={{margin:"9px"}}>LO ULTIMO!</h1>
-                <p style={{margin:"11px" , marginLeft:"37px"}}>Descuento en productos de la categoria Notebooks
-                </p>
-            </div>   )}
-            </div>
+<div class="container-fluid">
+		<div class="parallax"><h2 className="texto">Hola chicos</h2></div>
+	</div>
 
 
-
-
-            <div class="carousel-caption" style={{color: "black",position: "relative",top: '-440px',left: '-140px',borderRadius:'15px',backgroundColor: 'white',width:'460px', height:"120px" , zIndex:'1',boxShadow:"2px 1px 16px 2px black"}}>
-              {username? (  <div style={{marginTop:'7px'}}> <h4 style={{marginLeft:"162px"}}><p><small>APURATE&nbsp;{username.split("@").shift().toUpperCase()}! </small></p></h4>
-            <Link to="/products"><Button variant="outline-secondary" style={{ borderRadius: "20px" , marginLeft:"162px" }}>Comprar</Button></Link></div> ) :
-            ( <div> <h3 style={{marginLeft:"162px"}}> <p><small>APURATE </small></p></h3>
-        
-            <Link to="/user/login"><Button variant="outline-secondary" style={{ borderRadius: "20px" , marginLeft:"162px"}}>Ingresa</Button></Link></div>   )}
-           
-            </div>
-        </div>
-      </div>
- }
 
 
 
@@ -215,8 +187,8 @@ return(
       </section>
  </div>
 
-
- <hr className="solid"/>
+ 
+ 
 <div className="my-5 px-5 pb-5 text-center">
         <div className="card-body">
           
@@ -276,7 +248,7 @@ return(
             <div lg="3" md="6" className="col">
               <img
                 tag="img"
-                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"                className="rounded-circle z-depth-1 img-fluid"
+                src="https://media.discordapp.net/attachments/708038502662537217/727920740883759114/WhatsApp_Image_2020-04-27_at_10.28.28_AM.jpeg"                className="rounded-circle z-depth-1 img-fluid"
                 alt="Sample avatar"
               />
               <h5 className="font-weight-bold mt-4 mb-3">Bauti</h5>

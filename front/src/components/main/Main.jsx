@@ -19,6 +19,7 @@ import {
   fetchCart,
   addToCart
 } from "../../action-creator/Cart";
+import AdminContainer from "../admins/AdminContainer";
 
 const mapStateToProps = function (state, ownProps) {
   return {
@@ -73,6 +74,7 @@ class Main extends React.Component {
           <Route path="/user/:id/profile" component={UsersContainer} />
           <Route path="/product/:id/review" component={ReviewsContainer} />
           <Route path="/admin/product" component={PublicarContainer} />
+          <Route path="/admin/users" component={AdminContainer} />
           <Redirect from="/" to="/home" />
         </Switch>
         <Footer />

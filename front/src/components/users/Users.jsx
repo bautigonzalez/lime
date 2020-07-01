@@ -8,10 +8,8 @@ export default ({ carts, userId, user }) => {
     console.log(user)
     return (
         <div className="container" style={{marginTop:"50px", maxWidth:"70%"}}>
-
+            <h3 className="proddd" style={{textAlign:"center", marginTop:"70px"}}>PERFIL DE USUARIO DE {user.username ? user.username.split("@").shift().toUpperCase() : ""}</h3>
             <Card>
-                <Card.Header>PERFIL DE USUARIO DE {user ? user.username.split("@").shift().toUpperCase() : ""}
-</Card.Header>
                 <Card.Body>
                     <Card.Text className="tds">- Mail: {user.username} </Card.Text>
                     <Card.Text className="tds">- Direccion de entrega: {user.address} </Card.Text>
@@ -29,7 +27,8 @@ export default ({ carts, userId, user }) => {
                         <Accordion.Collapse eventKey="0">
             <Card.Body>{cart.products.map (product => 
                 <ul className="tds">
-                    <li><strong>{product.name}</strong>: {product.price} ARS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Card.Link href={`/product/${product.id}/review`} style={{fontSize:"12px"}}>Agregar review</Card.Link>
+                    <li><strong>{product.name}</strong>: {product.price} ARS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <Card.Link  style={{fontSize:"12px"}}><Link to={`/product/${product.id}/review`}>Agregar review </Link></Card.Link>
 </li>
                 </ul>)}</Card.Body>
                         </Accordion.Collapse>

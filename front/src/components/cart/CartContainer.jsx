@@ -7,15 +7,21 @@ import {
   updateProduct,
   completeCart,
   addToCart,
-  deleteCart
+  deleteCart,
 } from "../../action-creator/Cart";
 
 class CartContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cartInvitado : [],
+      cartInvitado: [],
       showModal: false,
+      ccv: "",
+      tarjeta: "",
+      direccion: "",
+      codigo: "",
+      disabled: true,
+      alerta: false
     };
     this.total = this.total.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -23,34 +29,36 @@ class CartContainer extends React.Component {
     this.handleComplete = this.handleComplete.bind(this);
     this.subtotal = this.subtotal.bind(this);
     this.mergeCart = this.mergeCart.bind(this);
-    this.closeModal = this.closeModal.bind(this)
-    this.openModal = this.openModal.bind(this)
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.handleChangeModal = this.handleChangeModal.bind(this);
   }
 
   componentDidMount() {
-    if(this.props.userId !== "invitado"){
-      this.mergeCart(this.props.userId)
-      .then(()=>this.props.fetchCart(this.props.userId))
+    if (this.props.userId !== "invitado") {
+      this.mergeCart(this.props.userId).then(() =>
+        this.props.fetchCart(this.props.userId)
+      );
     }
-    this.subtotal()
+    this.subtotal();
   }
 
-  mergeCart(userId){
-    let prod = JSON.parse(localStorage.getItem('cartInvitado'))
-    let array = []
-    for(let i = 0; i < prod.length; i++ ){
-      array.push(this.props.addToCart(prod[i], userId))
+  mergeCart(userId) {
+    let prod = JSON.parse(localStorage.getItem("cartInvitado"));
+    let array = [];
+    for (let i = 0; i < prod.length; i++) {
+      array.push(this.props.addToCart(prod[i], userId));
     }
-    return Promise.all(array)
+    return Promise.all(array);
   }
 
-  subtotal(){
-      let cont = 0
-      let subtotales = document.getElementsByClassName("subtotal")
-      for(let i = 0; i< subtotales.length; i++){
-          cont += Number(subtotales[i].textContent)
-      }
-      document.getElementById("totalfinal").textContent = cont + " ARS"
+  subtotal() {
+    let cont = 0;
+    let subtotales = document.getElementsByClassName("subtotal");
+    for (let i = 0; i < subtotales.length; i++) {
+      cont += Number(subtotales[i].textContent);
+    }
+    document.getElementById("totalfinal").textContent = cont + " ARS";
   }
 
   total(products) {
@@ -65,23 +73,27 @@ class CartContainer extends React.Component {
     document.getElementById(`total${id}`).textContent =
       Number(e.target.value) * price;
     this.props.updateProduct(id, this.props.userId, Number(e.target.value));
-    this.subtotal()
+    this.subtotal();
   }
 
   handleClick(productId) {
-    document.getElementById(`total${productId}`).textContent = 0
-    document.getElementsByClassName(`c${productId}`)[0].className = "invisible"
+    document.getElementById(`total${productId}`).textContent = 0;
+    document.getElementsByClassName(`c${productId}`)[0].className = "invisible";
     this.props.deleteProduct(productId, this.props.userId);
-    this.subtotal()
+    this.subtotal();
   }
 
   handleComplete() {
     this.props.completeCart(this.props.userId);
-    this.props.deleteCart()
-    this.props.history.push('/home')
-  }
-
+    this.subtotal()
+    this.props.deleteCart();
+this.setState({
+  alerta: true
+})  
+}
+  
   closeModal() {
+    this.props.history.push("/home");
     this.setState({
       showModal: false,
     });
@@ -93,8 +105,29 @@ class CartContainer extends React.Component {
     });
   }
 
+  handleChangeModal(evt) {
+    const value = evt.target.value;
+    this.setState({ [evt.target.name]: value });
+    if (
+      this.state.direccion.length > 3 &&
+      this.state.codigo.length > 3 &&
+      this.state.tarjeta.length > 1 &&
+      this.state.ccv.length > 1
+    ) {
+      this.setState({ disabled: false });
+    } else if (
+      this.state.direccion.length === 0 ||
+      this.state.codigo.length === 0 ||
+      this.state.tarjeta.length === 0 ||
+      this.state.ccv.length === 0
+    ) {
+      this.setState({ disabled: true });
+    }
+  }
+
+
   render() {
-    let cart = JSON.parse(localStorage.getItem('cartInvitado'))
+    let cart = JSON.parse(localStorage.getItem("cartInvitado"));
     return (
       <Cart
         orders={this.props.orders}
@@ -108,6 +141,10 @@ class CartContainer extends React.Component {
         openModal={this.openModal}
         closeModal={this.closeModal}
         showModal={this.state.showModal}
+        handleChangeModal={this.handleChangeModal}
+        disabled={this.state.disabled}
+        alerta={this.state.alerta}
+        user={this.props.user}
       />
     );
   }
@@ -121,7 +158,7 @@ const mapDispatchToProps = function (dispatch) {
       dispatch(updateProduct(productId, userId, cant)),
     completeCart: (userId) => dispatch(completeCart(userId)),
     addToCart: (product, userId) => dispatch(addToCart(product, userId)),
-    deleteCart: () => dispatch(deleteCart())
+    deleteCart: () => dispatch(deleteCart()),
   };
 };
 const mapStateToProps = function (state, ownProps) {
@@ -130,6 +167,7 @@ const mapStateToProps = function (state, ownProps) {
     userId: ownProps.match.params.id,
     orders: state.cart.orders,
     username: state.user.loginUser.username,
+    user: state.user.loginUser,
   };
 };
 

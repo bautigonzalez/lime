@@ -8,7 +8,7 @@
           <div className="container peliculas" id="peliculas">
               <div className="row" style={{marginTop:"90px"}}>
                   <div className="col-6 centrado">
-                      <h4 id="login" className="loginh4 mayuscula">Iniciar sesión</h4>
+                    <h4 id="login" className="loginh4 mayuscula" style={{ fontWeight: "lighter" }}>Iniciar sesión</h4>
                       <Form onSubmit={handleSubmit}>
                           <Form.Group controlId="formBasicEmail">
                               <Form.Label>Email</Form.Label>

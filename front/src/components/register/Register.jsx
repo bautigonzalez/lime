@@ -7,7 +7,7 @@ export default ({ passwordChange, passChange, usernameChange,nameChange, address
         <div className="container peliculas">
             <div className="row">
                 <div className="col-6 centrado">
-                    <h4 id="login" className="loginh4">REGISTRARSE</h4>
+                    <h4 id="login" className="loginh4 mayuscula" style={{ fontWeight: "lighter"}}>REGISTRARSE</h4>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
