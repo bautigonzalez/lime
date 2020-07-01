@@ -27,7 +27,8 @@ export default ({ carts, userId, user }) => {
                         <Accordion.Collapse eventKey="0">
             <Card.Body>{cart.products.map (product => 
                 <ul className="tds">
-                    <li><strong>{product.name}</strong>: {product.price} ARS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Card.Link href={`/product/${product.id}/review`} style={{fontSize:"12px"}}>Agregar review</Card.Link>
+                    <li><strong>{product.name}</strong>: {product.price} ARS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <Card.Link  style={{fontSize:"12px"}}><Link to={`/product/${product.id}/review`}>Agregar review </Link></Card.Link>
 </li>
                 </ul>)}</Card.Body>
                         </Accordion.Collapse>

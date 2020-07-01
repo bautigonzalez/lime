@@ -16,7 +16,7 @@ class ProductsContainer extends React.Component{
     render(){
         console.log("search: ", this.props.search)
 
-        return <Products products={this.props.products} addToCart={this.props.addToCart} userId={this.props.userId} />
+        return <Products products={this.props.products} addToCart={this.props.addToCart} userId={this.props.userId}/>
     }
 }
 
@@ -29,7 +29,8 @@ const mapStateToProps = function (state) {
 
         }) : state.products.products,
         search: state.navbar.search,
-        userId: state.user.loginUser.id
+        userId: state.user.loginUser.id , 
+       
     }
 }
 

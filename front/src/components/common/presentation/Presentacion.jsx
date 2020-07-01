@@ -119,39 +119,11 @@ return(
 
 </Card>
 
-
-{
-
-<div style={{height:"500px"}}>
-        <div >
-          <img
-            className="d-block w-100"
-            src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp-hero-banner-safari.image.large_2x.jpg"
-            style={{height:"480px", zIndex:"-50"}}
-            
-          />
-           <div class="carousel-caption" style={{color: "white",position: "relative",top: '-437px',left: '-25px',borderRadius:'15px',backgroundColor: 'rgb(159, 159, 161)',width:'460px', height:"170px" , zIndex:'1', boxShadow:"6px 6px 19px -1px black"}}>
-              {username? (  <div> <h1 style={{margin:"9px"}}>LO ULTIMO!</h1>
-                <p style={{margin:"11px" , marginLeft:"37px"}}>Descuento en productos de la categoria Notebooks de hasta <strong>{username.split("@").shift().length-1}0%</strong></p></div> ) :( <div> <h1 style={{margin:"9px"}}>LO ULTIMO!</h1>
-                <p style={{margin:"11px" , marginLeft:"37px"}}>Descuento en productos de la categoria Notebooks
-                </p>
-            </div>   )}
-            </div>
+<div class="container-fluid">
+		<div class="parallax"><h2 className="texto">Hola chicos</h2></div>
+	</div>
 
 
-
-
-            <div class="carousel-caption" style={{color: "black",position: "relative",top: '-440px',left: '-140px',borderRadius:'15px',backgroundColor: 'white',width:'460px', height:"120px" , zIndex:'1',boxShadow:"2px 1px 16px 2px black"}}>
-              {username? (  <div style={{marginTop:'7px'}}> <h4 style={{marginLeft:"162px"}}><p><small>APURATE&nbsp;{username.split("@").shift().toUpperCase()}! </small></p></h4>
-            <Link to="/products"><Button variant="outline-secondary" style={{ borderRadius: "20px" , marginLeft:"162px" }}>Comprar</Button></Link></div> ) :
-            ( <div> <h3 style={{marginLeft:"162px"}}> <p><small>APURATE </small></p></h3>
-        
-            <Link to="/user/login"><Button variant="outline-secondary" style={{ borderRadius: "20px" , marginLeft:"162px"}}>Ingresa</Button></Link></div>   )}
-           
-            </div>
-        </div>
-      </div>
- }
 
 
 
@@ -215,8 +187,8 @@ return(
       </section>
  </div>
 
-
- <hr className="solid"/>
+ 
+ 
 <div className="my-5 px-5 pb-5 text-center">
         <div className="card-body">
           
@@ -276,7 +248,7 @@ return(
             <div lg="3" md="6" className="col">
               <img
                 tag="img"
-                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"                className="rounded-circle z-depth-1 img-fluid"
+                src="https://media.discordapp.net/attachments/708038502662537217/727920740883759114/WhatsApp_Image_2020-04-27_at_10.28.28_AM.jpeg"                className="rounded-circle z-depth-1 img-fluid"
                 alt="Sample avatar"
               />
               <h5 className="font-weight-bold mt-4 mb-3">Bauti</h5>
