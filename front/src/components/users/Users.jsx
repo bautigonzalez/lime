@@ -10,7 +10,7 @@ export default ({ carts, userId, user }) => {
         <div className="container" style={{marginTop:"50px", maxWidth:"70%"}}>
 
             <Card>
-                <Card.Header>PERFIL DE USUARIO DE {user.username.split("@").shift().toUpperCase()}
+                <Card.Header>PERFIL DE USUARIO DE {user ? user.username.split("@").shift().toUpperCase() : ""}
 </Card.Header>
                 <Card.Body>
                     <Card.Text className="tds">- Mail: {user.username} </Card.Text>

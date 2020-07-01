@@ -27,7 +27,6 @@ export default ({
             <>
                 <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "0.1px" }}> Hola {name}</Link>
               </>
-            </>
           ) : (
             <>
               <Link className="navv" to="/user/login">Iniciar sesión</Link>
