@@ -11,6 +11,7 @@ return(
   
 <div >
 
+
 <div >
       <Carousel style={{height:"575px"}}>
         <Carousel.Item  >
@@ -30,6 +31,7 @@ return(
          
                 <h3 className="texto2">Notebooks</h3>
             <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px", color:"white", borderColor:"white"}}>Ver mas</Button></Link>
+
             </div>
         </Carousel.Item>
       </Carousel>
@@ -39,15 +41,15 @@ return(
     <Card className="text-center">
  
 
-  <Card.Body style={{margin:"40px" , marginTop:"100px"}}>
-    <Card.Title><i class="fa fa-truck"></i>&nbsp; ENVIO A TODO EL PAIS </Card.Title>
+      <Card.Body style={{ margin: "40px", marginTop: "50px", fontWeight: "lighter" }}>
+    <Card.Title><i class="fa fa-truck"></i>&nbsp; ENVÍOS A TODO EL PAÍS </Card.Title>
 
     
 
-    <h5 class="lead">
-  Para consultar el precio por envio a domicilio ingresa Aqui
+        <h5 style={{ fontWeight: "lighter" }}>
+  Consultá el precio por envío a domicilio
     </h5>
-    <Link to='/contact'> <Button variant="outline-info">Informacion</Button>   </Link>
+    <Link to='/contact'> <Button variant="outline-info" style={{margin:"10px"}}>Información</Button>   </Link>
   </Card.Body>
 
 
@@ -71,7 +73,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+    <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
@@ -88,7 +90,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+              <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
@@ -105,7 +107,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+              <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
 </CardDeck>
