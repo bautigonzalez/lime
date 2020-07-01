@@ -147,24 +147,24 @@ export default ({ orders, total, username, handleChange, disabledButton, handleC
 
           <Form.Group>
             <Form.Label>Confirmar direccion</Form.Label>
-            <Form.Control type="text" style={{ width: "100%" }} placeholder="Direccion" />
+            <Form.Control type="text" style={{ width: "100%" }} placeholder="Direccion" required />
           </Form.Group>
           <Form.Group>
             <Form.Label>Codigo postal</Form.Label>
-            <Form.Control type="text" style={{ width: "100%" }} placeholder="CP" />
+            <Form.Control type="text" style={{ width: "100%" }} placeholder="CP" required/>
           </Form.Group>
           <Form.Group>
             <Form.Label>Numero de tarjeta de credito</Form.Label>
-            <Form.Control type="text" style={{width:"100%"}} placeholder="Ingrese los 16 digitos del frente de su tarjeta" />
+            <Form.Control type="text" style={{ width: "100%" }} placeholder="Ingrese los 16 digitos del frente de su tarjeta" required/>
           </Form.Group>
           <Form.Group>
             <Form.Label>CCV</Form.Label>
-            <Form.Control type="password" placeholder="Ingrese los 3 digitos del dorso de la tarjeta" />
+            <Form.Control type="password" placeholder="Ingrese los 3 digitos del dorso de la tarjeta" required />
           </Form.Group>
         </Modal.Body>
 
                 <Modal.Footer>
-          <Button onClick={() => handleComplete()} bsStyle="success">Confirmar</Button>
+          <Button onClick={() => handleComplete()}>Confirmar</Button>
           <Button onClick={closeModal} >Cerrar</Button>
         </Modal.Footer>
       </Form>

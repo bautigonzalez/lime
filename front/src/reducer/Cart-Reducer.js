@@ -3,7 +3,7 @@ import { VIEW_CART , ADD_INVITADO_CART, DELETE_INVITADO_CART, DELETE_INVITADO_PR
 const initialState = {
     carts: [],
     orders : {} ,
-    products: [...JSON.parse(localStorage.getItem('cartInvitado'))],
+    products: JSON.parse(localStorage.getItem('cartInvitado')).length ? [...JSON.parse(localStorage.getItem('cartInvitado'))] : [],
 }
 
 export default ( state = initialState, action) => {

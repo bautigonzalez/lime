@@ -17,6 +17,7 @@ export default ({ passwordChange, passChange, usernameChange,nameChange, address
                             type="email" 
                             placeholder="Ingrese su Email"
                             value={username}
+                            required
                             />
                         </Form.Group>
                         <Form.Group >
@@ -27,6 +28,7 @@ export default ({ passwordChange, passChange, usernameChange,nameChange, address
                             type="text" 
                             placeholder="Nombre"
                             value={name}
+                            required
                             />
                         </Form.Group>
                         <Form.Group controlId="formBasicPassword">
@@ -61,6 +63,7 @@ export default ({ passwordChange, passChange, usernameChange,nameChange, address
                             type="text" 
                             placeholder="Direccion"
                             value={address}
+                            required
                             />
                         </Form.Group>
                         <Button className="submitButton" type="submit">

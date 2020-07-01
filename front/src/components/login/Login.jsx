@@ -18,6 +18,7 @@
                               type="email" 
                               placeholder="Ingrese su Email"
                               value={username}
+                              required
                               />
                           </Form.Group>
                           <Form.Group controlId="formBasicPassword">
@@ -28,6 +29,7 @@
                               onChange={passwordChange}
                               name="password" 
                               value={password}
+                              required
                               />
                           </Form.Group>
                           <Button className="submitButton" type="submit" id="ingresar">

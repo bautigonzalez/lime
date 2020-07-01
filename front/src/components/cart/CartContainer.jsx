@@ -6,7 +6,8 @@ import {
   deleteProduct,
   updateProduct,
   completeCart,
-  addToCart
+  addToCart,
+  deleteCart
 } from "../../action-creator/Cart";
 
 class CartContainer extends React.Component {
@@ -31,9 +32,7 @@ class CartContainer extends React.Component {
       this.mergeCart(this.props.userId)
       .then(()=>this.props.fetchCart(this.props.userId))
     }
-    
     this.subtotal()
-    
   }
 
   mergeCart(userId){
@@ -78,6 +77,7 @@ class CartContainer extends React.Component {
 
   handleComplete() {
     this.props.completeCart(this.props.userId);
+    this.props.deleteCart()
     this.props.history.push('/home')
   }
 
@@ -120,7 +120,8 @@ const mapDispatchToProps = function (dispatch) {
     updateProduct: (productId, userId, cant) =>
       dispatch(updateProduct(productId, userId, cant)),
     completeCart: (userId) => dispatch(completeCart(userId)),
-    addToCart: (product, userId) => dispatch(addToCart(product, userId))
+    addToCart: (product, userId) => dispatch(addToCart(product, userId)),
+    deleteCart: () => dispatch(deleteCart())
   };
 };
 const mapStateToProps = function (state, ownProps) {

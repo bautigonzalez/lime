@@ -14,7 +14,7 @@ export default ({ carts, userId, user }) => {
 </Card.Header>
                 <Card.Body>
                     <Card.Text className="tds">- Mail: {user.username} </Card.Text>
-                    <Card.Text className="tds">- Direccion de entrega: {user.adress} </Card.Text>
+                    <Card.Text className="tds">- Direccion de entrega: {user.address} </Card.Text>
                     <Card.Text className="tds">- Compras realizadas: {carts.length} </Card.Text>
                 </Card.Body>
             </Card>

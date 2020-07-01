@@ -43,8 +43,8 @@ class NavbarContainer extends React.Component{
         this.props.deslogueandome()
         this.props.deleteCart()
         return this.props.history.push("/");
-
     }
+    
     render(){
 
         return (<Navbar 
@@ -70,8 +70,7 @@ const mapStateToProps = function(state, ownProps){
 
 const mapDispatchToProps = function(dispatch) {
     return {
-        searching : (search) =>dispatch (searching(search))
-        ,
+        searching : (search) =>dispatch (searching(search)),
         deslogueandome: ()=>dispatch(deslogueandome()),
         deleteCart: ()=>dispatch(deleteCart())
     }
