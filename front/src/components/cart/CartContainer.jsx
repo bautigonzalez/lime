@@ -85,12 +85,13 @@ class CartContainer extends React.Component {
 
   handleComplete() {
     this.props.completeCart(this.props.userId);
+    this.subtotal()
     this.props.deleteCart();
 this.setState({
   alerta: true
 })  
 }
-
+  
   closeModal() {
     this.props.history.push("/home");
     this.setState({
