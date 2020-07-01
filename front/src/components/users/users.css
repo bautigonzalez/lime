@@ -4,3 +4,7 @@
   width: 50%;
   margin-bottom: 360px;
 }
+
+#boton:hover{
+  color: black;
+}

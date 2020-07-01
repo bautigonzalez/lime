@@ -11,31 +11,27 @@ return(
   
 <div >
 
-    <div >
-      <Carousel style={{height:"600px"}}>
-        <Carousel.Item >
-          <img
-            className="d-block w-100"
-            src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/banner-hero-giveback-support.image.large_2x.jpg" 
-            style={{ height: "600px", objectFit: "cover"}}
-          />
-          <div class="carousel-caption" style={{color:"black", position:"relative", top:"-360px" , left:"-500px"}}>
-            <h3 style={{ fontWeight: "lighter"}}>NUEVOS ACCESORIOS</h3>
-                <p>Hasta 20% de descuento</p>
-                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Ver más</Button>
+
+<div >
+      <Carousel style={{height:"575px"}}>
+        <Carousel.Item  >
+         
+<div class="container-fluid" style={{paddingLeft:'0px' , paddingRight:'0px' ,backgroundColor:"black", height:"656"}}>
+		<div class="parallax" ></div>
+	</div>
+          <div class="carousel-caption" style={{color:"white", position:"relative", top:"-389px" , left:"-441px", zIndex:"1"}}>
+          <h3 className="texto">Poner algo aca</h3>
+                <h4>OFERTAS DE HASTA 25%</h4>
+                <Button variant="outline-dark" style={{borderRadius:"20px",color:"white", borderColor:"white"}}>Mas info</Button>
             </div>
         </Carousel.Item>
         <Carousel.Item >
-          <img
-            className="d-block w-100"
-            src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/banner-hero-app-store.image.large_2x.jpg"
-            style={{ objectFit: "cover", height: "600px"}}
-          />
-           <div class="carousel-caption" style={{color:"black", position:"relative", top:"-500px" , left:"-400px"}}>
+        <div class="parallax2"></div>
+           <div class="carousel-caption" style={{color:"white", position:"relative", top:"-390px" , left:"655px", zIndex:"1"}}>
          
-            <h3 style={{ fontWeight: "lighter" }}>NOTEBOOKS Y SMARTPHONES</h3>
-                <p>ÚLTIMA GENERACIÓN</p>
-            <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px" }}>Ver mas</Button></Link>
+                <h3 className="texto2">Notebooks</h3>
+            <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px", color:"white", borderColor:"white"}}>Ver mas</Button></Link>
+
             </div>
         </Carousel.Item>
       </Carousel>
@@ -119,11 +115,39 @@ return(
 
 </Card>
 
-<div class="container-fluid">
-		<div class="parallax"><h2 className="texto">Hola chicos</h2></div>
-	</div>
+
+{
+
+<div style={{height:"500px"}}>
+        <div >
+          <img
+            className="d-block w-100"
+            src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp-hero-banner-safari.image.large_2x.jpg"
+            style={{height:"480px", zIndex:"-50"}}
+            
+          />
+           <div class="carousel-caption" style={{color: "white",position: "relative",top: '-437px',left: '-25px',borderRadius:'15px',backgroundColor: 'rgb(159, 159, 161)',width:'460px', height:"170px" , zIndex:'1', boxShadow:"6px 6px 19px -1px black"}}>
+              {username? (  <div> <h1 style={{margin:"9px"}}>LO ULTIMO!</h1>
+                <p style={{margin:"11px" , marginLeft:"37px"}}>Descuento en productos de la categoria Notebooks de hasta <strong>{username.split("@").shift().length-1}0%</strong></p></div> ) :( <div> <h1 style={{margin:"9px"}}>LO ULTIMO!</h1>
+                <p style={{margin:"11px" , marginLeft:"37px"}}>Descuento en productos de la categoria Notebooks
+                </p>
+            </div>   )}
+            </div>
 
 
+
+
+            <div class="carousel-caption" style={{color: "black",position: "relative",top: '-440px',left: '-140px',borderRadius:'15px',backgroundColor: 'white',width:'460px', height:"120px" , zIndex:'1',boxShadow:"2px 1px 16px 2px black"}}>
+              {username? (  <div style={{marginTop:'7px'}}> <h4 style={{marginLeft:"162px"}}><p><small>APURATE&nbsp;{username.split("@").shift().toUpperCase()}! </small></p></h4>
+            <Link to="/products"><Button variant="outline-secondary" style={{ borderRadius: "20px" , marginLeft:"162px" }}>Comprar</Button></Link></div> ) :
+            ( <div> <h3 style={{marginLeft:"162px"}}> <p><small>APURATE </small></p></h3>
+        
+            <Link to="/user/login"><Button variant="outline-secondary" style={{ borderRadius: "20px" , marginLeft:"162px"}}>Ingresa</Button></Link></div>   )}
+           
+            </div>
+        </div>
+      </div>
+ }
 
 
 
@@ -187,134 +211,9 @@ return(
       </section>
  </div>
 
- 
- 
-<div className="my-5 px-5 pb-5 text-center">
-        <div className="card-body">
-          
-          <Typography className="h1-responsive my-5" variant="h3" gutterBottom>
-          Nuestro increíble equipo
-           </Typography>
-          <p className="grey-text w-responsive mx-auto mb-5">
-          Cuando se habla específicamente de “equipo de desarrollo” se refiere al conjunto de personas que de manera conjunta desarrollan el producto del proyecto. Tienen un objetivo común, comparten la responsabilidad del trabajo que realizan en cada iteración y en el proyecto.
-          </p>
 
-          
-          <div className="row">
-          <div lg="3" md="6" className="col">
-              <img
-                tag="img"
-                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Vicky</h5>
-              <p className="text-uppercase blue-text">Web Developer</p>
-              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
-                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
-                </em>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="twitter" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="instagram" className="blue-text" />
-                </a>
-              </ul>
-            </div>
 
-            <div lg="3" md="6" className="col">
-              <img
-                tag="img"
-                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Bruno</h5>
-              <p className="text-uppercase blue-text">Web Developer</p>
-              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
-                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
-                </em>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="instagram" className="blue-text" />
-                </a>
-              </ul>
-            </div>
-            <div lg="3" md="6" className="col">
-              <img
-                tag="img"
-                src="https://media.discordapp.net/attachments/708038502662537217/727920740883759114/WhatsApp_Image_2020-04-27_at_10.28.28_AM.jpeg"                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Bauti</h5>
-              <p className="text-uppercase blue-text">Backend Developer</p>
-              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
-                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
-                </em>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="github" className="blue-text" />
-                </a>
-              </ul>
-            </div>
 
-            <div lg="3" md="6" className="col">
-              <img
-                tag="img"
-                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Gastivi</h5>
-              <p className="text-uppercase blue-text">Web Developer</p>
-              <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
-                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
-                </em>
-              <ul className="list-unstyled mb-0">
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="#!" className="p-2 fa-lg">
-                  <MDBIcon fab icon="instagram" className="blue-text" />
-                </a>
-              </ul>
-            </div>
-
-            <div lg="3" md="6" className="col">
-              <img
-                tag="img"
-                src="https://avatars2.githubusercontent.com/u/61799168?s=460&u=43fc727444f7de0ca0c1441c1d0099dcd0e142c5&v=4"
-                className="rounded-circle z-depth-1 img-fluid"
-                alt="Sample avatar"
-              />
-              <h5 className="font-weight-bold mt-4 mb-3">Lucho</h5>
-              <p className="text-uppercase blue-text">Backend Developer</p>
-              
-                <em  class="list-inline-item" style={{color:"grey" , marginBottom:"20px"}}>
-                Aca podemos poner una breve descripcion de lo que querramos o dejamos un texto aleatorio
-                </em>
-               
-             
-              <ul className="list-unstyled mb-0">
-                <a href="https://www.facebook.com/Lulobarone" className="p-2 fa-lg">
-                  <MDBIcon fab icon="facebook-f" className="blue-text" />
-                </a>
-                <a href="https://github.com/Lucianobarone" className="p-2 fa-lg">
-                  <MDBIcon fab icon="github" className="blue-text" />
-                </a>
-              </ul>
-            </div>
-            
-          </div>
-        </div>
-      </div>
 
   </div>
 )
