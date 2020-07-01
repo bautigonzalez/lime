@@ -59,7 +59,7 @@ export default ({ product, addToCart, userId, reviews }) => (
         {review.content}{' '}
             </p>
             <footer className="blockquote-footer">
-              Realizada por <cite title="Source Title">{review.user ? review.user.username : "" }</cite> el <cite title="Source Title">{review.createdAt.slice(5, 10)}</cite>
+              Realizada por <cite title="Source Title">{review.user ? review.user.username : ""}</cite> el <cite title="Source Title">{review.createdAt.slice(5, 10)}</cite>
             </footer>
           </blockquote>
         </Card.Body>

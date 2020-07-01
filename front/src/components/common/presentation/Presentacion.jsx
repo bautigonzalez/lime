@@ -17,24 +17,24 @@ return(
           <img
             className="d-block w-100"
             src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/banner-hero-giveback-support.image.large_2x.jpg" 
-            style={{height:"600px"}}
+            style={{ height: "600px", objectFit: "cover"}}
           />
           <div class="carousel-caption" style={{color:"black", position:"relative", top:"-360px" , left:"-500px"}}>
-          <h3>Los mejores accesorios</h3>
-                <p>OFERTAS DE HASTA 50%</p>
-                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Mas info</Button>
+            <h3 style={{ fontWeight: "lighter"}}>NUEVOS ACCESORIOS</h3>
+                <p>Hasta 20% de descuento</p>
+                <Button variant="outline-dark" style={{borderRadius:"20px"}}>Ver más</Button>
             </div>
         </Carousel.Item>
         <Carousel.Item >
           <img
             className="d-block w-100"
             src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/banner-hero-app-store.image.large_2x.jpg"
-            style={{height:"600px"}}
+            style={{ objectFit: "cover", height: "600px"}}
           />
            <div class="carousel-caption" style={{color:"black", position:"relative", top:"-500px" , left:"-400px"}}>
          
-                <h3>Notebooks Y Smarphones</h3>
-                <p>ULTIMOS MODELOS DISPONIBLES</p>
+            <h3 style={{ fontWeight: "lighter" }}>NOTEBOOKS Y SMARTPHONES</h3>
+                <p>ÚLTIMA GENERACIÓN</p>
             <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px" }}>Ver mas</Button></Link>
             </div>
         </Carousel.Item>
@@ -45,15 +45,15 @@ return(
     <Card className="text-center">
  
 
-  <Card.Body style={{margin:"40px" , marginTop:"100px"}}>
-    <Card.Title><i class="fa fa-truck"></i>&nbsp; ENVIO A TODO EL PAIS </Card.Title>
+      <Card.Body style={{ margin: "40px", marginTop: "50px", fontWeight: "lighter" }}>
+    <Card.Title><i class="fa fa-truck"></i>&nbsp; ENVÍOS A TODO EL PAÍS </Card.Title>
 
     
 
-    <h5 class="lead">
-  Para consultar el precio por envio a domicilio ingresa Aqui
+        <h5 style={{ fontWeight: "lighter" }}>
+  Consultá el precio por envío a domicilio
     </h5>
-    <Link to='/contact'> <Button variant="outline-info">Informacion</Button>   </Link>
+    <Link to='/contact'> <Button variant="outline-info" style={{margin:"10px"}}>Información</Button>   </Link>
   </Card.Body>
 
 
@@ -77,7 +77,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+    <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
@@ -94,7 +94,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+              <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
@@ -111,7 +111,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">VER OFERTAS</button>
+              <button type="button" class="btn btn-outline-success">Ver más</button>
     </Card.Footer>
   </Card>
 </CardDeck>
