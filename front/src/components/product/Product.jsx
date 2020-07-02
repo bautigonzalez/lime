@@ -5,7 +5,7 @@ import Rating from '@material-ui/lab/Rating';
 import "./style.css"
 
 
-export default ({ product, addToCart, userId, reviews }) => (
+export default ({ product, addToCart, userId, reviews, valoration }) => (
   <div className="fondo" style={{ paddingTop: "70px", fontWeight: "lighter"}}>
     
     <div style={{ display: "flex", justifyContent:"center"}}>
@@ -36,7 +36,7 @@ export default ({ product, addToCart, userId, reviews }) => (
         <Card.Body>
           <Card.Title style={{ fontSize:"45px" }}>{product.name}</Card.Title>
           
-          <Rating value={product.valoration} readOnly size="medium" />   
+          <Rating value={valoration} readOnly size="medium" />   
           <br/>
           <br/>
        
