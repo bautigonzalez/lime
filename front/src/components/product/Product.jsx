@@ -5,7 +5,7 @@ import Rating from '@material-ui/lab/Rating';
 import "./style.css"
 
 
-export default ({ product, addToCart, userId, reviews }) => (
+export default ({ product, addToCart, userId, reviews, valoration }) => (
   <div className="fondo" style={{ marginLeft: '200px', paddingTop: "70px", fontWeight: "lighter"}}>
     {console.log(reviews)}
     <div style={{ display: "flex", padding: "3rem", paddingTop: "70px"}}>
@@ -37,7 +37,7 @@ export default ({ product, addToCart, userId, reviews }) => (
               <br />
               <br />
               <br />
-              <Rating value={product.valoration} readOnly size="medium" />              
+              <Rating value={valoration} readOnly size="medium" />              
               <Button onClick={userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")} variant="primary" style={{ marginLeft: '115px', backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
               <br/>
           </Card.Text>

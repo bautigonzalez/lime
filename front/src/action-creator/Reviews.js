@@ -26,3 +26,9 @@ export const addReview = function (content, stars, userId, productId) {
 
     }
 }
+
+export const updateValoration = function (valoration, productId) {
+    return (dispatch) => {
+        return axios.put(`/api/product/${productId}/review`, {valoration})
+    }
+}
