@@ -10,8 +10,12 @@ class ProductsContainer extends React.Component{
     }
 
     componentDidMount(){
+        console.log("hola")
         this.props.fetchProducts()
     }
+
+
+    
     
     render(){
         console.log("search: ", this.props.search)

@@ -28,3 +28,51 @@
     display: flex;
     justify-content: flex-end;
 }
+
+#imgCentradas {
+    padding-left: 170px;
+    padding-right: 190px;
+    max-height: 325px;
+  }
+
+  .reviewssTitle{
+    font-family: sans-serif;
+    margin-top: 66px;
+    margin-left: 35px;
+    font-weight: lighter;
+  }
+
+  
+  .reviewss{
+    margin-top: 20px;
+    margin-left: 35px;
+  }
+
+  .prueba{
+    padding-left: 50px;
+    padding-right: 50px
+  }
+
+  .carousel-control-prev{
+    background-color:  rgba(116, 116, 116, 0.486)  !important;
+    height: 35px !important;
+    width: 36px !important;
+    border-radius: 96px !important;
+    margin-top: 150px !important;
+    margin-left: 20px;
+
+  }
+  .carousel-control-next{
+    background-color: rgba(116, 116, 116, 0.486) !important;
+    height: 35px !important;
+    width: 36px !important;
+    border-radius: 96px !important;
+    margin-top: 150px !important;
+    margin-right: 50px !important;
+
+}
+
+
+
+
+

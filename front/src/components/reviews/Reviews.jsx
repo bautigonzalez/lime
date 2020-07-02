@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Carousel, Card, Button, Form } from "react-bootstrap";
 import Rating from '@material-ui/lab/Rating';
+import "./reviews.css"
 
 
 export default ({ product, reviews, contentChange, starsChange, handleSubmit, content, stars}) => (
@@ -44,6 +45,7 @@ export default ({ product, reviews, contentChange, starsChange, handleSubmit, co
 
             </div>
         </div >
+        <div className="reviews">
         <Form style={{ width: "1000px" }} onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Tu review sobre el producto:</Form.Label>
@@ -74,5 +76,6 @@ export default ({ product, reviews, contentChange, starsChange, handleSubmit, co
                 Enviar
   </Button>
         </Form>
+        </div>
     </div>
 );

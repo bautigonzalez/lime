@@ -13,13 +13,13 @@ return(
 
 
 <div >
-      <Carousel style={{height:"575px"}}>
+      <Carousel style={{height:"516px",zIndex:"1"}}>
         <Carousel.Item  >
          
 <div class="container-fluid" style={{paddingLeft:'0px' , paddingRight:'0px' ,backgroundColor:"black", height:"656"}}>
 		<div class="parallax" ></div>
 	</div>
-          <div class="carousel-caption" style={{color:"white", position:"relative", top:"-389px" , left:"-441px", zIndex:"1"}}>
+          <div class="carousel-caption" style={{color:"white", position:"relative", top:"-389px" , left:"-376px", zIndex:"1"}}>
           <h3 className="texto">Poner algo aca</h3>
                 <h4>OFERTAS DE HASTA 25%</h4>
                 <Button variant="outline-dark" style={{borderRadius:"20px",color:"white", borderColor:"white"}}>Mas info</Button>
@@ -27,7 +27,7 @@ return(
         </Carousel.Item>
         <Carousel.Item >
         <div class="parallax2"></div>
-           <div class="carousel-caption" style={{color:"white", position:"relative", top:"-390px" , left:"655px", zIndex:"1"}}>
+           <div class="carousel-caption" style={{color:"white", position:"relative", top:"-438px" , left:"522px", zIndex:"1"}}>
          
                 <h3 className="texto2">Notebooks</h3>
             <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px", color:"white", borderColor:"white"}}>Ver mas</Button></Link>
