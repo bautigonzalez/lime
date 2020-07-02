@@ -49,6 +49,7 @@
               </Form.Group>
               <Button
                 id="boton"
+                type="submit"
                 className="font-weight-bold"
                 style={{
                   backgroundColor: "#A6CD3B",
