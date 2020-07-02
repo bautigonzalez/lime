@@ -34,7 +34,7 @@ return (
          <Link  to={`/product/${product.id}`}><img src={product.image} className="card-img-top" id="imgCentrada"/></Link>
        </div>
        <hr className="solid" style={{margin:"10px"}}/>
-          <div className="card-body text-center" id="cart2" style={{height:"278px", marginTop:"-20px"}}>
+          <div className="card-body text-center" id="cart2" style={{height:"278px", marginTop:"-20px", marginLeft:"-20px"}}>
           <h6 style={{color:"grey", marginBottom:"20px"}}>{product.category}</h6>
          <h5>
            <strong>
