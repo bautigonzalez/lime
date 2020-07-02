@@ -36,24 +36,23 @@ return (
        <hr className="solid" style={{margin:"10px"}}/>
           <div className="card-body text-center" id="cart2" style={{height:"278px", marginTop:"-20px", marginLeft:"-20px"}}>
           <h6 style={{color:"grey", marginBottom:"20px"}}>{product.category}</h6>
-         <h5>
+         <h5 >
            <strong>
-              <Link to={`/product/${product.id}`}><p className="prodName">{product.name}</p></Link>
+              <Link to={`/product/${product.id}`} className="prodName"><p className="prodName" style={{ marginLeft: "20px" }}>{product.name}</p></Link>
            </strong>
          </h5>
-         
          <div className='valoration'>
-         <Rating value={product.valoration} readOnly size="medium"/>
+            <Rating value={product.valoration} className='valoration' readOnly size="medium"/>
          </div>
-         
+    
          
 
          <hr className="solid"/>
          <div className='px-1'>
                 <span className='float-left '>
-                <h5 className="font-weight-bold blue-text">
+               
                 <p className="hola">${product.price}</p>
-                  </h5>
+                
                 </span>
                 <span className='float-right' style={{backgroundColor:'white', border:"none"}}>
               <MDBIcon icon="cart-plus" id="cart" onClick={ userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")}/>
