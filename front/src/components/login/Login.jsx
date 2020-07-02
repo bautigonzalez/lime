@@ -13,7 +13,7 @@
   }) => (
     <div className="fondo">
       <div className="container peliculas" id="peliculas">
-        <div className="row" style={{ marginTop: "90px" }}>
+        <div className="row" style={{ marginTop: "150px" }}>
           <div className="col-6 centrado" >
             <h4
               id="login"
@@ -62,7 +62,7 @@
                 Ingresar
               </Button>
               <br></br>
-              <a href="/api/user/auth/facebook">Login with Facebook</a>
+              <a href="/api/user/auth/facebook">Ingresar con Facebook</a>
             </Form>
           </div>
           <div className="col-6 beneficios">

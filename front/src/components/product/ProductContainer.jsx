@@ -8,7 +8,11 @@ import { addToCart } from "../../action-creator/Cart"
 class ProductContainer extends React.Component {
     constructor(props) {
         super(props);
+        this.state= {
+            alerta:false
+        }
     }
+
 
     componentDidMount() {
         this.props.fetchProduct(this.props.id)

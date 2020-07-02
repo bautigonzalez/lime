@@ -48,19 +48,19 @@ export default ({ product, reviews, contentChange, starsChange, handleSubmit, co
         <div className="reviews">
         <Form style={{ width: "1000px" }} onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Tu review sobre el producto:</Form.Label>
+                    <Form.Label style={{ fontWeight: "lighter", fontSize: "20px", fontFamily: "Gill Sans, sans-serif", color:'#808080'}}>Tu review sobre el producto:</Form.Label>
                 <Form.Control 
                     onChange={contentChange}
                     name="content"
                     value={content}
                     size="lg"
-                    style={{ width: "1000px" }}
+                    style={{ width: "1000px", height:'150px' }}
                     type="text" 
-                    placeholder="Agregar review" />
+                     />
             </Form.Group>
 
             <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label>Valoracion:</Form.Label>
+                    <Form.Label style={{ fontWeight: "lighter", fontSize: "20px", fontFamily: "Gill Sans, sans-serif", color: '#808080'}}>Valoración:</Form.Label>
                 <Form.Control as="select"
                     onChange={starsChange}
                     name="content"
@@ -72,7 +72,10 @@ export default ({ product, reviews, contentChange, starsChange, handleSubmit, co
                     <option>5</option>
                 </Form.Control>
             </Form.Group>
-            <Button variant="primary" type="submit">
+                <Button style={{
+                    backgroundColor: "#A6CD3B",
+                    border: "1px solid #A6CD3B",
+                }} type="submit">
                 Enviar
   </Button>
         </Form>

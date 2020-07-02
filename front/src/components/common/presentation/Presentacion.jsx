@@ -20,17 +20,18 @@ return(
 		<div class="parallax" ></div>
 	</div>
           <div class="carousel-caption" style={{color:"white", position:"relative", top:"-389px" , left:"-376px", zIndex:"1"}}>
-          <h3 className="texto">Poner algo aca</h3>
-                <h4>OFERTAS DE HASTA 25%</h4>
-                <Button variant="outline-dark" style={{borderRadius:"20px",color:"white", borderColor:"white"}}>Mas info</Button>
+            <h3  style={{ fontWeight: "lighter", fontSize: "50px", fontFamily: "Gill Sans, sans-serif", opacity:'0.7' }}>Nuevos celulares</h3>
+            <h4 style={{ fontWeight: "lighter", fontSize: "20px", fontFamily: "Gill Sans, sans-serif", opacity: '0.7' }}>Hasta 15% OFF</h4>
+            <Button variant="outline-dark" style={{ borderRadius: "20px", color: "white", borderColor: "white", opacity: '0.7'}}>Ver mas</Button>
             </div>
         </Carousel.Item>
         <Carousel.Item >
         <div class="parallax2"></div>
            <div class="carousel-caption" style={{color:"white", position:"relative", top:"-438px" , left:"522px", zIndex:"1"}}>
          
-                <h3 className="texto2">Notebooks</h3>
-            <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px", color:"white", borderColor:"white"}}>Ver mas</Button></Link>
+            <h3 style={{ fontWeight: "lighter", fontSize: "50px", fontFamily: "Gill Sans, sans-serif", opacity: '0.7' }}>Notebooks</h3>
+            <h4 style={{ fontWeight: "lighter", fontSize: "20px", fontFamily: "Gill Sans, sans-serif", opacity: '0.7' }}>Hasta 15% OFF</h4>
+            <Link to="/products"><Button variant="outline-dark" style={{ borderRadius: "20px", color: "white", borderColor: "white", opacity: '0.7'}}>Ver mas</Button></Link>
 
             </div>
         </Carousel.Item>
@@ -46,10 +47,9 @@ return(
 
     
 
-        <h5 style={{ fontWeight: "lighter" }}>
-  Consultá el precio por envío a domicilio
+        <h5 style={{ fontWeight: "lighter", color:'black' }}>
+          <Link style={{ textDecoration: 'none', color:'black' }} to='/contact'> Consultá el precio por envío a domicilio</Link>
     </h5>
-    <Link to='/contact'> <Button variant="outline-info" style={{margin:"10px"}}>Información</Button>   </Link>
   </Card.Body>
 
 
@@ -73,11 +73,11 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <button type="button" class="btn btn-outline-success">Ver más</button>
+              <button type="button" className="btn btn-light" >Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
-    <Card.Img variant="top" src="https://personal.vteximg.com.br/arquivos/ids/401504-275-275/Samsung-Galaxy-S20-Plus-Cosmic-Black-VPlan-20GB-Black-1-1223579.jpg?v=637280808090530000" />
+            <Card.Img variant="top" src="https://static.mercadoshops.com/celular-samsung-galaxy-note-negro-smn950f_iZ1032053441XsZ2843902XpZ1XfZ2843902-64755381122-2XvZgrandexIM.jpg?v=20200429_104107" />
     <Card.Body>
       <Card.Title>CELULARES</Card.Title>
       <Card.Text>
@@ -90,7 +90,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-              <button type="button" class="btn btn-outline-success">Ver más</button>
+              <button type="button" className="btn btn-light" >Ver más</button>
     </Card.Footer>
   </Card>
   <Card className="seleccion">
@@ -107,7 +107,7 @@ return(
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-              <button type="button" class="btn btn-outline-success">Ver más</button>
+              <button type="button" className="btn btn-light" >Ver más</button>
     </Card.Footer>
   </Card>
 </CardDeck>
