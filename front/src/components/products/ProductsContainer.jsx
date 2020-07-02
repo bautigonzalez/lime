@@ -10,12 +10,17 @@ class ProductsContainer extends React.Component{
     }
 
     componentDidMount(){
+        console.log("hola")
         this.props.fetchProducts()
     }
+
+
+    
+    
+
     
     render(){
         console.log("search: ", this.props.search)
-
         return <Products products={this.props.products} addToCart={this.props.addToCart} userId={this.props.userId}/>
     }
 }

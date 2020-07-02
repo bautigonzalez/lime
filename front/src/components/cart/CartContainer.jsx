@@ -162,6 +162,7 @@ const mapDispatchToProps = function (dispatch) {
   };
 };
 const mapStateToProps = function (state, ownProps) {
+  console.log("USERID DE CART:",ownProps.match.params.id,)
   return {
     cartInvitado: state.cart.products,
     userId: ownProps.match.params.id,

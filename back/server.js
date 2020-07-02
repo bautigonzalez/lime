@@ -9,6 +9,7 @@ const {User}= require('./models')
 const cookieParser = require('cookie-parser');
 const passport = require('passport')
 const session = require("express-session");
+const FacebookStrategy = require("passport-facebook").Strategy;
 const LocalStrategy = require('passport-local').Strategy;
 
 //logging middleware
@@ -49,13 +50,31 @@ passport.use(
   })
 )
 
+passport.use(
+  new FacebookStrategy(
+    {
+      clientID: "712700209532501",
+      clientSecret: "5835a058cea57e1f6feb092915060c0c",
+      callbackURL: "http://localhost:3000/api/user/auth/facebook/callback",
+    },
+    function (accessToken, refreshToken, profile, done) {
+      User.findOrCreate({
+        where: {
+          username: profile.displayName,
+          password: profile.id,
+          name: profile.displayName,
+        },
+      }).then((user) => done(null, user));
+    }
+  )
+)
+
 passport.serializeUser(function(user,done){
-  done(null,user.id)
+user.address ? done(null, user.id) : done(null,user[0].id)
 })
 
 passport.deserializeUser(function(id,done){
-  User.findByPk(id)
-  .then((user)=>done(null,user))
+ User.findByPk(id).then((user) => done(null, user));
 })
 
 app.use('/api', routes);

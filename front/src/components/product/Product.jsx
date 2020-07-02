@@ -6,41 +6,49 @@ import "./style.css"
 
 
 export default ({ product, addToCart, userId, reviews, valoration }) => (
-  <div className="fondo" style={{ marginLeft: '200px', paddingTop: "70px", fontWeight: "lighter"}}>
-    {console.log(reviews)}
-    <div style={{ display: "flex", padding: "3rem", paddingTop: "70px"}}>
+  <div className="fondo" style={{ paddingTop: "70px", fontWeight: "lighter"}}>
+    
+    <div style={{ display: "flex", justifyContent:"center"}}>
     <div>
-      <Carousel style={{ width: "500px", height: "400px" }}>
+      <Carousel style={{ width: "550px", height: "400px" }}>
           <Carousel.Item style={{margin:"0 auto", padding:'10px', width:'100%'}}>
+          <div className="pruba">
           <img
             className="d-block w-100"
             src={product.image}
-              style={{ maxWidth: "250px", maxHeight: "300px", margin: "auto"}}
+            id="imgCentradas"
           />
+          </div>
         </Carousel.Item>
-          <Carousel.Item style={{ margin: "0 auto", padding: '10px', width: '100%'}}>
-          <img
+          <Carousel.Item style={{margin:"0 auto", padding:'10px', width:'100%',display:"flex", alignItems:"center"}}>
+         <div>
+         <img
             className="d-block w-100"
             src={product.secondaryimage}
-              style={{ maxWidth: "250px", maxHeight: "300px", margin: "auto"}}
+            id="imgCentradas"
           />
+         </div>
         </Carousel.Item>
       </Carousel>
     </div>
     <div>
-      <Card border="light" style={{ width: "450px", height: "400px", display: "flex" }}>
+      <Card border="light" style={{ width: "550px", height: "100%", display: "flex" }}>
         <Card.Body>
           <Card.Title style={{ fontSize:"45px" }}>{product.name}</Card.Title>
-                    <Card.Title>{product.price} ARS</Card.Title>
+          
+          <Rating value={valoration} readOnly size="medium" />   
+          <br/>
+          <br/>
+       
           <Card.Text>
               {product.description}
-              <br />
-              <br />
-              <br />
-              <Rating value={valoration} readOnly size="medium" />              
-              <Button onClick={userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")} variant="primary" style={{ marginLeft: '115px', backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
               <br/>
+             
           </Card.Text>
+         <Card.Title style={{fontSize:"25px"}}>{product.price} ARS</Card.Title>
+         <br/>
+          <br/>
+          <Button onClick={userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")} variant="primary" style={{backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
         </Card.Body>
       </Card>
 
@@ -48,9 +56,16 @@ export default ({ product, addToCart, userId, reviews, valoration }) => (
 
   </div >
 
+  
+  {reviews.length ? (<div>
+  <h3 className="reviewssTitle">Opiniones sobre {product.name}</h3>
+  <hr className="solid" style={{width:" 1000px" , position: "relative",right: "182px",padding: "10px"}}/>
+  </div>) : (null) }
+
     {reviews.length ? (<>
     {reviews && reviews.map((review)=> 
-      <Card style={{ width: "1000px"}}>
+    <div className="reviewss">
+<Card style={{ width: "1000px"}}>
         <Card.Header><Rating value={review.stars} readOnly size="medium" /></Card.Header>
         <Card.Body>
           <blockquote className="blockquote mb-0">
@@ -64,6 +79,8 @@ export default ({ product, addToCart, userId, reviews, valoration }) => (
           </blockquote>
         </Card.Body>
       </Card>
+    </div>
+      
     )}
     </>) : (null)}
   </div>

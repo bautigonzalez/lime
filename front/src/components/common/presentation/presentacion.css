@@ -7,7 +7,7 @@
 }
 
 .tecnologia {
-  margin-top: 115px;
+  margin-top: 70px;
   margin-bottom: 79px;
   margin-right: 200px;
   margin-left: 200px;
@@ -66,5 +66,14 @@
   font-weight: 300;
   font-size: 40px;
 }
+
+.carousel-control-prev {
+ margin-top: 263px !important;
+}
+
+
+.carousel-control-next {
+  margin-top: 263px !important;
+ }
 
 
