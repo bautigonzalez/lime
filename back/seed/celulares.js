@@ -3,7 +3,7 @@ module.exports = celulares = [
     name: "Samsung Galaxy S20",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 5,
+    valoration: 0,
     category: "Celulares",
     price: 95000,
     secondaryimage:
@@ -15,7 +15,7 @@ module.exports = celulares = [
     name: "Samsung Galaxy A10",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 32000,
     secondaryimage:
@@ -27,7 +27,7 @@ module.exports = celulares = [
     name: "Samsung Galaxy J6+",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 40000,
     secondaryimage:
@@ -39,7 +39,7 @@ module.exports = celulares = [
     name: "Samsung Galaxy A51",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 36500,
     secondaryimage:
@@ -51,7 +51,7 @@ module.exports = celulares = [
     name: "Samsung Galaxy Z Flip",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 5,
+    valoration: 0,
     category: "Celulares",
     price: 97000,
     secondaryimage:
@@ -63,7 +63,7 @@ module.exports = celulares = [
     name: "Samsung Galaxy Note 10",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 88700,
     secondaryimage:
@@ -75,7 +75,7 @@ module.exports = celulares = [
     name: "Apple iPhone 11",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 5,
+    valoration: 0,
     category: "Celulares",
     price: 95000,
     secondaryimage:
@@ -87,7 +87,7 @@ module.exports = celulares = [
     name: "Apple iPhone XR",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 80000,
     secondaryimage:
@@ -99,7 +99,7 @@ module.exports = celulares = [
     name: "Apple iPhone 7",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 50000,
     secondaryimage:
@@ -111,7 +111,7 @@ module.exports = celulares = [
     name: "Apple iPhone 6s",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 31600,
     secondaryimage:
@@ -123,7 +123,7 @@ module.exports = celulares = [
     name: "Apple iPhone 8 Plus",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 57000,
     secondaryimage:
@@ -135,7 +135,7 @@ module.exports = celulares = [
     name: "Apple iPhone 11 Pro Max",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 5,
+    valoration: 0,
     category: "Celulares",
     price: 110000,
     secondaryimage:
@@ -147,7 +147,7 @@ module.exports = celulares = [
     name: "Motorola Moto G8 Play",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 59000,
     secondaryimage:
@@ -159,7 +159,7 @@ module.exports = celulares = [
     name: "Motorola One Macro",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 33000,
     secondaryimage:
@@ -171,7 +171,7 @@ module.exports = celulares = [
     name: "Motorola Moto Z3 Play",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 37400,
     secondaryimage:
@@ -183,7 +183,7 @@ module.exports = celulares = [
     name: "Motorola Moto G7 Power",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 39000,
     secondaryimage:
@@ -195,7 +195,7 @@ module.exports = celulares = [
     name: "Motorola Moto E5",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 28000,
     secondaryimage:
@@ -207,7 +207,7 @@ module.exports = celulares = [
     name: "Huawei P30 Lite",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 49000,
     secondaryimage:
@@ -219,7 +219,7 @@ module.exports = celulares = [
     name: "Huawei Mate 10",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 23000,
     secondaryimage:
@@ -231,7 +231,7 @@ module.exports = celulares = [
     name: "Huawei P40 Lite",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 41000,
     secondaryimage:
@@ -243,7 +243,7 @@ module.exports = celulares = [
     name: "Huawei P30 Pro",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 5,
+    valoration: 0,
     category: "Celulares",
     price: 92000,
     secondaryimage:
@@ -255,7 +255,7 @@ module.exports = celulares = [
     name: "Huawei Gw",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 1,
+    valoration: 0,
     category: "Celulares",
     price: 12000,
     secondaryimage:
@@ -267,7 +267,7 @@ module.exports = celulares = [
     name: "LG G7 ThinQ",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 52000,
     secondaryimage:
@@ -279,7 +279,7 @@ module.exports = celulares = [
     name: "LG K50S ",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 23000,
     secondaryimage:
@@ -291,7 +291,7 @@ module.exports = celulares = [
     name: "LG K9",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 14000,
     secondaryimage:
@@ -303,7 +303,7 @@ module.exports = celulares = [
     name: "LG Q60s",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 28700,
     secondaryimage:
@@ -315,7 +315,7 @@ module.exports = celulares = [
     name: "LG Q6",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 24500,
     secondaryimage:
@@ -327,7 +327,7 @@ module.exports = celulares = [
     name: "Xiaomi Poco F1",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 49000,
     secondaryimage:
@@ -339,7 +339,7 @@ module.exports = celulares = [
     name: "Xiaomi Redmi Note 9S",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 45000,
     secondaryimage:
@@ -351,7 +351,7 @@ module.exports = celulares = [
     name: "Xiaomi Redmi Note 8 Pro",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 3,
+    valoration: 0,
     category: "Celulares",
     price: 48700,
     secondaryimage:
@@ -363,7 +363,7 @@ module.exports = celulares = [
     name: "Xiaomi Mi 9T",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 5,
+    valoration: 0,
     category: "Celulares",
     price: 67000,
     secondaryimage:
@@ -375,7 +375,7 @@ module.exports = celulares = [
     name: "Xiaomi Redmi 7A",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 25000,
     secondaryimage:
@@ -387,7 +387,7 @@ module.exports = celulares = [
     name: "Sony Xperia M5",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 18700,
     secondaryimage:
@@ -399,7 +399,7 @@ module.exports = celulares = [
     name: "Sony Xperia 10 Plus",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 67000,
     secondaryimage:
@@ -411,7 +411,7 @@ module.exports = celulares = [
     name: "Sony Xperia L1",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 2,
+    valoration: 0,
     category: "Celulares",
     price: 20000,
     secondaryimage:
@@ -423,7 +423,7 @@ module.exports = celulares = [
     name: "Google Pixel 4",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 5,
+    valoration: 0,
     category: "Celulares",
     price: 76000,
     secondaryimage:
@@ -432,10 +432,10 @@ module.exports = celulares = [
       "https://http2.mlstatic.com/D_NQ_NP_781837-MLA40490832967_012020-O.webp",
   },
   {
-    name: "Google Pixel 3",
+    name: "Google Pixel 0",
     description:
       "Pantalla: disfrutá de colores intensos y mayor nitidez en todos tus contenidos. Bateria: tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono. Camara: Capturá tus mejores momentos y revivilos cuando quieras.",
-    valoration: 4,
+    valoration: 0,
     category: "Celulares",
     price: 55000,
     secondaryimage:
