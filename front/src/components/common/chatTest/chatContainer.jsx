@@ -23,15 +23,11 @@ class ChatContainer extends React.Component{
     }
 
     componentDidMount(){
-       
         const messages = $("#messages")
-
         socket.on("new_message", (data)=>{
             messages.append(`<li>${data.username}: ${data.message}</li>`)
         })
     }
-
-
 
     mostrarChat(){
         $("#chat").toggleClass("invisible")
