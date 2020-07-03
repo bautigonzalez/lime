@@ -1,6 +1,6 @@
 import React from 'react';
 import Admin from "./Admin"
-import { fetchUsers, setAdmin } from "../../action-creator/Admin"
+import { fetchUsers, setAdmin, deleteProductAdmin } from "../../action-creator/Admin"
 import { connect } from "react-redux"
 
 class UsuariosContainer extends React.Component{
@@ -16,14 +16,14 @@ class UsuariosContainer extends React.Component{
 
 const mapStateToProps = function(state, ownProps){
   return {
-    users: state.admin.users
+    users: state.admin.users,
   }
 }
 
 const mapDispatchToProps = function(dispatch, ownProps){
   return {
     fetchUsers: ()=>dispatch(fetchUsers()),
-    setAdmin: (userId, state)=>dispatch(setAdmin(userId, state))
+    setAdmin: (userId, state)=>dispatch(setAdmin(userId, state)),
   }
 }
 

@@ -28,18 +28,23 @@ export default ({ product, reviews, contentChange, starsChange, handleSubmit, co
                 </Carousel>
             </div>
             <div>
-                <Card border="light" style={{ width: "450px", height: "400px", display: "flex" }}>
+                <Card style={{ width: "550px", height: "100%", display: "flex", borderColor: '#DCDCDC', borderRadius: '10px' }}>
                     <Card.Body>
-                        <Card.Title style={{ fontSize: "45px" }}>{product.name}</Card.Title>
-                        <Card.Title>{product.price} ARS</Card.Title>
+                        <Card.Title style={{ fontSize: '40px', fontFamily: 'Gill Sans, sans-serif', fontWeight: 'lighter' }}>{product.name}</Card.Title>
+
+                        <Rating value={product.valoration} readOnly size="medium" />
+                        <br />
+                        <br />
+
                         <Card.Text>
                             {product.description}
                             <br />
-                            <br />
-                            <br />
-                            <Rating value={product.valoration} readOnly size="medium" />
-                            <br />
+
                         </Card.Text>
+                        <Card.Title style={{ fontSize: '35px', fontFamily: 'Gill Sans, sans-serif', fontWeight: 'lighter' }}>{product.price} ARS</Card.Title>
+                        <br />
+                        <br />
+                        {}
                     </Card.Body>
                 </Card>
 
@@ -74,7 +79,7 @@ export default ({ product, reviews, contentChange, starsChange, handleSubmit, co
             </Form.Group>
                 <Button style={{
                     backgroundColor: "#A6CD3B",
-                    border: "1px solid #A6CD3B",
+                    border: "1px solid #A6CD3B"
                 }} type="submit">
                 Enviar
   </Button>

@@ -4,6 +4,7 @@ import { connect } from "react-redux"
 import { fetchReviews, updateValoration } from "../../action-creator/Reviews"
 import { fetchProduct } from "../../action-creator/Products"
 import { addToCart } from "../../action-creator/Cart"
+import { deleteProductAdmin } from "../../action-creator/Admin"
 
 class ProductContainer extends React.Component {
     constructor(props) {
@@ -12,6 +13,7 @@ class ProductContainer extends React.Component {
         this.state = {
             valoration : 0
         }
+        this.handleClick = this.handleClick.bind(this)
         this.promReviews = this.promReviews.bind(this)
     }
 
@@ -33,8 +35,12 @@ class ProductContainer extends React.Component {
         this.setState({valoration: Math.round(prom/cont) })
     }
 
+    handleClick(productId) {
+        return this.props.deleteProductAdmin(productId)
+    }
+
     render() {
-        return <Product reviews={this.props.reviews} product={this.props.product} addToCart={this.props.addToCart} userId={this.props.userId} valoration={this.state.valoration}/>
+        return <Product productId={this.props.id} handleClick={this.handleClick} state= {this.props.state} reviews={this.props.reviews} product={this.props.product} valoration={this.state.valoration} addToCart={this.props.addToCart} userId={this.props.userId} />
     }
 }
 
@@ -43,7 +49,8 @@ const mapStateToProps = function (state, ownProps) {
         id: ownProps.match.params.id,
         product: state.products.product,
         userId: state.user.loginUser.id,
-        reviews: state.reviews.reviews
+        reviews: state.reviews.reviews,
+        state: state.user.loginUser.state,
     }
 }
 
@@ -52,6 +59,7 @@ const mapDispatchToProps = function (dispatch, ownProps) {
         fetchProduct: (id) => dispatch(fetchProduct(id)),
         addToCart: (product, userId) => dispatch(addToCart(product, userId)),
         fetchReviews: (productId) => dispatch(fetchReviews(productId)),
+        deleteProductAdmin: (productId) => dispatch(deleteProductAdmin(productId))
         updateValoration: (valoration, productId) => dispatch(updateValoration(valoration, productId)),
     }
 }

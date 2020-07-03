@@ -22,7 +22,7 @@ router.post('/', (req,res)=>{
     .then(prod => res.status(201).json(prod))
 })
 
-router.delete('/:id', (req,res)=>{
+router.delete('/:id/delete', (req,res)=>{
     Product.destroy({
         where:{id : req.params.id}
     })
