@@ -68,9 +68,9 @@ export const updateProduct = function (productId, userId, cant) {
     }
 }
 
-export const completeCart = function (userId) {
+export const completeCart = function (userId, email) {
     return (dispatch) => {
-        return axios.put(`/api/user/${userId}/cart/checkout`)
+        return axios.put(`/api/user/${userId}/cart/checkout`, {email})
     }
 }
 

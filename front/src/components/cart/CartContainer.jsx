@@ -84,7 +84,7 @@ class CartContainer extends React.Component {
   }
 
   handleComplete() {
-    this.props.completeCart(this.props.userId);
+    this.props.completeCart(this.props.userId, this.props.username);
     this.subtotal()
     this.props.deleteCart();
 this.setState({
@@ -156,7 +156,7 @@ const mapDispatchToProps = function (dispatch) {
       dispatch(deleteProduct(productId, userId)),
     updateProduct: (productId, userId, cant) =>
       dispatch(updateProduct(productId, userId, cant)),
-    completeCart: (userId) => dispatch(completeCart(userId)),
+    completeCart: (userId, email) => dispatch(completeCart(userId, email)),
     addToCart: (product, userId) => dispatch(addToCart(product, userId)),
     deleteCart: () => dispatch(deleteCart()),
   };
