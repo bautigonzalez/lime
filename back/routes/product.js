@@ -37,6 +37,13 @@ router.put("/:id", (req, res, next)=>{
         .then(prod=>res.status(201).json(prod))
 })
 
+router.put("/:id/review", (req, res, next)=>{
+    Product.findByPk(req.params.id)
+        .then(prod=>{
+            return prod.update({valoration : req.body.valoration})
+        })
+        .then(()=>res.sendStatus(201))
+})
 
   
 router.post('/:id/review', (req,res,next)=>{
@@ -50,7 +57,6 @@ router.post('/:id/review', (req,res,next)=>{
       })
     })
 })
-
 
 router.get('/:id/review',(req,res)=>{
     Review.findAll({

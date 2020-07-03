@@ -6,6 +6,7 @@ import "./style.css"
 
 
 export default ({ product, addToCart, userId, reviews, state , handleClick, productId}) => (
+
   <div className="fondo" style={{ paddingTop: "70px", fontWeight: "lighter"}}>
     
     <div style={{ display: "flex", justifyContent:"center"}}>
@@ -36,7 +37,7 @@ export default ({ product, addToCart, userId, reviews, state , handleClick, prod
         <Card.Body>
             <Card.Title style={{ fontSize:'40px' ,fontFamily: 'Gill Sans, sans-serif', fontWeight: 'lighter' }}>{product.name}</Card.Title>
           
-          <Rating value={product.valoration} readOnly size="medium" />   
+          <Rating value={valoration} readOnly size="medium" />   
           <br/>
           <br/>
        
