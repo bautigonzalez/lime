@@ -22,7 +22,7 @@ export default ({ name, handleChange, handleChangeName, handleSubmit, handleSubm
                     <button class="btn btn-outline-secondary" id="botonn" onClick={()=>{
                         name? (sendUsername(name.split(" ")[0])) : (sendUsername("invitado"))
                         sendMessage()
-                    }} type="submit"><span class="material-icons" style={{marginTop: "4px"}}>
+                    }} type="submit"><span style={{position:"relative" ,left:"2px",bottom:"-4px" }}  class="material-icons" >
                     send
                     </span></button>
                 </form>

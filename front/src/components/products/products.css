@@ -67,6 +67,8 @@ html {
 }
 
 .hola {
+  margin-top: -3px;
+  padding-left: 7px;
   font-weight: lighter;
   color: lightslategray;
   font-family: Gill Sans, sans-serif;
@@ -132,8 +134,8 @@ text-decoration-line: none !important;
 #cart:active{
   position: absolute;
   bottom: 15px;
-  font-size: 2.0rem;
-  color: red !important;
+  font-size: 2.3rem;
+  color: rgb(53, 144, 53) !important;
   transition: 0.1s ease !important;
 }
 
@@ -147,7 +149,7 @@ text-decoration-line: none !important;
   transition: 0.5s ease;
 }
 #cart:hover {
-  color: rgb(86, 144, 122);
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 

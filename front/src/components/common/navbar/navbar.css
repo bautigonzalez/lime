@@ -177,6 +177,10 @@ input[type=text]:focus {
     margin: 13px;
 }
 
+.menudrop a:hover{
+    color: black !important;
+}
+
 .buscador{
     display: flex;
     justify-content: center
