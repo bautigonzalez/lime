@@ -6,7 +6,7 @@ import { MDBIcon , MDBRow , MDBCol} from "mdbreact";
 import Typography from '@material-ui/core/Typography'; 
 
 export default ({username})=>{
-console.log(username)
+
 return( 
   
 <div >

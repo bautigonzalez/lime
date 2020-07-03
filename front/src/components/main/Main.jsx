@@ -11,6 +11,7 @@ import ReviewsContainer from "../reviews/ReviewsContainer";
 import PresentacionContainer from "../common/presentation/PresentacionContainer";
 import Footer from "../common/footer/Footer";
 import Contact from "../common/extrasFooter/contacs";
+import Chat from '../common/chatTest/chatContainer'
 import Developers from "../common/extrasFooter/developers";
 import { authenticate } from "../../action-creator/Users"
 import { connect } from 'react-redux'
@@ -78,6 +79,7 @@ class Main extends React.Component {
           <Route path="/admin/users" component={AdminContainer} />
           <Redirect from="/" to="/home" />
         </Switch>
+        <Chat/>
         <Footer />
       </div>
     );

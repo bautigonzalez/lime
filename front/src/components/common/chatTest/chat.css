@@ -1,0 +1,95 @@
+.invisible {
+  display: none;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.float:focus .chat {
+  display: flex;
+}
+
+#mensaggeContainer {
+  max-height: 234px;
+  overflow: overlay;
+}
+
+.float {
+    cursor: pointer;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 25px;
+  background-color: #a6cd3c;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.chat {
+    
+    background-color: #f8f9faf0;
+    width: 350px;
+    position: fixed;
+    bottom: 110px;
+    height: 340px;
+    right: 33px;
+    color: grey;
+  -webkit-box-shadow: -1px -1px 11px -1px rgba(0,0,0,0.41);
+-moz-box-shadow: -1px -1px 11px -1px rgba(0,0,0,0.41);
+box-shadow: -1px -1px 11px -1px rgba(0,0,0,0.41);
+}
+
+
+#message{
+    width: 242px;
+    -webkit-transition: 0;
+    transition: 0;
+    height: 42px;
+    margin-top: 0;
+    font-size: 60%;
+    position: relative;
+    bottom: 6px;
+    
+}
+
+#formMensaje{
+    position: fixed;
+    bottom: 118px;
+    right: 55px;
+}
+#botonn{
+    font-size: 20px;
+    position: relative;
+    bottom: 6px;
+    margin-left: 10px;
+    border-radius: 38px;
+}
+
+#messages li:before {
+    content: none;
+  
+}
+
+#messages{
+    font-size: 70%;
+    margin-left: 0px;
+    padding-left: 27px;
+    text-align: initial;
+    font-weight: lighter;
+    color: black;
+
+}
+
+#nombre{
+    font-family: inherit;
+    font-size: 27px;
+    margin-bottom: 15px;
+    color: #4d544a;
+    background-color: #a6cd3c;
+}

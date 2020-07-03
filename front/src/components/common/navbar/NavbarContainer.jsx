@@ -56,6 +56,7 @@ class NavbarContainer extends React.Component{
             handleClick={this.handleClick}
             value={this.state.input}
             name={this.props.name}
+            user={this.props.user}
             />)
     }
 }
@@ -64,7 +65,8 @@ const mapStateToProps = function(state, ownProps){
     return {
         userId: state.user.loginUser.id,
         username: state.user.loginUser.username, 
-        name:state.user.loginUser.name
+        name:state.user.loginUser.name,
+        user:state.user.loginUser
     }
 }
 

@@ -129,6 +129,13 @@ text-decoration-line: none !important;
   border-radius: 0.5rem 0 0.5rem 0;
   transform: translate(100%, 100%);
 }
+#cart:active{
+  position: absolute;
+  bottom: 15px;
+  font-size: 2.0rem;
+  color: red !important;
+  transition: 0.1s ease !important;
+}
 
 #cart2 {
   position: relative;

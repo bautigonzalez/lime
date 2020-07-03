@@ -5,7 +5,7 @@ import "./navbar.css";
 
 export default ({
   userId,
-  username,
+  user,
   deslogueandome,
   handlerChange,
   handlerSubmit,
@@ -15,7 +15,7 @@ export default ({
 }) => {
   return (
     <header className="header">
-      <div className="container" style={{maxWidth:"1240px"}}>
+      <div className="container" style={{maxWidth:"1240px", display:"flex" ,justifyContent:"space-around"}}>
         <nav className="row nav-principal" style={{display:'flex', justifyContent:"space-around"}}>
           <Link to="/" >
             <img
@@ -25,7 +25,27 @@ export default ({
           </Link>
           {userId ? (
             <>
-                <Link className="navv" to={`/user/${userId}/profile`} style={{ marginLeft: "-58.9px" }}> Hola {name}</Link>
+               <div className='navv'style={{marginLeft:"10px"}}>
+        <Link className="drop" to='#' role="button" data-toggle="dropdown" aria-haspopup="true" style={{ marginLeft: "-58.9px" }} >
+        Hola {name}
+        </Link>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <Link class="menudrop" to={`/user/${userId}/profile`} > Perfil</Link>
+          
+          <a class="menudrop" >{userId && user.state > 0 ? (<div>
+            
+            <div class="dropdown-divider"></div><Link to="/admin/product" class="menudrop">Agregar productos</Link>
+            </div>) : (null) }</a>
+          <a class="menudrop" >
+          {userId && user.state === 2 ? (<Link to="/admin/users" class="menudrop">Administradores</Link>) : (null) }</a>
+        </div>
+      </div>
+
+
+
+      
+
+               
               </>
           ) : (
             <>
@@ -61,12 +81,6 @@ export default ({
             
           </form>
           
-         
-
-
-
-
-
 
           <div className='drop'>
         <a class="nav-link dropdown-toggle"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
@@ -80,6 +94,8 @@ export default ({
           <a class="menudrop"  onClick={() => handleClick("")} >Todos</a>
         </div>
       </div>
+
+   
 
       
          

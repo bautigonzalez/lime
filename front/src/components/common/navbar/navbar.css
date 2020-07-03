@@ -49,7 +49,7 @@ p{
     text-decoration: none;
     color: var(--blanco);
     transition: all 200ms;
-    margin-left: -104px;
+    
     margin-top: 10px;
 }
 
@@ -207,4 +207,13 @@ input[type=text]:focus {
     margin-left: 30px;
     /* margin-top: 10px; */
     align-items: center;
+}
+
+.menudrop {
+    margin: 7px !important;
+}
+
+.dropdown-menu{
+    top: 11px !important;
+    left: -20px !important;
 }
