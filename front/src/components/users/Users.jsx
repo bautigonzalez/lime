@@ -26,12 +26,24 @@ export default ({ carts, userId, user }) => {
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
             <Card.Body>{cart.products.map (product => 
-                <ul className="tds">
-                    <li><strong>{product.name}</strong>: {product.price} ARS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                    <Card.Link  style={{fontSize:"12px"}}><Link to={`/product/${product.id}/review`}>Agregar review </Link></Card.Link>
+            <div style={{display: "flex"}}>
+                    
+                   <div className="imagen"><img style={{width:"50px" , height:"80px"}} src={product.image}/></div>
+                    <div style={{margin:"17px", marginLeft:"-17px"}}>
+
+                 
+                   <ul className="tds">
+
+                   <li className="nada"><div className="separacion">
+                    <strong>{product.name}</strong>: {product.price} ARS
+                        </div>
+                    <Card.Link  style={{fontSize:"12px", marginLeft:"360"}}><Link style={{marginLeft:"360"}} to={`/product/${product.id}/review`}>Agregar review </Link></Card.Link>
                     <Card.Link  style={{fontSize:"12px"}}><Link to={`/product/${product.id}`}>Volver a comprar </Link></Card.Link>
-</li>
-                </ul>)}</Card.Body>
+                    </li>
+                </ul>
+                </div>
+            </div>
+                )}</Card.Body>
                         </Accordion.Collapse>
                     </Card>
                 </Accordion>

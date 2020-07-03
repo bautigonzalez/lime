@@ -51,7 +51,7 @@ export default ({ product, addToCart, userId, reviews, state , handleClick, prod
           <br/>
           {}
           <Button onClick={userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")} variant="primary" style={{backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
-            {state > 0 ? <Button onClick={()=>handleClick(productId)} variant="primary" style={{ backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito" >Eliminar producto</Button> : null}
+            {state > 0 ? <Button onClick={()=>handleClick(productId)} variant="primary" style={{ backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="eliminarAlCarrito" >Eliminar producto</Button> : null}
         </Card.Body>
       </Card>
 

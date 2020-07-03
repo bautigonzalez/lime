@@ -19,19 +19,11 @@
 }
 
 #agregarAlCarrito:hover{
-    background-color: #819E31 !important;
+    
     color: black !important;
 }
 
-#agregarAlCarrito:active{
-  background-color: rgba(224, 31, 31, 0.692) !important;
-  transition: 0.1s ease !important;
-  transform: translateY(-10px) !important;
-  color: rgb(231, 219, 219) !important;
-  border: none !important;
- 
 
-}
 
 
 .precioFinal{
@@ -43,6 +35,11 @@
     padding-left: 170px;
     padding-right: 190px;
     max-height: 325px;
+    transition: 0.7s;
+  }
+
+  #imgCentradas:hover{
+    transform: scale(1.3);
   }
 
   .reviewssTitle{
@@ -84,5 +81,22 @@
 
 
 
+#eliminarAlCarrito{
+  margin-left: 10px;
+}
 
+#eliminarAlCarrito:active{
+  background-color: rgb(199, 50, 50) !important;
+  transition: 0.2s ease !important;
+  transform: translateY(-10px) !important;
+  color: rgb(231, 219, 219) !important;
+  border: none !important;
+}
 
+#agregarAlCarrito:active{
+  background-color: rgb(53, 144, 53) !important;
+  transition: 0.2s ease !important;
+  transform: translateY(-10px) !important;
+  color: rgb(231, 219, 219) !important;
+  border: none !important;
+}
