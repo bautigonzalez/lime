@@ -71,13 +71,9 @@ export default ({
             required
             style={{ width: "100%", fontSize: "18px" }}
           >
-            {" "}
-            <option disabled selected>
-              Seleccionar
-            </option>
-            <option>Celulares</option>
-            <option>Notebooks</option>
-            <option>Accesorios</option>
+            <option value="Celulares">Celulares</option>
+            <option value="Notebooks">Notebooks</option>
+            <option value="Accesorios">Accesorios</option>
           </Form.Control>
         </Form.Group>
         <Form.Group>

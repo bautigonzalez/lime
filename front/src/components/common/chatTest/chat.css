@@ -87,7 +87,7 @@ box-shadow: -1px -1px 11px -1px rgba(0,0,0,0.41);
 }
 
 #nombre{
-    font-family: inherit;
+    font-family: 'Gill Sans', sans-serif;
     font-size: 27px;
     margin-bottom: 15px;
     color: #4d544a;
