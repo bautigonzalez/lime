@@ -3,7 +3,7 @@ module.exports = accesorios = [
     name: "Sony L85s",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 4700,
     secondaryimage:
@@ -15,7 +15,7 @@ module.exports = accesorios = [
     name: "JBL C1",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 3,
+    valoration: 0,
     category: "Accesorios",
     price: 1800,
     secondaryimage:
@@ -27,7 +27,7 @@ module.exports = accesorios = [
     name: "Xiaomi Redmi AirDots",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 3,
+    valoration: 0,
     category: "Accesorios",
     price: 2700,
     secondaryimage:
@@ -39,7 +39,7 @@ module.exports = accesorios = [
     name: "Motorola Pulse Escape",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 4400,
     secondaryimage:
@@ -51,7 +51,7 @@ module.exports = accesorios = [
     name: "Motorola Earbuds 2",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 2,
+    valoration: 0,
     category: "Accesorios",
     price: 629,
     secondaryimage:
@@ -63,7 +63,7 @@ module.exports = accesorios = [
     name: "Apple EarPods",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 3,
+    valoration: 0,
     category: "Accesorios",
     price: 1350,
     secondaryimage:
@@ -75,7 +75,7 @@ module.exports = accesorios = [
     name: "Apple AirPods",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 5,
+    valoration: 0,
     category: "Accesorios",
     price: 9500,
     secondaryimage:
@@ -87,7 +87,7 @@ module.exports = accesorios = [
     name: "Samsung Galaxy Buds",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 5,
+    valoration: 0,
     category: "Accesorios",
     price: 8700,
     secondaryimage:
@@ -99,7 +99,7 @@ module.exports = accesorios = [
     name: "Samsung AKG",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 950,
     secondaryimage:
@@ -111,7 +111,7 @@ module.exports = accesorios = [
     name: "Logitech M170",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 2,
+    valoration: 0,
     category: "Accesorios",
     price: 1200,
     secondaryimage:
@@ -123,7 +123,7 @@ module.exports = accesorios = [
     name: "Microsoft Mobile ",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 3,
+    valoration: 0,
     category: "Accesorios",
     price: 1650,
     secondaryimage:
@@ -135,7 +135,7 @@ module.exports = accesorios = [
     name: "Apple Magic 2",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 5,
+    valoration: 0,
     category: "Accesorios",
     price: 7550,
     secondaryimage:
@@ -147,7 +147,7 @@ module.exports = accesorios = [
     name: "Asus Rog Strix Impact",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 5,
+    valoration: 0,
     category: "Accesorios",
     price: 8000,
     secondaryimage:
@@ -159,7 +159,7 @@ module.exports = accesorios = [
     name: "Acer Predator Cestus",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 5,
+    valoration: 0,
     category: "Accesorios",
     price: 7300,
     secondaryimage:
@@ -171,7 +171,7 @@ module.exports = accesorios = [
     name: "Logitech K400",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 2850,
     secondaryimage:
@@ -183,7 +183,7 @@ module.exports = accesorios = [
     name: "HP K500",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 3,
+    valoration: 0,
     category: "Accesorios",
     price: 3250,
     secondaryimage:
@@ -195,7 +195,7 @@ module.exports = accesorios = [
     name: "Apple Magic Keyboard",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 6950,
     secondaryimage:
@@ -207,7 +207,7 @@ module.exports = accesorios = [
     name: "Logitech G Prodigy",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 6000,
     secondaryimage:
@@ -219,7 +219,7 @@ module.exports = accesorios = [
     name: "Google Home Mini",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 3,
+    valoration: 0,
     category: "Accesorios",
     price: 7200,
     secondaryimage:
@@ -231,7 +231,7 @@ module.exports = accesorios = [
     name: "Google Chromecast",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 5,
+    valoration: 0,
     category: "Accesorios",
     price: 5000,
     secondaryimage:
@@ -243,7 +243,7 @@ module.exports = accesorios = [
     name: "Tedge Bluetooth",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 2,
+    valoration: 0,
     category: "Accesorios",
     price: 1500,
     secondaryimage:
@@ -255,7 +255,7 @@ module.exports = accesorios = [
     name: "Xiaomi Mi Bluetooth",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 5700,
     secondaryimage:
@@ -267,7 +267,7 @@ module.exports = accesorios = [
     name: "Samsung Bottle Design",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 5,
+    valoration: 0,
     category: "Accesorios",
     price: 8500,
     secondaryimage:
@@ -279,7 +279,7 @@ module.exports = accesorios = [
     name: "Sony Extra Bass",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 6350,
     secondaryimage:
@@ -291,7 +291,7 @@ module.exports = accesorios = [
     name: "JBL Go 2",
     description:
       "Breve descripcion de un producto dentro de la categoria Accesorios para Proyecto E-commerce Lime. Se suele llamar accesorio a todo aquel elemento que forma parte de un sistema o de una máquina, una vez definida esta como producto o subproducto básico",
-    valoration: 4,
+    valoration: 0,
     category: "Accesorios",
     price: 4200,
     secondaryimage:
