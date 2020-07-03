@@ -2,10 +2,7 @@ import React from 'react';
 import { connect } from "react-redux"
 import { withRouter } from "react-router"
 import Presentacion from './Presentacion';
-import {
-    fetchCart,
-    addToCart
-} from "../../../action-creator/Cart";
+import {addToCart} from "../../../action-creator/Cart";
 
 const mapStateToProps = function (state, ownProps) {
     return {

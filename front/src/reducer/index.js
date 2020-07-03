@@ -13,4 +13,5 @@ export default combineReducers({
   navbar: navbarReducer,
   reviews: reviewsReducer,
   admin: adminReducer
+  
 });

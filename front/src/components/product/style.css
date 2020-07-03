@@ -23,6 +23,16 @@
     color: black !important;
 }
 
+#agregarAlCarrito:active{
+  background-color: rgba(224, 31, 31, 0.692) !important;
+  transition: 0.1s ease !important;
+  transform: translateY(-10px) !important;
+  color: rgb(231, 219, 219) !important;
+  border: none !important;
+ 
+
+}
+
 
 .precioFinal{
     display: flex;
