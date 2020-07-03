@@ -5,11 +5,12 @@ import Rating from '@material-ui/lab/Rating';
 import "./style.css"
 
 
-export default ({ product, addToCart, userId, reviews }) => (
+export default ({ product, addToCart, userId, reviews, state , handleClick, productId, valoration}) => (
+
   <div className="fondo" style={{ paddingTop: "70px", fontWeight: "lighter"}}>
     
     <div style={{ display: "flex", justifyContent:"center"}}>
-    <div>
+      <div>
       <Carousel style={{ width: "550px", height: "400px" }}>
           <Carousel.Item style={{margin:"0 auto", padding:'10px', width:'100%'}}>
           <div className="pruba">
@@ -32,11 +33,11 @@ export default ({ product, addToCart, userId, reviews }) => (
       </Carousel>
     </div>
     <div>
-      <Card border="light" style={{ width: "550px", height: "100%", display: "flex" }}>
+        <Card  style={{ width: "550px", height: "100%", display: "flex", borderColor:'#DCDCDC', borderRadius:'10px' }}>
         <Card.Body>
-          <Card.Title style={{ fontSize:"45px" }}>{product.name}</Card.Title>
+            <Card.Title style={{ fontSize:'40px' ,fontFamily: 'Gill Sans, sans-serif', fontWeight: 'lighter' }}>{product.name}</Card.Title>
           
-          <Rating value={product.valoration} readOnly size="medium" />   
+          <Rating value={valoration} readOnly size="medium" />   
           <br/>
           <br/>
        
@@ -45,10 +46,12 @@ export default ({ product, addToCart, userId, reviews }) => (
               <br/>
              
           </Card.Text>
-         <Card.Title style={{fontSize:"25px"}}>{product.price} ARS</Card.Title>
+            <Card.Title style={{ fontSize: '35px', fontFamily: 'Gill Sans, sans-serif', fontWeight: 'lighter' }}>{product.price} ARS</Card.Title>
          <br/>
           <br/>
+          {}
           <Button onClick={userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")} variant="primary" style={{backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
+            {state > 0 ? <Button onClick={()=>handleClick(productId)} variant="primary" style={{ backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito" >Eliminar producto</Button> : null}
         </Card.Body>
       </Card>
 
@@ -57,14 +60,14 @@ export default ({ product, addToCart, userId, reviews }) => (
   </div >
 
   
-  {reviews.length ? (<div>
-  <h3 className="reviewssTitle">Opiniones sobre {product.name}</h3>
-  <hr className="solid" style={{width:" 1000px" , position: "relative",right: "182px",padding: "10px"}}/>
+  {reviews.length ? (<div style={{width:'100%'}}>
+      <h3 style={{ display: "flex", justifyContent: "center", marginTop: '60px', fontFamily:'Gill Sans, sans-serif', fontWeight: 'lighter' }}>Opiniones sobre {product.name}</h3>
+      <hr className="solid" style={{ display: "flex", justifyContent: "center" }}/>
   </div>) : (null) }
 
     {reviews.length ? (<>
     {reviews && reviews.map((review)=> 
-    <div className="reviewss">
+      <div className="reviewss" style={{ display: "flex", justifyContent: "center" }}>
 <Card style={{ width: "1000px"}}>
         <Card.Header><Rating value={review.stars} readOnly size="medium" /></Card.Header>
         <Card.Body>

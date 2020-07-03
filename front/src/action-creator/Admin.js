@@ -22,4 +22,10 @@ export const setAdmin = function(userId, state) {
     }
 }
 
+export const deleteProductAdmin = function (productId) {
+    return (dispatch) => {
+        return axios.delete(`/api/product/${productId}/delete`, {productId})
+    }
+}
+
 

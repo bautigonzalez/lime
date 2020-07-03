@@ -27,6 +27,16 @@ router.get("/orders", (req, res, next) => {
   Order.findAll().then((orders) => res.json(orders));
 });
 
+router.get("/auth/facebook", passport.authenticate("facebook"));
+
+router.get(
+  "/auth/facebook/callback",
+  passport.authenticate("facebook", {
+    successRedirect: "http://localhost:3000/home",
+    failureRedirect: "http://localhost:3000/login",
+  })
+);
+
 router.get("/:id", (req, res, next) => {
   User.findByPk(req.params.id).then((user) => res.json(user));
 });

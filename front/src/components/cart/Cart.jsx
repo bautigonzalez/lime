@@ -22,9 +22,9 @@ export default ({
   <div className="container">
     <div className="card" style={{ marginTop: "50px", marginBottom: "20px" }}>
       <div className="card-body">
-        <p className="division">
-          Carrito de {username ? username.split("@").shift() : "Invitado"}:
-        </p>
+
+          <h3 className="proddd" style={{alignContent:"center"}} >CARRITO {user.name ? `DE ${user.name.toUpperCase()}` : "INVITADO"}</h3>
+
         <div class="table-responsive">
           <table className="table product-table">
             <thead className="mdb-color lighten-5">
@@ -125,16 +125,17 @@ export default ({
                           </strong>
                         </td>
                         <td className="tds">
-                          <button
+                          <Button
                             type="button"
-                            className="btn btn-sm btn-primary"
+                            variant="light"
                             data-toggle="tooltip"
                             data-placement="top"
                             onClick={() => handleClick(product.id)}
                             title="Remove item"
+
                           >
                             X
-                          </button>
+                        </Button>
                         </td>
                       </tr>
                     ))}
@@ -209,16 +210,17 @@ export default ({
                         </strong>
                       </td>
                       <td className="tds">
-                        <button
+                        <Button
                           type="button"
-                          className="btn btn-sm btn-primary"
+                          variant="light"                          
                           data-toggle="tooltip"
                           data-placement="top"
                           onClick={() => handleClick(product.id)}
                           title="Remove item"
+        
                         >
                           X
-                        </button>
+                        </Button>
                       </td>
                     </tr>
                   ))}
@@ -254,13 +256,18 @@ export default ({
                   </h4>
                 </td>
                 <td colspan="3" className="text-right">
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-rounded"
-                    onClick={() => openModal()}
-                  >
+                    <Button
+                      type="button"
+                      variant="light"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      onClick={() => openModal()}
+
+                    >
+                      
+                  
                     Finalizar Compra
-                  </button>
+                  </Button>
                 </td>
               </tr>
             </tbody>
@@ -276,7 +283,7 @@ export default ({
     <Modal show={showModal} onHide={closeModal}>
       <Form onSubmit={() => handleComplete()}>
         <Modal.Header>
-          <Modal.Title>Antes de finalizar...</Modal.Title>
+            <Modal.Title className="proddd" >Antes de finalizar...</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form.Group>
@@ -326,6 +333,7 @@ export default ({
 
         <Modal.Body>
           <Button
+            variant="light"
             style={{ margin: "10px 10px 10px 10px" }}
             onClick={() => handleComplete()}
             disabled={disabled}
@@ -334,6 +342,7 @@ export default ({
           </Button>
 
           <Button
+            variant="light"
             style={{ margin: "10px 10px 10px 10px" }}
             onClick={closeModal}
           >

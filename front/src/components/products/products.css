@@ -68,6 +68,9 @@ html {
 
 .hola {
   font-weight: lighter;
+  color: lightslategray;
+  font-family: Gill Sans, sans-serif;
+  font-size: 22px;
 }
 
 .val {
@@ -76,8 +79,12 @@ html {
 }
 
 .prodName {
-  color: rgb(47, 107, 187);
+color: lightslategray;
 height: 108px;
+font-weight: lighter;
+text-decoration: none !important;
+text-decoration-line: none !important;
+
 }
 
 #sombra {
@@ -144,9 +151,9 @@ height: 108px;
   cursor: pointer;
 }
 
-
-
 .valoration{
   position: relative;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
   bottom: 20px
 }
