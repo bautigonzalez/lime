@@ -23,7 +23,7 @@ export default ({
     <div className="card" style={{ marginTop: "50px", marginBottom: "20px" }}>
       <div className="card-body">
 
-          <h3 className="proddd" style={{alignContent:"center"}} >CARRITO {user ? `DE ${user.name.toUpperCase()}` : "INVITADO"}</h3>
+          <h3 className="proddd" style={{alignContent:"center"}} >CARRITO {user.name ? `DE ${user.name.toUpperCase()}` : "INVITADO"}</h3>
 
         <div class="table-responsive">
           <table className="table product-table">
