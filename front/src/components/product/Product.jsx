@@ -5,11 +5,11 @@ import Rating from '@material-ui/lab/Rating';
 import "./style.css"
 
 
-export default ({ product, addToCart, userId, reviews }) => (
+export default ({ product, addToCart, userId, reviews, state , handleClick, productId}) => (
   <div className="fondo" style={{ paddingTop: "70px", fontWeight: "lighter"}}>
     
     <div style={{ display: "flex", justifyContent:"center"}}>
-    <div>
+      <div>
       <Carousel style={{ width: "550px", height: "400px" }}>
           <Carousel.Item style={{margin:"0 auto", padding:'10px', width:'100%'}}>
           <div className="pruba">
@@ -50,6 +50,7 @@ export default ({ product, addToCart, userId, reviews }) => (
           <br/>
           {}
           <Button onClick={userId ? () => addToCart(product, userId) : () =>  addToCart(product, "invitado")} variant="primary" style={{backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito">Agregar al carrito</Button>
+            {state > 0 ? <Button onClick={()=>handleClick(productId)} variant="primary" style={{ backgroundColor: "#A6CD3B", border: "1px solid #A6CD3B" }} id="agregarAlCarrito" >Eliminar producto</Button> : null}
         </Card.Body>
       </Card>
 

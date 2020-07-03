@@ -88,4 +88,5 @@ const mapDispatchToProps = function (dispatch, ownProps) {
     },
   };
 };
+
 export default connect(null, mapDispatchToProps)(RegisterContainer);

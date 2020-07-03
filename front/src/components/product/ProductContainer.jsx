@@ -4,6 +4,7 @@ import { connect } from "react-redux"
 import { fetchReviews } from "../../action-creator/Reviews"
 import { fetchProduct } from "../../action-creator/Products"
 import { addToCart } from "../../action-creator/Cart"
+import { deleteProductAdmin } from "../../action-creator/Admin"
 
 class ProductContainer extends React.Component {
     constructor(props) {
@@ -11,6 +12,7 @@ class ProductContainer extends React.Component {
         this.state= {
             alerta:false
         }
+        this.handleClick = this.handleClick.bind(this)
     }
 
 
@@ -19,8 +21,12 @@ class ProductContainer extends React.Component {
         this.props.fetchReviews(this.props.id)
     }
 
+    handleClick(productId) {
+        return this.props.deleteProductAdmin(productId)
+    }
+
     render() {
-        return <Product reviews={this.props.reviews} product={this.props.product} addToCart={this.props.addToCart} userId={this.props.userId} />
+        return <Product productId={this.props.id} handleClick={this.handleClick} state= {this.props.state} reviews={this.props.reviews} product={this.props.product} addToCart={this.props.addToCart} userId={this.props.userId} />
     }
 }
 
@@ -29,7 +35,8 @@ const mapStateToProps = function (state, ownProps) {
         id: ownProps.match.params.id,
         product: state.products.product,
         userId: state.user.loginUser.id,
-        reviews: state.reviews.reviews
+        reviews: state.reviews.reviews,
+        state: state.user.loginUser.state,
     }
 }
 
@@ -37,7 +44,8 @@ const mapDispatchToProps = function (dispatch, ownProps) {
     return {
         fetchProduct: (id) => dispatch(fetchProduct(id)),
         addToCart: (product, userId) => dispatch(addToCart(product, userId)),
-        fetchReviews: (productId) => dispatch(fetchReviews(productId))
+        fetchReviews: (productId) => dispatch(fetchReviews(productId)),
+        deleteProductAdmin: (productId) => dispatch(deleteProductAdmin(productId))
     }
 }
 
