@@ -5,7 +5,7 @@ import Rating from '@material-ui/lab/Rating';
 import "./style.css"
 
 
-export default ({ product, addToCart, userId, reviews, state , handleClick, productId}) => (
+export default ({ product, addToCart, userId, reviews, state , handleClick, productId, valoration}) => (
 
   <div className="fondo" style={{ paddingTop: "70px", fontWeight: "lighter"}}>
     
