@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const passport = require("passport");
+var nodemailer = require("nodemailer");
 const { User, Cart, Order, Product } = require("../models");
 const { Op } = require("sequelize");
 
@@ -163,7 +164,32 @@ router.put("/:id/cart/checkout", (req, res, next) => {
     .then((cartFound) => {
       cartFound.update({state: "completed"})
   })
-  .then(() => res.sendStatus(200))
+
+  .then(() => {
+    var transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "lime.store.plataforma5@gmail.com",
+        pass: "limeadmin5",
+      },
+    })
+
+var mailOptions = {
+  from: "lime.store.plataforma5@gmail.com",
+  to: req.body.email,
+  subject: "Gracias por su compra!",
+  text:
+    "Compra realizada con exito, la recibira en una semana. Gracias por elegirnos!",
+};
+
+transporter.sendMail(mailOptions, function (error, info) {
+  if (error) {
+   console.log(error)
+  } else {
+    console.log("Email sent")
+  }
+})
+  })
 });
 
 router.get("/admin", (req, res, next) => {});
